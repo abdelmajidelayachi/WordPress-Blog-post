@@ -1,0 +1,24 @@
+.mobile-menu-visible.sidemenu-right.sidemenu-active #headerwrap,
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.sidemenu-right,
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.sidemenu-right .fixed-header{
+	left:0;
+	right:0
+}
+#mobile-menu.sidemenu{
+	left:0;
+	right:0;
+	width:100%;
+	transform-origin:top;
+	transform:translateY(-125%);
+	visibility:hidden;
+	transition:visibility .8s ease,transform .8s ease
+}
+.mobile-menu-visible #mobile-menu.sidemenu{
+	transform:none;
+	visibility:visible
+}
+.mobile-menu-visible .body-overlay,
+.body-overlay,
+.body-overlay.body-overlay-on{
+	display:none
+}

@@ -1,0 +1,17 @@
+.sidemenu-right #headerwrap{
+	left:-300px
+}
+.navbar-wrapper{
+	display:block;
+}
+.pull-down{
+	display:none
+}
+.social-links .icon-medium i{
+	margin:auto
+}
+.header-widget{
+	display:block;
+	text-align:inherit;
+	max-height:none!important
+}

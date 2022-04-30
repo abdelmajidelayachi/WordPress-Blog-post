@@ -1,0 +1,27 @@
+.module.ui.minimal .tab-content{
+	border:none;
+	padding:1.3em 0 0;
+	box-shadow:none;
+	background:none;
+	color:inherit
+}
+.module.minimal .tab-nav{
+	padding:0
+}
+.module.minimal ul.tab-nav li{
+	background:0;
+	border:none
+}
+.module.minimal .tab-nav li:hover{
+	background:0
+}
+.module.minimal ul.tab-nav li.current{
+	border-bottom:1px solid #00a2fb
+}
+.module.ui.minimal ul.tab-nav li a{
+	color:inherit;
+	padding:3px 5px
+}
+.module.minimal ul.tab-nav li a:focus{
+	outline:none
+}

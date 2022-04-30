@@ -1,0 +1,10 @@
+.builder-zooming{
+    background-position:center center;
+    background-repeat:no-repeat
+}
+.themify_builder .builder-zooming.active-zooming{
+    background-size:115%!important
+}
+.themify_builder .builder-zooming{
+    transition:background 1.5s ease-in
+}

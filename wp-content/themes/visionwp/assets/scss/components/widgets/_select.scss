@@ -1,0 +1,11 @@
+.wp-block-categories,
+.wp-block-archives{
+    select{
+        width: 100%;
+        border: 1px solid #ddd;
+        padding: 0.75rem 0.6rem;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+}

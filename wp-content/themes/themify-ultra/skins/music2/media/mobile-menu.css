@@ -1,0 +1,11 @@
+#headerwrap #main-nav a:hover,
+#main-nav .current_page_item>a,
+#main-nav .current-menu-item>a{
+	color:#a97ae3
+}
+#header .social-widget a{
+	color:#434789
+}
+#header .social-widget a:hover{
+	color:#a97ae3
+}

@@ -1,0 +1,6 @@
+.woocommerce .woocommerce-ordering select{
+	border-radius:0;
+	border:none;
+	border-bottom:1px solid rgba(180,180,180,.3);
+	background-size: 16px;
+}

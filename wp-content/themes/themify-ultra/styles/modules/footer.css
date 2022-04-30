@@ -1,0 +1,52 @@
+#footerwrap{
+	padding:54px 0 2em;
+	border-top:1px solid rgba(0,0,0,.05);
+	background-color:#fff;
+}
+#footer{
+	font-size:.9em;
+}
+/* for layout part inserted in footer */
+#footer .module_row > .row_inner {
+    max-width:100% 
+}
+.footer-block #footerwrap{
+	text-align: center;
+	position:static
+}
+.footer-text{
+	padding:0 0 2em;
+	line-height:1.8em;
+	font-size:.85em
+}
+.footer-widgets .widget{
+	margin:0 0 1.5em
+}
+.footer-widgets .widgettitle{
+	color:inherit;
+	margin:0 0 1em
+}
+.main-col,
+.section-col{
+	box-sizing:border-box
+}
+@media screen and (max-width:1024px){
+	.footer-widgets .col4-1{
+		width:48.4%
+	}
+	.footer-widgets .col4-1:nth-child(2n+1){
+		margin-left:0;
+		clear:left
+	}
+}
+@media screen and (max-width:680px){
+	#footerwrap{
+		padding-top:35px
+	}
+	.footer-widgets .col4-2,
+	.footer-widgets .col3-1{
+		margin-left:0;
+		width:100%;
+		max-width:100%
+	}
+}

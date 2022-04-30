@@ -1,0 +1,59 @@
+@supports (display: grid) { /* all browsers except IE */
+	body.hidden-view{
+		overflow:hidden
+	}
+	.section_loader,
+	body.hidden-view:after{
+		height:100%;
+		position:fixed;
+		background-color:#662d91;
+		left:0;
+		top:0;
+		opacity:1
+	}
+	body.hidden-view:after{
+		content:"";
+		width:100%;
+		transition:opacity .5s;
+		z-index:1000
+	}
+	.hidden-view .section_loader{
+		margin:0 auto;
+		perspective:1000;
+		animation:fadeInLoading .5s ease-in-out;
+		animation-fill-mode:forwards;
+		z-index:10000
+	}
+	body:after{
+		content:"";
+		opacity:0;
+		z-index:-1
+	}
+	.section_spinner{
+		width:50px;
+		height:50px;
+		background-color:#fff;
+		top:50%;
+		left:50%;
+		margin:-25px 0 0 -25px;
+		animation:rotateplane 1.2s infinite ease-in-out
+	}
+	.section_spinner .tf_fa{
+		display:block;
+		color:#fff;
+		font-size:3.2em;
+		width:inherit;
+		height:inherit
+	}
+	@keyframes fadeInLoading{
+		0% {opacity:0}
+		25%{opacity:.5}
+		50%{opacity:1}
+		100%{opacity:1}
+	}
+	@keyframes rotateplane{
+		0%{transform:perspective(120px) rotateX(0deg) rotateY(0deg);}
+		50%{transform:perspective(120px) rotateX(-180.1deg) rotateY(0deg);}
+		100%{transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg);}
+	}
+}

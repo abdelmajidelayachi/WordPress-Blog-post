@@ -1,0 +1,448 @@
+/*
+Skin Name:Ultra Wedding2
+Version:1.0
+Demo URI:https://themify.me/demo/themes/ultra-wedding2/
+Required Plugins:themify-portfolio-post,builder-contact
+*/
+
+/************************************************************************************
+GENERAL
+*************************************************************************************/
+:root{
+	--theme_accent:#bd5d2a;
+	--theme_accent_semi:rgba(215,170,146,.8);
+}
+body{
+	font:1.1em/1.65em 'Source Serif Pro', serif;
+	color:#6b6b6b
+}
+.post-nav a:hover span{
+	color:#000
+}
+li::marker{
+	color:#d7aa92;
+	font-size:1.8em
+}
+
+/* reset general border-radius */
+#main-nav li > .sub-menu,
+.footer-horizontal-left .back-top .arrow-up a,.footer-horizontal-right .back-top .arrow-up a,
+.footer-left-col .back-top .arrow-up a,.footer-right-col .back-top .arrow-up a,
+.loops-wrapper.polaroid .post, .loops-wrapper.overlay .post, .loops-wrapper.auto_tiles > .product,.loops-wrapper.auto_tiles .post-image + .post-content, .loops-wrapper.auto_tiles > .post, .post-image img, .product img, ul.products li.product .post-image, #cart-wrap .product-image img, .woocommerce div.product div.images img, .woocommerce-product-gallery__wrapper .tf_swiper-container-initialized, #add_payment_method table.cart img, .woocommerce-cart table.cart img, .woocommerce-checkout table.cart img,.widget .feature-posts-list .post-img,#main-nav .highlight-link > a,.pagenav a,.pagenav span,.pagenav .current,a.load-more-button,.more-link,input[type=reset], input[type=submit], button, select, textarea, input[type=text], input[type=password], input[type=search], input[type=email], input[type=url], input[type=number], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=time], input[type=week], input[type=checkbox], .woocommerce ul.products li.product .button, .woocommerce ul.products li.product .button, .woocommerce a.button, .woocommerce #respond input#submit, .woocommerce #respond input#submit.alt, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce button.button.alt.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce button.button.alt, .woocommerce button.button, .woocommerce a.button, .woocommerce a.button.alt, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled]{
+	border-radius:0
+}
+.mobile-menu-visible.header-overlay #headerwrap,
+#main-nav .highlight-link > a,.pagenav span,.pagenav .current,a.load-more-button,.more-link,input[type=reset], input[type=submit], button, .woocommerce ul.products li.product .button, .woocommerce ul.products li.product .button, .woocommerce a.button, .woocommerce #respond input#submit, .woocommerce #respond input#submit.alt, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce button.button.alt.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce button.button.alt, .woocommerce button.button, .woocommerce a.button, .woocommerce a.button.alt, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled]{
+	background-color:var(--theme_accent);
+	color:#fff
+}
+
+/* HEADINGS
+================================================ */
+h1,h2,h3,h4,h5,h6{
+	color:inherit;
+	font-family:'Abril Fatface', cursive;
+	font-weight:normal;
+	letter-spacing:0;
+}
+h3 {
+	font-size:1.6em;
+}
+h4{
+	font-size:.95em;
+	margin:0 0 .7em;
+	letter-spacing:.02em;
+}
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+#header{
+	padding-top:1.4em;
+	padding-bottom:1.4em
+}
+
+/* SITE LOGO
+================================================ */
+#site-logo{
+	font: normal 1.4em 'Abril Fatface', cursive;
+	letter-spacing:.02em;
+	text-transform: uppercase;
+}
+
+/* MAIN NAVIGATION
+================================================ */
+#main-nav a{
+	box-sizing:border-box;
+	padding:.6em .8em;
+	letter-spacing:.04em
+}
+#main-nav .highlight-link > a{
+	color:#fff;
+	background-color:#d7aa92;
+	text-transform:uppercase;
+	padding:.65em 1.6em;
+	letter-spacing:0.02em;
+	font-size:.85em
+}
+#main-nav .highlight-link > a:hover{
+	background-color:#000;
+	color:#fff
+}
+#main-nav a:hover, #main-nav .current_page_item > a,
+#main-nav .current-menu-item > a, #main-nav ul a:hover{
+	color:var(--theme_accent)
+}
+#main-nav li > .sub-menu{
+	top:auto
+}
+
+/* HEADER LAYOUTS
+================================================ */
+/* header stripe */
+.header-stripe #site-logo{
+	background-color:#d7aa92
+}
+
+/************************************************************************************
+POST
+*************************************************************************************/
+.post-title{
+	font-family:'Abril Fatface', cursive;
+	font-weight:normal;
+	letter-spacing:.025em
+}
+.post-title a{
+	color:#6b6b6b
+}
+.post-meta .post-category{
+	margin-right:.5em
+}
+.post-meta .post-category a{
+	background-color:#d7aa92;
+	color:#fff;
+	display:inline-block;
+	text-transform:uppercase;
+	padding:.2em 1.85em;
+	font-size:.75em
+}
+.post-meta .post-category:after {
+	display:none;
+}
+.post-content-inner{
+	display:flex;
+	flex-direction:column
+}
+.post-meta{
+	order:-1
+}
+
+/* list-post */
+.list-post .post{
+	text-align:left
+}
+.list-post .post-content{
+	padding-left:100px;
+	padding-right:100px
+}
+.list-post .post-title{
+	font-size:2em;
+	margin-bottom:.9em;
+	letter-spacing:-.001em
+}
+.list-post .post-image{
+	margin-bottom:2.25em
+}
+.loops-wrapper.list-post .post-meta{
+	margin:0 0 1.1em
+}
+
+/* related-posts */
+.related-posts .related-title{
+	font-weight:normal;
+}
+.related-posts .post-title{
+	font-size:1.25em;
+	line-height:1.75em;
+	font-weight:normal;
+}
+.related-posts .post-content > .post-meta,
+.related-posts .post-content > .post-title{
+	text-align:initial
+}
+.related-posts .post-category a{
+	color:#fff;
+	background-color:#d7aa92;
+	display:inline-block;
+	padding:.55em 1.9em .45em 1.9em;
+	font-size:.9em
+}
+.related-posts .post-image{
+	margin-bottom:1.65em
+}
+.related-posts .post-meta{
+	margin-bottom:1.3em
+}
+
+/************************************************************************************
+PORTFOLIO
+*************************************************************************************/
+.project-meta{
+	border-bottom:1px solid #e1ebf7;
+	padding-bottom:1.3em
+}
+.single-portfolio .project-meta{
+	margin:0 0 3em
+}
+.project-date, .project-client,
+.project-services, .project-view{
+	border-color:#e1ebf7;
+	font-family:'Abril Fatface', cursive;
+	font-weight:normal;
+	padding:0 2em;
+	margin:0
+}
+.project-date strong, .project-client strong,
+.project-services strong, .project-view strong{
+	font-family:'Source Serif Pro', serif;
+	font-size: .9em;
+	font-weight:normal;
+	text-transform:none;
+	letter-spacing:-.03em;
+	margin:0 0 .3em
+}
+.project-client{
+	padding-left:0
+}
+.loops-wrapper.portfolio .post-title{
+	font-size:1em;
+	text-transform:uppercase
+}
+.loops-wrapper .post{
+	text-align:left;
+	margin-bottom:1em;
+	overflow:hidden
+}
+.loops-wrapper.auto_tiles .post-content{
+    text-transform:uppercase;
+    box-shadow:0px 1px 5px rgba(0,0,0,.1);
+    box-sizing:border-box;
+    margin:8%;
+    padding:5%;
+	padding-bottom:3%;
+    position:absolute;
+    width:auto;
+    right:0;
+    left:0;
+    bottom:-100%;
+	visibility:hidden;
+    transition:bottom .25s,visibility .25s;
+}
+.loops-wrapper.auto_tiles .post:hover .post-content{
+	bottom:0;
+	visibility:visible;
+}
+.loops-wrapper.auto_tiles .post-image + .post-content{
+    background-color:#fff;
+    color:#000;
+    width:auto
+}
+
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+#footerwrap{
+	background-color:#f5f4f2;
+	border:none
+}
+#footer{
+	font-size:1em
+}
+#footer a:hover{
+	color:#000
+}
+
+/* FOOTER LOGO
+================================================ */
+#footer-logo{
+	font: normal 1.2em 'Abril Fatface', cursive;
+	text-transform:uppercase;
+	letter-spacing:.02em
+}
+
+/* FOOTER WIDGET
+================================================ */
+.footer-widgets .widgettitle{
+	font-family:'Abril Fatface', cursive;
+	font-weight:normal;
+	font-size:1.1em;
+	text-transform:none;
+	letter-spacing:.05em;
+	margin:0 0 1.45em
+}
+
+/* FOOTER TEXT
+================================================ */
+.footer-text{
+	letter-spacing:0.01em
+}
+.footer-text .one,.footer-text .two{
+	display:inline-block;
+	vertical-align:middle
+}
+.footer-text .two{
+	margin-left:5px
+}
+.section-col + .footer-text{
+	text-align:center;
+	border-top:1px solid #e5e1e2;
+	padding-top:2.1em
+}
+
+/************************************************************************************
+BUILDER STYLING
+*************************************************************************************/
+/*
+BUILDER BUTTON
+================================================ */
+.ui.builder_button{
+	text-transform:uppercase;
+	padding:1.2em 1.45em;
+	font-size:.875em
+}
+.module.module-buttons a.pink{
+	background-color:#d7aa92;
+	color:#fff
+}
+.module.module-buttons a.pink.builder_button{
+	color:#fff
+}
+.module.module-buttons a.pink.builder_button:hover{
+	background-color:#000
+}
+/*
+BUILDER SLIDER
+================================================ */
+.person-name{
+	font-family:'Abril Fatface', cursive;
+	font-weight:normal
+}
+.person-company{
+	font-size:.6em;
+	letter-spacing:-.04em;
+	line-height:normal
+}
+.testimonial-author:before{
+	content:"\201C";
+	color:#d7aa92;
+	display:block;
+	font-size:5.5em;
+	font-family:sans-serif;
+	font-style:normal;
+	font-weight:bold;
+	float:left;
+	margin-top:45px;
+	margin-right:20px
+}
+
+/* slider arrow */
+.themify_builder_slider_wrap .carousel-prev,
+.themify_builder_slider_wrap .carousel-next{
+	position:relative;
+	overflow:visible;
+	background-color:transparent
+}
+.themify_builder_slider_wrap .carousel-prev:hover,
+.themify_builder_slider_wrap .carousel-next:hover{
+	background-color:transparent;
+	color:var(--theme_accent)
+}
+.themify_builder_slider_wrap .carousel-prev:before,
+.themify_builder_slider_wrap .carousel-next:before{
+	border-width:2px;
+	width:7px;
+	height:7px
+}
+.themify_builder_slider_wrap .carousel-prev:after,
+.themify_builder_slider_wrap .carousel-next:after{
+	content:"";
+	display:inline-block;
+	border-top:2px solid;
+	width:14px;
+	position:absolute;
+	top:50%
+}
+.themify_builder_slider_wrap .carousel-prev:after{
+	left:11px
+}
+.themify_builder_slider_wrap .carousel-next:after{
+	right:11px
+}
+.tf_carousel_nav_wrap{
+	position:absolute;
+	bottom:13%;
+	right:8%
+}
+
+.module-image .image-title, .module-tile .tile-title,
+.module-feature .module-feature-title, .module-pro-image .image-pro-title{
+	font-weight:normal
+}
+
+/*
+BUILDER ZOOM ICON
+================================================ */
+.module .image-wrap .zoom{
+	border:2px solid;
+	padding:1.6em;
+	margin:0;
+	font-size:1.8em;
+	transform:translate(-50%, -50%)
+}
+.module .image-wrap .zoom,
+.module .image-wrap .zoom:hover{
+	background:0
+}
+
+/*
+IMAGE OVERLAY
+================================================ */
+.module-image.image-overlay .image-content{
+	box-shadow:0 2px 15px rgba(0,0,0,.2);
+	text-transform:uppercase;
+	background-color:#fff;
+	box-sizing:border-box;
+	padding:6%;
+	margin:8%;
+	width:auto;
+	right:0;
+	color:#6b6b6b
+}
+.module-image.image-overlay h3:not(.module-title) {
+	font-size:1.1em;
+	letter-spacing:.04em;
+}
+.module-image.image-overlay .image-content a{
+	color:var(--theme_accent)
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+@media screen and (max-width:680px){
+	.module .image-wrap .zoom{
+		padding:1.1em;
+		font-size:1em
+	}
+	.project-date, .project-client,
+	.project-services, .project-view{
+		padding:0 1em
+	}
+	.list-post .post-content{
+		padding-left:50px;
+		padding-right:50px
+	}
+	.loops-wrapper.portfolio .post-title{
+		font-size:.8em
+	}
+}

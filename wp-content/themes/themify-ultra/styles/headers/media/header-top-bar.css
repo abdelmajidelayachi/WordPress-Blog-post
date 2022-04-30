@@ -1,0 +1,19 @@
+.navbar-wrapper{
+    display:block
+} 
+.mobile-menu-visible.sidemenu-right #headerwrap{
+	left:-300px
+}
+#site-description{
+	margin:2px 0 0
+}
+.slide-cart #main-nav-wrap{
+	clear:both
+}
+.header-widget{
+	display:block;
+	max-height:none!important
+}
+.pull-down{
+	display:none
+}

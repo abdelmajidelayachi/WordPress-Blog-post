@@ -1,0 +1,127 @@
+.header-rightpane.mobile-menu-visible{
+	overflow-x:hidden
+}
+#site-description{
+	margin-bottom:2em
+}
+.header-rightpane #footerwrap,
+.header-rightpane.full_width #footerwrap,
+.header-rightpane #body,
+.header-rightpane.full_width #body{
+	padding-left:0;
+	padding-right:0
+}
+.slide-cart-visible.sidemenu-right,
+.header-rightpane.full_width.mobile-menu-visible{
+	left:-300px
+}
+.header-rightpane #sidebar{
+	margin:auto
+}
+.header-rightpane #mobile-menu.sidemenu{
+	position:static;
+	width:auto;
+	background:none;
+	height:auto;
+	overflow:inherit;
+	padding:0;
+	color:inherit;
+	box-shadow:none
+}
+.header-rightpane.mobile-menu-visible #headerwrap{
+	right:0
+}
+.header-rightpane #headerwrap{
+	right:-300px;
+	left:auto;
+	box-shadow:none
+}
+.header-rightpane #headerwrap #header{
+	width:auto;
+	height:100%;
+	padding:35px 25px 15px
+}
+#headerwrap .header-icons{
+	top:0;
+	transform:none
+}
+#headerwrap #menu-icon-close{
+    display:none
+}
+#menu-icon{
+	position:fixed;
+	top:15px;
+	right:0;
+	background-color:#EC1E24;
+	color:#fff;
+	font-size:1.2em;
+	padding:0;
+	margin:0;
+	width:25px;
+	height:45px;
+	line-height:45px;
+	text-align:center;
+	z-index:10000;
+	border-radius:8px 0 0 8px;
+	transition:border .2s ease-in-out
+}
+.header-rightpane.slide-cart-visible #headerwrap #menu-icon,
+.header-rightpane.mobile-menu-visible #headerwrap #menu-icon{
+	right:300px
+}
+.header-rightpane #menu-icon-close{
+	display:none
+}
+#headerwrap .menu-icon-inner{
+	border:none
+}
+.menu-icon-inner:before,
+.menu-icon-inner:after{
+	transform:rotateZ(-45deg);
+	border-left:1px solid;
+	border-top:1px solid;
+	width:50%;
+	height:50%;
+	top:0;
+	left: 6px;
+	right:auto;
+}
+.menu-icon-inner:after{
+	left: 11px;
+}
+.mobile-menu-visible .menu-icon-inner{
+	transform: rotateZ(-180deg) translate(3px,4px)
+}
+.mobile-menu-visible .menu-icon-inner:before,
+.mobile-menu-visible .menu-icon-inner:after{
+	left:3px
+}
+.mobile-menu-visible .menu-icon-inner:after{
+	left:8px
+}
+.header-rightpane #headerwrap #site-logo{
+	padding-top:0;
+	letter-spacing:.03em;
+	margin:0 0 .5em
+}
+.social-widget{
+	margin:1em 0
+}
+.search-button{
+	margin-bottom:5px
+}
+#pagewrap .back-top-float{
+	right:20px
+}
+@media (pointer:coarse){
+	#headerwrap{
+		overflow:inherit;
+	}
+}
+#headerwrap.tf_scrollbar{
+	overflow:visible;
+}
+.mobile-menu-visible #headerwrap.tf_scrollbar{
+	overflow-x:hidden;
+	overflow-y:auto;
+}

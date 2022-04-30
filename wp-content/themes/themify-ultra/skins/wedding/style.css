@@ -1,0 +1,479 @@
+/*  
+Skin Name:Ultra Wedding
+Version:1.0
+Demo URI:https://themify.me/demo/themes/ultra-wedding/
+Required Plugins:builder-contact, builder-maps-pro, builder-countdown, builder-timeline
+*/
+
+/************************************************************************************
+GENERAL
+*************************************************************************************/
+:root{
+	--theme_accent:#ff887b;
+	--theme_accent_semi:rgba(255,136,123,.85);
+}
+body{
+	font:1.3em/1.6em 'Josefin Sans',Arial,sans-serif;
+	color:#505050
+}
+.post-nav .arrow,
+a{
+	color:#e07368
+}
+a:hover,
+#footer a:hover{
+	color:var(--theme_accent)
+}
+/* form elements */
+label{
+	font-size:.85em;
+	font-weight:600;
+	text-transform:uppercase
+}
+textarea, input[type=text], input[type=password], input[type=search], input[type=email], input[type=url], input[type=number], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=time], input[type=week]{
+	background:none;
+	border:none;
+	border-bottom:1px solid #947d7b;
+	color:inherit
+}
+textarea{
+	border:1px solid #947d7b
+}
+select{
+	background:none;
+	border:none;
+	border-bottom:1px solid #947d7b;
+	width:100%;
+	max-width:27.3em
+}
+input[type=reset], input[type=submit], button[type=submit]{
+	padding:.9em 2em;
+	font-size:1em;
+	font-weight:400;
+	border-radius:25px;
+	font-weight:700
+}
+input[type=reset]:hover,
+input[type=submit]:hover,
+button[type=submit]:hover{
+	background-color:var(--theme_accent_semi)
+}
+
+/* reset general border-radius */
+input[type=reset],input[type=submit],button,select,textarea,input[type=checkbox],input[type=text],input[type=password],input[type=search],input[type=email],input[type=url],input[type=number],input[type=tel],input[type=date],input[type=datetime],input[type=datetime-local],input[type=month],input[type=time],input[type=week],.woocommerce ul.products li.product .button,.woocommerce a.button,.woocommerce #respond input#submit,.woocommerce #respond input#submit.alt,.woocommerce a.button,.woocommerce button.button,.woocommerce input.button,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.woocommerce button.button.alt.disabled,.woocommerce button.button:disabled,.woocommerce button.button:disabled[disabled],.woocommerce button.button.alt,.woocommerce button.button,.woocommerce a.button,.woocommerce a.button.alt,.woocommerce button.button:disabled,.woocommerce button.button:disabled[disabled],.loops-wrapper.polaroid .post,.loops-wrapper.overlay .post,.loops-wrapper.auto_tiles > .product,.loops-wrapper.auto_tiles .post-image + .post-content,.loops-wrapper.auto_tiles > .post,.post-image img,.product img, ul.products li.product .post-image,#cart-wrap .product-image img,.woocommerce div.product div.images img,.woocommerce-product-gallery__wrapper .tf_swiper-container-initialized,#add_payment_method table.cart img,.woocommerce-cart table.cart img,.woocommerce-checkout table.cart img,.select2-dropdown,.select2-container--default .select2-selection--single,.select2-container--default .select2-selection--single .select2-selection__arrow,#slide-cart .button,#slide-cart .product-image img,.woocommerce-cart #content table.cart td.actions .coupon .input-text,.woocommerce span.onsale,.woocommerce ul.products li.product .onsale,.woocommerce table.shop_table,.woocommerce-checkout #payment,#add_payment_method #payment ul.payment_methods li,.woocommerce-cart #payment ul.payment_methods li,.woocommerce-checkout #payment ul.payment_methods li,.woocommerce-error, .woocommerce-info, .woocommerce-message,.woocommerce-page .cart-collaterals .cart_totals,body:not(.footer-block) #footer .back-top a,#main-nav .highlight-link > a,.pagenav a,.pagenav span,.pagenav .current,a.load-more-button,.more-link,.widget .feature-posts-list .post-img,.module .image-wrap .zoom{
+	border-radius:0
+}
+.header-leftpane #main-nav .highlight-link > a,.header-overlay #main-nav li.highlight-link a,.header-rightpane #main-nav li.highlight-link a,.image-wrap .zoom,.image-wrap .zoom:hover{
+	border-radius:0
+}
+
+/************************************************************************************
+HEADING
+*************************************************************************************/
+h1, h2, h3, h4, h5, h6{
+	font-weight:900;
+	color:inherit
+}
+h1{
+	font:400 italic 3.5em/1em 'Playfair Display', serif;
+	margin:0 0 .5em;
+	letter-spacing:0;
+	text-transform:none
+}
+h2{
+	color:var(--theme_accent);
+	font:400 italic 2.3em/1.4em 'Playfair Display', serif;
+	margin:0 0 .7em
+}
+h3{
+	font:bold 1.625em/1.4em 'Josefin Sans',Arial,sans-serif;
+	text-transform:none;
+	letter-spacing:.02em
+}
+h4{
+	letter-spacing:.06em
+}
+h5{
+	font:italic 1.3em/1.6em 'Playfair Display', serif;
+	letter-spacing:.02em;
+	margin:0 0 1em
+}
+/************************************************************************************
+HEADER
+*************************************************************************************/
+/* MAIN NAVIGATION
+================================================ */
+#main-nav a{
+	padding:.6em;
+	letter-spacing:.05em;
+	font-weight:700;
+	text-transform:uppercase;
+	font-size:.85em
+}
+#main-nav ul a{
+	font-weight:700;
+	text-transform:uppercase;	
+	letter-spacing:0
+}
+/* highlight-link */
+#main-nav .highlight-link > a{
+	background-color:var(--theme_accent);
+	color:#fff;
+	line-height:2em;
+    padding:.3em 1.5em 0;
+	border-radius:25px
+}
+#main-nav .highlight-link > a:hover,
+#main-nav .highlight-link.current_page_item > a,
+#main-nav .highlight-link.current-menu-item > a{
+	box-shadow:none;
+	background-color:var(--theme_accent);
+	color:#fff
+}
+/* HEADER MENU SPLIT
+================================================ */
+.header-menu-split #headerwrap{
+	border-top:3px solid var(--theme_accent)
+}
+
+/* site logo in split-menu layout */
+#main-nav #site-logo a{
+	padding-bottom:0;
+    padding-top:0
+}
+/* HEADER BOXED LAYOUT
+================================================ */
+.boxed-layout.fixed-header #site-logo{
+	margin:.5em auto .1em
+}
+
+/* HEADER LEFT PANEL
+================================================ */
+.header-leftpane #headerwrap #menu-icon{
+	background:var(--theme_accent) !important
+}
+.header-leftpane #main-nav li.highlight-link > a{
+	background:none;
+	padding:.6em 0
+}
+.header-leftpane .search-button{
+	margin-right:0;
+	margin-bottom:0
+}
+/* HEADER OVERLAY 
+================================================ */
+.header-overlay.mobile-menu-visible #headerwrap{
+   	background-color:rgba(68, 52, 50, .94)
+}
+.header-overlay #main-nav li.highlight-link > a{
+	background:none;
+	padding:.6em 0
+}
+/* HEADER RIGHT PANEL
+================================================ */
+.header-rightpane #headerwrap #menu-icon{
+	background:var(--theme_accent) !important
+}
+.header-rightpane #main-nav .highlight-link > a{
+	background:none;
+	padding:.6em 1em
+}
+/* HEADER STRIPE
+================================================ */
+.header-stripe #site-logo{
+    	background-color:var(--theme_accent)
+}
+.header-stripe .fixed-header #site-logo{
+	padding:.725em .75em .4em
+}
+.header-stripe .fixed-header #main-nav > li > a{
+	padding:.975em .6em 1.3em
+}
+.header-stripe .fixed-header #header{
+	background-color:rgba(0, 0, 0, 0);
+	box-shadow:none
+}
+
+/* HEADER BLOCK
+================================================ */
+.header-block .search-button{
+	margin:0;
+	margin-bottom:3px
+}
+/************************************************************************************
+PAGE
+*************************************************************************************/
+.page-title{
+	text-align:center;
+	font-size:4em;
+	line-height:1.2em
+}
+/************************************************************************************
+Gallery
+*************************************************************************************/
+.image-wrap .zoom,
+.image-wrap .zoom:hover{
+	background:none;
+	color:#fff
+}
+.module-image.image-overlay a{
+	display:block
+}
+.image-wrap .zoom{
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	margin:0;
+	opacity:0;
+	transition:background-color .3s ease-in .1s,opacity .3s ease-in .1s
+}
+.image-wrap .zoom:before{
+	font-size:2.125em;
+	opacity:0;
+	transition:opacity .1s 0s ease-in-out
+}
+.image-wrap .zoom:hover{
+	background:rgba(255,136,123,.9);
+	cursor:pointer;
+	opacity:1
+}
+.image-wrap .zoom:hover:before{
+	opacity:1;
+    transition-delay:.1s
+}
+button.mfp-arrow{
+	background:0
+}
+
+/************************************************************************************
+Timeline
+*************************************************************************************/
+#pagewrap .module-timeline.layout-list > ul::before{
+	border-right:1px solid rgba(0, 0, 0, .2);	
+	margin-top:-0
+}
+#pagewrap .module-timeline.layout-list > ul > li:last-child .module-timeline-content-wrap{
+	border-bottom:none;
+	padding:0
+}
+#pagewrap .module-timeline.layout-list .module-timeline-content-wrap{	
+	border-bottom:1px solid rgba(180,180,180,.3);
+	padding-bottom:2em
+}
+#pagewrap .module-timeline.layout-list .module-timeline-icon{
+	background:var(--theme_accent)
+}
+#pagewrap .module-timeline.layout-list .module-timeline-date{	
+	text-transform:uppercase
+}
+#pagewrap .module-timeline.layout-list .module-timeline-dot{
+	display:none
+}
+#pagewrap .module-timeline.layout-list .module-timeline-title{
+	color:#404040;
+	font-family:"Josefin Slab",serif;
+	font-style:normal;
+	font-weight:700;
+	letter-spacing:0
+}
+#pagewrap .module-timeline.layout-list .module-timeline-icon .fa-circle-thin:before{
+	content:"";
+	background:url('images/timeline-icon.png') no-repeat center center;
+	width:20px;
+	height:20px;
+	display:inline-block;
+	padding:.375em 0 0;
+	background-size:100%
+}
+
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+#footerwrap{
+	background-color:#302827;
+	color:#c1aca9
+}
+#footerwrap a{
+	color:#ffc6c0
+}
+#footer{
+	font-size:.95em
+}
+
+/* footer logo */
+#footer-logo{
+	margin-bottom:.6em;
+	font-size:2em
+}
+/* footer social widget */
+.footer-block #footer .social-widget{
+	margin:0 0 1em
+}
+.footer-block #footer .social-widget a{
+	width:42px;
+	height:42px;
+	border-radius:50%;
+	border:3px solid;
+	display:inline-block;
+	line-height:2em;
+	text-align:center
+}
+.footer-block #footer .social-widget a:hover{
+	border-color:var(--theme_accent)
+}
+.footer-block #footer .social-widget a:hover i{
+	color:var(--theme_accent)
+}
+.footer-block #footer .social-widget{
+	position:relative;
+	padding-top:1em;
+	padding-bottom:1em
+}
+.footer-block #footer .social-widget:after,
+.footer-block #footer .social-widget:before{
+	content:"";
+	background:#463c3a;
+	width:80px;
+	height:1px;
+	left:50%;
+    position:absolute;   
+    transform:translateX(-50%)
+}
+.footer-block #footer .social-widget:before{
+	top:0
+}
+.footer-block #footer .social-widget:after{
+	bottom:0
+}
+
+/************************************************************************************
+BUILDER
+*************************************************************************************/
+/* Image Module */
+.module-image.image-overlay .image-title{
+	font-weight:400
+}
+
+/* Feature module */
+.module-feature .module-feature-title{
+	font-size:1.3em
+}
+
+/* Countdown Module */
+#pagewrap .module-countdown .ui.transparent{
+	padding:.5em 2em
+}
+
+/* Our Story section */
+.our-story-section h3{
+	margin-bottom:.8em
+}
+.our-story-section h2{
+	position:relative;
+	margin-top:-.9em;
+	padding:0 1.5625em;
+	background:#fff;
+	display:inline-block;
+	vertical-align:top
+}
+
+/* Ceremony section */
+.ceremony-section h2{
+	margin-bottom:.8em
+}
+.ceremony-section .layout-icon-top .module-feature-image{
+	margin-bottom:0
+}
+.ceremony-section .module-feature-chart-html5{
+	height:100px !important
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+
+@media screen and (min-width:761px){
+	/* Timeline */
+	#pagewrap .module-timeline.layout-list > ul::before{		
+		left:33%;	
+		margin-top:-.3125em 
+	}
+	#pagewrap .module-timeline.layout-list .module-timeline-date{
+		width:25%
+	}
+	#pagewrap .module-timeline.layout-list .module-timeline-icon{
+		left:34%;
+		text-align:center;
+		height:60px;
+		width:60px;
+		margin-left:-1.875em;
+		margin-top:-.625em
+	}	
+	#pagewrap .module-timeline.layout-list .module-timeline-content-wrap{
+		width:55%
+	}	
+	#pagewrap .module-timeline.layout-list .module-timeline-date{
+		font-size:1.5em;
+		text-transform:uppercase
+	}
+	#pagewrap .module-timeline.layout-list .module-timeline-icon i{
+		font-size:1.1em;
+		font-weight:700
+	}
+	#pagewrap .module-timeline.layout-list .module-timeline-title{
+		color:#404040;
+		font-family:"Josefin Slab",serif;
+		font-style:normal;
+		font-weight:700;
+		letter-spacing:0;
+		font-size:1.7em
+	}	
+	#pagewrap .module-timeline.layout-list .module-timeline-icon .fa-circle-thin:before{		
+		width:34px;
+		height:34px;
+		padding:1.625em 0 0
+	}
+}
+@media screen and (max-width:760px){
+	/* Heading */
+	h1,
+	.page-title{
+		font-size:2.4em
+	}
+	
+	#headerwrap #main-nav a:hover,
+	#headerwrap #main-nav ul a:hover{
+		color:var(--theme_accent)
+	}
+
+	/* highlight link */
+	#headerwrap #main-nav .highlight-link > a:hover,
+	#headerwrap #main-nav .highlight-link.current_page_item > a,
+	#headerwrap #main-nav .highlight-link.current-menu-item > a{
+	  	background:none;
+	  	color:var(--theme_accent);
+	  	border-radius:0
+	  }
+}
+
+@media screen and (max-width:680px){
+	body{
+		font-size:1.15em
+	}
+	h1,
+	.page-title{
+		font-size:1.9em
+	}
+	h2{
+		font-size:1.7em
+	}
+	h3{
+		font-size:1.2em;
+		letter-spacing:0
+	}
+	.module-feature .module-feature-title,
+	h4{
+		font-size:1.1em
+	}
+}

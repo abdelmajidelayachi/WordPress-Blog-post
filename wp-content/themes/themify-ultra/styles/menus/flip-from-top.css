@@ -1,0 +1,36 @@
+.mobile-menu-visible.sidemenu-right.sidemenu-active #headerwrap,
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.sidemenu-active,
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.sidemenu-active .fixed-header{
+	left:0;
+	right:0
+}
+#mobile-menu.sidemenu{
+	left:0;
+	right:0;
+	width:100%;
+	visibility:hidden; 
+	transform-origin:50% 20%;
+	transition:transform .4s ease,opacity .4s ease,visibility .4s ease
+}
+#mobile-menu.sidemenu-on,
+#mobile-menu.sidemenu-off{
+	 animation:flipFromTopOff 1s alternate
+}
+.mobile-menu-visible #mobile-menu.sidemenu{
+	animation:flipFromTopOn 1s alternate;
+	visibility:visible
+}
+.mobile-menu-visible .body-overlay,
+.body-overlay,
+.body-overlay.body-overlay-on,
+body:not(.mobile-menu-visible) #menu-icon-close{
+	display:none
+}
+@keyframes flipFromTopOn{
+	from{transform:perspective(400px) rotateX(360deg) scale(.1);opacity:.1}
+	to{transform:perspective(400px) rotateX(0) scale(1);opacity:1}
+}
+@keyframes flipFromTopOff{
+	from{transform:perspective(400px) rotateX(0) scale(1);opacity:1}
+	to{transform:perspective(400px) rotateX(360deg) scale(.1);opacity:.1}
+}

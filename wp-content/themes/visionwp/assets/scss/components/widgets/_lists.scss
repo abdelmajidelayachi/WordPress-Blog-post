@@ -1,0 +1,22 @@
+.wp-block-archives{  
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+        position: relative;
+
+        &:before{
+            position: absolute;
+            left: 0;
+            top: 0.7rem;
+        }
+
+        a{
+            font-size: 0.95rem;
+            line-height: 36px;
+            color: #282835;
+            text-decoration: underline;
+        }
+    }
+}
+

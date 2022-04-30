@@ -1,0 +1,8 @@
+.sidemenu{
+	background-color:#fff;
+	color:#4b567d
+}
+#headerwrap #main-nav a:hover,
+#headerwrap #main-nav ul a:hover{
+	color:var(--theme_accent)
+}

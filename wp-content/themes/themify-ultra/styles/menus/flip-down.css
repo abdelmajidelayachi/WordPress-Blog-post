@@ -1,0 +1,35 @@
+.mobile-menu-visible.sidemenu-right.sidemenu-active #headerwrap,
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.sidemenu-active,
+body:not(.header-overlay):not(.header-minbar):not(.header-leftpane):not(.header-rightpane).mobile-menu-visible.sidemenu-active .fixed-header{
+	left:0;
+	right:0
+}
+#mobile-menu.sidemenu{
+	left:0;
+	right:0;
+	width:100%;
+	-webkit-overflow-scrolling:touch;
+	transform-origin:top;
+	transform:perspective(800px) rotateX(-90deg);
+	visibility:hidden;
+	transition:transform .8s ease,opacity .8s ease,visibility .8s ease
+}
+.mobile-menu-visible #mobile-menu.sidemenu{
+	transform:perspective(800px) rotateX(0deg);
+	opacity:1;
+	visibility:visible
+}
+.mobile-menu-visible .body-overlay,
+.body-overlay,
+.body-overlay.body-overlay-on,
+body:not(.mobile-menu-visible) #menu-icon-close{
+	display:none
+}
+/*Animation menu elements */
+.search-button,
+.social-widget,
+.header-widget div[class*="col"],
+#main-nav li{
+    	transition:transform .2s ease,opacity .2s ease;
+	transform:translate(0,-40px) !important
+}

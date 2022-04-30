@@ -1,0 +1,39 @@
+:root{
+	--tb_preset_black:#000
+}
+.module.module-buttons a.black.builder_button,
+.module-alert.ui .ui.black,
+.module-menu .ui.nav.black a,
+.themify_builder .ui.black,
+.ui.nav.black li a,
+.ui.module-tab.black .tab-nav li a{
+    color:#eee
+}
+.ui.black,
+.ui.nav.black,
+.ui.nav.black ul,
+.ui.separate.black > li,
+.ui.module-tab.black .tab-nav li,
+.ui.black.vertical .tab-nav,
+.ui.module-accordion.black .accordion-title,
+.ui.module-tab.black.panel .tab-nav{
+    background-color:var(--tb_preset_black)
+}
+.ui.black > li.current_page_item > a,
+.ui.black > li.current_page_item:hover > a,
+.ui.black > li.current-menu-item > a,
+.ui.black > li.current-menu-item:hover > a,
+.ui.builder_button.black:hover,
+.ui.nav.black > li a:hover,
+.ui.module-accordion.black li:hover .accordion-title,
+.ui.module-tab.black .tab-nav li:hover{
+    background:#595959
+}
+.ui.black > li.current,
+.ui.black > li.current:hover,
+.ui.black .tab-nav li.current{
+    background:#101010
+}
+.module.module-buttons.transparent a.black{
+    color:var(--tb_preset_black)
+}

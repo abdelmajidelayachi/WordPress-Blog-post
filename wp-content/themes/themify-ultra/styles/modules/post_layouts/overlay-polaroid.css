@@ -1,0 +1,136 @@
+.loops-wrapper.overlay .post-image + .post-content,
+.loops-wrapper.polaroid .post-image + .post-content,
+.loops-wrapper.overlay .post-image + .product-content,
+.loops-wrapper.polaroid .post-image + .product-content{
+	background-color:rgba(0,0,0,.7);
+	color:#fff;
+	left:0;
+	right:0;
+	position:absolute;
+	overflow:hidden;
+	padding:5%;
+	transition:.5s ease-in-out;
+	transition-property:color,top,bottom,transform,height,min-height
+}
+.loops-wrapper.overlay .post-image + .post-content,
+.loops-wrapper.overlay .post-image + .product-content{
+	top:100%;
+	bottom:0;
+	height:100%;
+}
+.loops-wrapper.polaroid .post-image + .post-content,
+.loops-wrapper.polaroid .post-image + .product-content{
+	bottom:0;
+	height:0;
+	min-height:70px
+}
+.loops-wrapper.overlay .post-image + .product-content .price,
+.loops-wrapper.polaroid .post-image + .product-content .price{
+	color:#fff
+}
+.loops-wrapper.overlay .post-image + .post-content a,
+.loops-wrapper.polaroid .post-image + .post-content a,
+.loops-wrapper.overlay .post-image + .product-content a,
+.loops-wrapper.polaroid .post-image + .product-content a{
+	color:#fff
+}
+.overlay .product:hover .post-image + .product-content,
+.loops-wrapper.overlay .post:hover .post-content{
+	top:0!important
+}
+.polaroid .product:hover .post-image + .product-content,
+.polaroid .post:hover .post-image + .post-content{
+	bottom:0;
+	height:100%;
+	min-height:100%;
+}
+.loops-wrapper.overlay .post:hover .post-image,
+.loops-wrapper.polaroid .post:hover .post-image{
+	transform:scale(1.1)
+}
+.loops-wrapper.overlay .post-image,
+.loops-wrapper.polaroid .post-image,
+.loops-wrapper.polaroid .post-meta{
+	margin-bottom:0
+}
+.loops-wrapper.overlay .post-image img,
+.loops-wrapper.polaroid .post-image img{
+	width:100%
+}
+.loops-wrapper.overlay .post-image + .post-content .post-content-inner{
+	width:100%;
+	top:50%;
+	left:0;
+	position:absolute;
+	transform:translateY(-50%)
+}
+.overlay .product .post-image + .product-content,
+.polaroid .product .post-image + .product-content{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center
+}
+
+/*POLAROID POST*/
+.loops-wrapper.slider.polaroid .post-image + .post-content,
+.loops-wrapper.slider.polaroid .post-image + .product-content{
+	top:60%
+}
+.loops-wrapper.polaroid .disp-cell.valignmid{
+	vertical-align:top
+}
+.overlay .product,
+.polaroid .product,
+.loops-wrapper.polaroid .post,
+.loops-wrapper.overlay .post{
+	overflow:hidden;
+	position:relative;
+	text-align:center;
+	border-radius:8px;
+}
+.no-gutter.overlay .product,
+.no-gutter.polaroid .product,
+.loops-wrapper.polaroid.no-gutter .post,
+.loops-wrapper.overlay.no-gutter .post{
+	border-radius:0
+}
+.loops-wrapper.polaroid .post:hover .disp-cell.valignmid{
+	vertical-align:middle
+}
+.polaroid .product .post-image + .product-content{
+	justify-content:flex-start
+}
+.polaroid .product:hover .post-image + .product-content{
+	justify-content:center
+}
+
+.loops-wrapper.polaroid .post-image + .post-content .post-date-wrap,
+.loops-wrapper.polaroid .post-image + .post-content .entry-content,
+.loops-wrapper.polaroid .post-image + .post-content .post-meta{
+	display:none
+}
+.loops-wrapper.polaroid .post:hover .post-image + .post-content .post-date-wrap,
+.loops-wrapper.polaroid .post:hover .post-image + .post-content .entry-content,
+.loops-wrapper.polaroid .post:hover .post-image + .post-content .post-meta{
+	display:block
+}
+
+/* clickable overlays */
+.loops-wrapper.grid4.polaroid .post-image + .post-content,
+.loops-wrapper.grid3.polaroid .post-image + .post-content,
+.loops-wrapper.grid2.polaroid .post-image + .post-content,
+.loops-wrapper.grid4.overlay .post-image + .post-content,
+.loops-wrapper.grid3.overlay .post-image + .post-content,
+.loops-wrapper.grid2.overlay .post-image + .post-content{
+	cursor:pointer
+}
+.themify_builder_active .loops-wrapper.grid4.polaroid .post-image + .post-content,
+.themify_builder_active .loops-wrapper.grid3.polaroid .post-image + .post-content,
+.themify_builder_active .loops-wrapper.grid2.polaroid .post-image + .post-content,
+.themify_builder_active .loops-wrapper.grid4.overlay .post-image + .post-content,
+.themify_builder_active .loops-wrapper.grid3.overlay .post-image + .post-content,
+.themify_builder_active .loops-wrapper.grid2.overlay .post-image + .post-content{
+	cursor:auto;
+	pointer-events:none;
+}

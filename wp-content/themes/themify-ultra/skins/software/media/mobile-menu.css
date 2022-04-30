@@ -1,0 +1,8 @@
+#headerwrap #main-nav a:hover,
+#headerwrap #main-nav ul a:hover{
+	color:var(--theme_accent)
+}
+.fixed-header #main-nav .highlight-link > a{
+	text-align:center;
+	margin-top:20px
+}

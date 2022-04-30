@@ -1,0 +1,120 @@
+form.woocommerce-checkout {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    div#customer_details {
+        flex: 0 0 55%;
+        @include media(xs) {
+            flex: 0 0 100%;
+        }
+        >div {
+            width: 100%;
+            float: none;
+            max-width: initial;
+            input,
+            select,
+            span.select2-selection {
+                height: 45px;
+                padding: 10px !important;
+            }
+            .form-row label {
+                font-size: 13px;
+            }
+        }
+        .woocommerce-form__label-for-checkbox {
+            input#ship-to-different-address-checkbox {
+                height: auto;
+            }
+            span {
+                font-size: 13px;
+            }
+        }
+    }
+    h3#order_review_heading {
+        display: none;
+    }
+    div#order_review {
+        flex: 0 0 40%;
+        background: #f7f7f7;
+        padding: 30px;
+        @include media(xs) {
+            flex: 0 0 100%;
+            margin-top: 30px;
+        }
+        table {
+            background: #fff;
+        }
+        #payment {
+            background: #fff;
+            border-radius: 0;
+            button#place_order {
+                background: $color-primary;
+                border-radius: 0;
+                font-weight: 400;
+                display: block;
+                width: 100%;
+                &:after {
+                    content: "\f07a";
+                    font-family: 'FontAwesome';
+                    margin-left: 6px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .woocommerce-billing-fields__field-wrapper {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .woocommerce-additional-fields__field-wrapper {
+            padding: 0 30px;
+        }
+        .form-row {
+            flex: 0 0 33.33%;
+            position: relative;
+            padding-top: 26px;
+            margin-bottom: 3px;
+        }
+    }
+    form.woocommerce-checkout {
+        padding: 30px;
+        justify-content: space-between;
+        margin: auto;
+        div#order_review {
+            #payment {
+                button#place_order {
+                    width: auto;
+                    float: left;
+                }
+            }
+        }
+    
+        div#customer_details>div .form-row label {
+            position: absolute;
+            top: 0;
+        }
+    }
+}
+
+.entry-content h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.woocommerce form {
+    .form-row {
+        position: relative;
+        padding-top: 26px;
+        margin: 0;
+        textarea {
+            height: 150px;
+        }
+
+        input.input-text {
+            height: 35px;
+        }
+    }
+}
+
+.woocommerce-additional-fields {
+    padding: 30px 0;
+}

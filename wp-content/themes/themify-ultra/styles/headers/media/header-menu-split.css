@@ -1,0 +1,10 @@
+.header-menu-split #headerwrap #main-nav-wrap{
+	position:static
+}
+.header-menu-split .fixed-header #header{
+	padding-top:5px;
+	padding-bottom:5px
+}
+.fixed-header .cart-icon{
+	display:inline-block
+}

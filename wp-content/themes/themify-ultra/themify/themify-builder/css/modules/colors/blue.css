@@ -1,0 +1,39 @@
+:root{
+	--tb_preset_blue:#4d7de1
+}
+.module.module-buttons a.blue.builder_button,
+.module-alert.ui .ui.blue,
+.module-menu .ui.nav.blue a,
+.themify_builder  .ui.blue,
+.ui.nav.blue li a,
+.ui.module-tab.blue .tab-nav li a{
+    color:#edf3ff
+}
+.ui.blue,
+.ui.nav.blue,
+.ui.nav.blue ul,
+.ui.separate.blue > li,
+.ui.module-tab.blue .tab-nav li,
+.ui.blue.vertical .tab-nav,
+.ui.module-accordion.blue .accordion-title,
+.ui.module-tab.blue.panel .tab-nav{
+    background-color:var(--tb_preset_blue)
+}
+.ui.blue > li.current_page_item > a,
+.ui.blue > li.current_page_item:hover > a,
+.ui.blue > li.current-menu-item > a,
+.ui.blue > li.current-menu-item:hover > a,
+.ui.builder_button.blue:hover,
+.ui.nav.blue > li a:hover,
+.ui.module-accordion.blue li:hover .accordion-title,
+.ui.module-tab.blue .tab-nav li:hover{
+    background:#6b9df9
+}
+.ui.blue > li.current,
+.ui.blue > li.current:hover,
+.ui.blue .tab-nav li.current{
+    background:#214178
+}
+.module.module-buttons.transparent a.blue{
+    color:var(--tb_preset_blue)
+}

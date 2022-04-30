@@ -1,0 +1,355 @@
+/*
+Skin Name:Ultra Salon
+Version:1.0
+Demo URI:https://themify.me/demo/themes/ultra-salon/
+Required Plugins:builder-contact, builder-woocommerce, woocommerce
+*/
+
+/************************************************************************************
+GENERAL
+*************************************************************************************/
+:root{
+	--theme_accent:#df9a2b;
+	--theme_accent_semi:rgba(223,154,43,.8);
+}
+body{
+	color:#494949;
+	font:1.05em/1.7em 'Quicksand', sans-serif
+}
+a{
+	color:var(--theme_accent)
+}
+.post-title a,
+.post-nav a:hover span,
+a:hover{
+	color:#000
+}
+
+/* reset general border-radius */
+input[type=reset],input[type=submit],button,select,textarea,input[type=checkbox],input[type=text],input[type=password],input[type=search],input[type=email],input[type=url],input[type=number],input[type=tel],input[type=date],input[type=datetime],input[type=datetime-local],input[type=month],input[type=time],input[type=week],.woocommerce ul.products li.product .button,.woocommerce a.button,.woocommerce #respond input#submit,.woocommerce #respond input#submit.alt,.woocommerce a.button,.woocommerce button.button,.woocommerce input.button,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.woocommerce button.button.alt.disabled,.woocommerce button.button:disabled,.woocommerce button.button:disabled[disabled],.woocommerce button.button.alt,.woocommerce button.button,.woocommerce a.button,.woocommerce a.button.alt,.woocommerce button.button:disabled,.woocommerce button.button:disabled[disabled],.loops-wrapper.polaroid .post,.loops-wrapper.overlay .post,.loops-wrapper.auto_tiles > .product,.loops-wrapper.auto_tiles .post-image + .post-content,.loops-wrapper.auto_tiles > .post,.post-image img,.product img, ul.products li.product .post-image,#cart-wrap .product-image img,.woocommerce div.product div.images img,.woocommerce-product-gallery__wrapper .swiper-container-initialized,#add_payment_method table.cart img,.woocommerce-cart table.cart img,.woocommerce-checkout table.cart img,.select2-dropdown,.select2-container--default .select2-selection--single,.select2-container--default .select2-selection--single .select2-selection__arrow,#slide-cart .button,#slide-cart .product-image img,.woocommerce-cart #content table.cart td.actions .coupon .input-text,.woocommerce span.onsale,.woocommerce ul.products li.product .onsale,.woocommerce table.shop_table,.woocommerce-checkout #payment,#add_payment_method #payment ul.payment_methods li,.woocommerce-cart #payment ul.payment_methods li,.woocommerce-checkout #payment ul.payment_methods li,.woocommerce-error, .woocommerce-info, .woocommerce-message,.woocommerce-page .cart-collaterals .cart_totals,body:not(.footer-block) #footer .back-top a,#main-nav .highlight-link > a,.pagenav a,.pagenav span,.pagenav .current,a.load-more-button,.more-link,.widget .feature-posts-list .post-img{
+	border-radius:0
+}
+
+/* FORMS
+================================================ */
+input[type=reset],input[type=submit],button{
+	background-color:transparent;
+	border:1px solid;
+	color:inherit;
+	font-weight:normal;
+	padding:.65em 2.1em
+}
+input[type=reset]:hover,input[type=submit]:hover,button:hover{
+	transform:none;
+	background-color:var(--theme_accent);
+	border-color:var(--theme_accent)
+}
+textarea, input[type=text], input[type=password], input[type=search], input[type=email], input[type=url], input[type=number], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=time], input[type=week]{
+	border:1px solid #d7d7d7;
+	padding:.5em;
+	text-transform:none
+}
+#commentform p label{
+	display:inline-block;
+	text-transform:none;
+	font-size:.9em
+}
+
+/* HEADINGS
+================================================ */
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Cormorant Garamond', serif
+}
+h1{
+	font-size:4em;
+	letter-spacing:-0.03em;
+	margin:0 0 .2em
+}
+h2{
+	font-size:3em;
+	letter-spacing:0.02em
+}
+h5{
+	font-size:1.35em;
+	letter-spacing:0.04em;
+	margin:0 0 .4em
+}
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+#headerwrap{
+	border:none
+}
+
+/* SITE LOGO
+================================================ */
+#site-logo{
+	font:small-caps bold 1.7em/1em 'Cormorant Garamond', serif;
+	letter-spacing:.04em
+}
+#site-description{
+	vertical-align:sub
+}
+
+/* MAIN NAVIGATION
+================================================ */
+#main-nav a{
+	letter-spacing:.15em;
+	text-transform:uppercase;
+	padding-left:1em;
+	padding-right:1em
+}
+#main-nav ul a,
+#main-nav .mega-menu-posts a,
+#main-nav .mega-menu-posts span,
+#main-nav .has-mega-column .widgettitle,
+#main-nav .has-mega-column > .sub-menu > .columns-sub-item > a,
+#main-nav .has-mega-column > .sub-menu a{
+	font-size:1em;
+	text-transform:uppercase
+}
+#main-nav .mega-menu-posts a,
+#main-nav .mega-menu-posts span{
+	letter-spacing:normal
+}
+
+/* remove dropdown rounded corners */
+#main-nav li:not(.themify-widget-menu) > ul,
+#main-nav .has-mega-column > .sub-menu,
+#main-nav .has-mega-sub-menu .mega-sub-menu{
+	border-radius:0
+}
+
+/* mega menu */
+#main-nav .mega-menu-posts .post,
+#main-nav .mega-menu-posts .post-title{
+	text-align:left
+}
+
+/* highlight-link */
+#main-nav .highlight-link > a{
+    padding:.6em 1.45em;
+    letter-spacing:.15em;
+    background-color:#000;
+    color:#fff
+}
+
+/* CART ICON
+================================================ */
+.cart-wrap a span{
+	position:relative;
+	margin:0 0 -6px -11px
+}
+
+/* SEARCH LIGHTBOX
+================================================ */
+.search-option-tab li:hover a,
+.search-option-tab li.active a{
+	box-shadow:inset 0 -3px 0 0 var(--theme_accent)
+}
+.view-all-button:after{
+	border-color:var(--theme_accent)
+}
+
+/* TRANSPARENT HEADER
+================================================ */
+.transparent-header #headerwrap.fixed-header{
+	background-color:rgba(255,255,255,.9);
+	color:#000
+}
+.transparent-header #headerwrap a{
+	transition:none
+}
+.transparent-header #main-nav > li > a{
+	color:inherit
+}
+
+/* HEADER LEFT/RIGHTPANE
+================================================ */
+.header-minbar #main-nav a,
+.header-leftpane #main-nav a,
+.header-rightpane #main-nav a{
+	padding:.6em 0
+}
+.header-minbar #main-nav .highlight-link a,
+.header-rightpane #main-nav .highlight-link a,
+.header-leftpane #main-nav .highlight-link a{
+	margin-left:0
+}
+
+/* HEADER STRIPE
+================================================ */
+.header-stripe #site-logo{
+	background-color:var(--theme_accent)
+}
+.header-stripe #headerwrap.fixed-header{
+	background-color:transparent;
+	box-shadow:none
+}
+
+/* HEADER OVERLAY
+================================================ */
+.header-overlay.transparent-header .fixed-header,
+.header-overlay.mobile-menu-visible #headerwrap{
+	background-color:rgba(255,255,255,.9);
+	color:#000
+}
+.header-overlay.transparent-header .fixed-header .header-icons a,
+.header-overlay.mobile-menu-visible .header-icons a,
+.header-overlay.mobile-menu-visible #header,
+.header-overlay.mobile-menu-visible #header a,
+.header-overlay.mobile-menu-visible #mobile-menu.sidemenu{
+	color:#000
+}
+.header-overlay.transparent-header .fixed-header .header-icons a:hover,
+.header-overlay.mobile-menu-visible .header-icons a:hover,
+.header-overlay.mobile-menu-visible #header a:hover{
+	color:var(--theme_accent)
+}
+
+/************************************************************************************
+WIDGETS
+*************************************************************************************/
+.widgettitle{
+	font-family:'Cormorant Garamond', serif;
+	letter-spacing:-.015em;
+	text-transform:none
+}
+
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+#footerwrap{
+	background-color:#000;
+	color:#fff
+}
+#footerwrap a{
+	color:var(--theme_accent);
+	text-decoration:none
+}
+#footerwrap a:hover{
+	color:#fff
+}
+
+/* FOOTER LOGO
+================================================ */
+#footer-logo{
+	font:small-caps bold 1.7em/1em 'Cormorant Garamond', serif;
+	letter-spacing:-.04em
+}
+#footer-logo a{
+	color:#fff
+}
+
+/* FOOTER NAVIGATION
+================================================ */
+.footer-nav a{
+	text-transform:uppercase;
+	font-size:1.15em;
+	letter-spacing:.07em
+}
+.footer-horizontal-left .footer-nav a,
+.footer-horizontal-right .footer-nav a,
+.footer-left-col .footer-nav a,
+.footer-right-col .footer-nav a{
+	padding-right:19px
+}
+/************************************************************************************
+WOOCOMMERCE
+*************************************************************************************/
+/* BUTTONS
+================================================ */
+#slide-cart .button,.woocommerce ul.products li.product .button,.woocommerce a.button.disabled,.woocommerce button.button.disabled,.woocommerce button.button.alt.disabled,.woocommerce button.button:disabled,.woocommerce button.button:disabled[disabled],.woocommerce input.button.disabled,.woocommerce input.button:disabled,.woocommerce input.button:disabled[disabled],.woocommerce #respond input#submit,.woocommerce a.button,.woocommerce button.button,.woocommerce input.button,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt{
+	background-color:transparent;
+	border:1px solid;
+	color:inherit;
+	font-family:'Quicksand', sans-serif;
+	font-weight:normal;
+	font-size:.7em;
+	padding:.7em 1.6em;
+	letter-spacing:.07em;
+	line-height:normal;
+	transition:all .3s
+}
+#slide-cart .button:hover,.woocommerce ul.products li.product .button:hover,.woocommerce a.button.alt.disabled:hover,.woocommerce button.button.alt.disabled:hover,.woocommerce button.button.alt:disabled:hover,.woocommerce button.button.alt:disabled[disabled]:hover,.woocommerce input.button.alt.disabled:hover,.woocommerce input.button.alt:disabled:hover,.woocommerce input.button.alt:disabled[disabled]:hover,.woocommerce #respond input#submit:hover,.woocommerce a.button:hover,.woocommerce button.button:hover,.woocommerce input.button:hover,.woocommerce a.button.alt:hover,.woocommerce button.button.alt:hover,.woocommerce input.button.alt:hover{
+	background-color:var(--theme_accent);
+	color:#fff;
+	border-color:var(--theme_accent)
+}
+.woocommerce ul.products li.product .button{
+	padding:.6em 1.3em;
+}
+/* on sale */
+.woocommerce span.onsale,
+.woocommerce ul.products li.product .onsale{
+	min-width:auto;
+	min-height:auto;
+	line-height:normal
+}
+
+/* SINGLE PRODUCTS
+================================================ */
+/* quantity */
+.woocommerce .quantity .qty{
+	background:transparent;
+	border:1px solid;
+	color:inherit;
+	padding:.3em
+}
+/* tabs */
+.woocommerce div.product .woocommerce-tabs ul.tabs li a{
+	font-size:1.05em;
+	font-weight:normal;
+	text-transform:uppercase;
+    letter-spacing:.15em
+}
+#tf_sticky_buy div.product form.cart .quantity{
+	vertical-align:middle
+}
+
+/************************************************************************************
+BUILDER STYLING
+*************************************************************************************/
+/* SLIDER MODULE
+================================================ */
+/* slider controls */
+.tf_carousel .swiper-slide{
+	text-align:left
+}
+.tf_carousel_nav_wrap{
+	justify-content:flex-end;
+	margin:0
+}
+.tf_carousel_nav_wrap .carousel-prev:hover,
+.tf_carousel_nav_wrap .carousel-next:hover{
+	background:0;
+	color:var(--theme_accent)
+}
+.person-name{
+    font-size:1.5em
+}
+.person-position {
+    font-size:.9em;
+    color:var(--theme_accent);
+    text-transform:uppercase
+}
+/* Service Menu*/
+.tb-menu-price{
+	font-weight:normal
+}
+.module-service-menu .tb-menu-title{
+	font-size:1.3em;
+	text-transform:none
+}
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+@media (max-width:680px){
+	h1{
+		font-size:2.2em
+	}
+	h2{
+		font-size:2em
+	}
+}

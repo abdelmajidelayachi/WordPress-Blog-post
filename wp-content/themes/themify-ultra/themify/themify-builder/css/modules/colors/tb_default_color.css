@@ -1,0 +1,27 @@
+.module.module-buttons a.tb_default_color,
+.module .ui.nav.tb_default_color a,
+.ui.module-tab.tb_default_color .tab-nav li a{
+    color:#555
+}
+.tb_default_color,
+.tb_default_color.nav,
+.tb_default_color.nav ul,
+.tb_default_color.separate > li,
+.module-tab.tb_default_color .tab-nav li,
+.tb_default_color.vertical .tab-nav,
+.module-tab.panel.tb_default_color .tab-nav,
+.module-accordion.tb_default_color .accordion-title,
+.tb_default_color.module-callout{
+    background-color:#F7F7F7;
+	color:#555
+}
+.tb_default_color,
+.tb_default_color.nav ul,
+.tb_default_color.nav li,
+.tb_default_color_default_color.module-tab .tab-nav li,
+.module-tab.tb_default_color .tab-content,
+.module-tab.tb_default_color.panel .tab-nav,
+.tb_default_color.module-accordion > li,
+.tb_default_color.module-callout{
+    border-color:rgba(0,0,0,.05)
+}

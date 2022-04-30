@@ -1,0 +1,41 @@
+@import 
+"product-list",
+"cart",
+"checkout",
+"single-page",
+"search",
+"category",
+"widgets",
+"thankyou";
+
+a.cart-icon {
+    margin-left: 20px;
+    font-size: 18px;
+    position: relative;
+    span {
+        position: absolute;
+        font-size: 8px;
+        height: 15px;
+        width: 15px;
+        background: #3431d6;
+        border-radius: 50%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -6px;
+        right: -13px;
+    }
+    @include media(mb) {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+.woocommerce ul.products li.product .button {
+    &.loading {
+        &:after {
+            content: "\f013";
+        }
+    }
+}

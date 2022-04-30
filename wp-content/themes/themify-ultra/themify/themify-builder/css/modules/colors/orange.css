@@ -1,0 +1,39 @@
+:root{
+	--tb_preset_orange:#ff9600
+}
+.module.module-buttons a.orange.builder_button,
+.module-alert.ui .ui.orange,
+.module-menu .ui.nav.orange a,
+.themify_builder .ui.orange,
+.ui.nav.orange li a,
+.ui.module-tab.orange .tab-nav li a{
+    color:#fff2ea
+}
+.ui.orange,
+.ui.nav.orange,
+.ui.nav.orange ul,
+.ui.separate.orange > li,
+.ui.module-tab.orange .tab-nav li,
+.ui.orange.vertical .tab-nav,
+.ui.module-accordion.orange .accordion-title,
+.ui.module-tab.orange.panel .tab-nav{
+    background-color:var(--tb_preset_orange)
+}
+.ui.orange > li.current_page_item > a,
+.ui.orange > li.current_page_item:hover > a,
+.ui.orange > li.current-menu-item > a,
+.ui.orange > li.current-menu-item:hover > a,
+.ui.builder_button.orange:hover,
+.ui.nav.orange > li a:hover,
+.ui.module-accordion.orange li:hover .accordion-title,
+.ui.module-tab.orange .tab-nav li:hover{
+    background:#ffb651
+}
+.ui.orange > li.current,
+.ui.orange > li.current:hover,
+.ui.orange .tab-nav li.current{
+    background:#a55000
+}
+.module.module-buttons.transparent a.orange{
+    color:var(--tb_preset_orange)
+}

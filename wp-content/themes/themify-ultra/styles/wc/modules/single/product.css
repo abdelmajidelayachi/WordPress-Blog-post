@@ -1,0 +1,92 @@
+.woocommerce div.product p.price, 
+.woocommerce div.product span.price{
+    color:inherit;
+    line-height:1.5em
+}
+.woocommerce div.product .stock{
+	color:inherit;
+}
+.woocommerce div.product div.images{
+	margin-bottom:2em;
+	opacity:1!important
+}
+.woocommerce div.product div.images img{
+	display:block;
+	width:auto;
+	margin:auto;
+	height:auto;
+	box-shadow:none
+}
+.woocommerce div.product div.images div.thumbnails{
+	padding-top:1em
+}
+.woocommerce div.product div.images .flex-control-thumbs li{
+    width:60px;
+    clear:none !important;
+    margin:10px 10px 0 0
+}
+.woocommerce div.product .product_title{
+    font-size:1.4em;
+	font-weight:600;
+    text-transform:none;
+    letter-spacing:-.02em
+}
+.woocommerce.single-product span.onsale,
+.woocommerce.single-product ul.products li.product .onsale{
+    right:auto;
+    left:0;
+    margin:-.5em 0 0 -.5em
+}
+.woocommerce div.product form.cart .reset_variations{
+	color:inherit;
+	padding:0 6px;
+	font-size:20px;
+	min-width:1em;
+	min-height:1em;
+	position:relative;
+	display:inline-block;
+	text-decoration:none;
+	text-align:left;
+	text-indent:-999em;
+	transition:transform .25s
+}
+.woocommerce div.product form.cart .reset_variations:before,
+.woocommerce div.product form.cart .reset_variations:after{
+    content:'';
+    height:50%;
+    width:1px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) rotate(45deg);
+    background-color:currentColor;
+    transition:transform .25s;
+    text-indent:0;
+    float:left
+}
+.woocommerce div.product form.cart .reset_variations:after{
+    transform:translate(-50%,-50%) rotate(-45deg)
+}
+.woocommerce div.product form.cart .reset_variations:hover{
+	transform:rotate(90deg)
+}
+.woocommerce div.product form.cart .variations label{
+	font-weight:normal
+}
+/* WC zoom overlay */
+.pswp__bg{
+	background:rgba(0,0,0,.8);
+	-webkit-backdrop-filter:blur(10px);
+    backdrop-filter:blur(10px)
+}
+@media screen and (max-width:680px){
+	.woocommerce div.product .woocommerce-tabs ul.tabs li a{
+		padding:.4em 1em;
+		font-size:.9em
+	}
+	.woocommerce div.product div.images,
+	.woocommerce div.product div.summary{
+		float:none;
+		width:100%
+	}
+}

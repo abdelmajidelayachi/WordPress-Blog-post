@@ -1,0 +1,72 @@
+#{$prefix}-site-button {
+    display: flex;
+    #{$prefix}-primary-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-white;
+        font-size: 16px;
+        transition: all 0.3s;
+        padding: 10px 15px;
+        line-height: 1;
+         background: #f94d1c;
+         border: 1px solid transparent;
+        &:hover {
+            background: #f04819;
+            color: $color-white;
+            border: 1px solid #f04819;
+        }
+    }
+    a {
+        background: no-repeat;
+        padding: 0;
+        border: none;
+        height: auto;
+        display: table;
+        margin-top: 5px;
+        color: #010834;
+        width: auto;
+        i {
+            margin-left: 5px;
+        }
+    }
+}
+
+
+#{$prefix}-header-button {    
+    @include media(sm) {
+        width: 100%;
+        position: fixed;
+        bottom: 50px;
+        right: 15px;
+        opacity: 0;
+        z-index: -1;
+        visibility: hidden;
+        transition: all .3s;
+        justify-content: flex-end;
+    }    
+}
+
+.show-header-button {
+    #{$prefix}-header-button {    
+        @include media(sm) {          
+            z-index: 999;
+            visibility: visible;
+            opacity: 1;
+        }    
+    }
+}
+
+.wp-block-latest-posts__post-excerpt {
+    .visionwp-site-button {
+        a {
+            background: no-repeat;
+            border: none;
+            padding: 5px 0;
+            &:hover {
+                background: no-repeat;
+                border: none;
+            }
+        }
+    }
+}

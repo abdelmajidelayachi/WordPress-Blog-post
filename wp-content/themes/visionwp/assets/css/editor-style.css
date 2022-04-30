@@ -1,0 +1,11 @@
+html :where(.wp-block) {
+    max-width: 100% !important;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.block-editor-writing-flow, .blocks-widgets-container .editor-styles-wrapper {
+    max-width: 100% !important;
+    margin: auto;
+    width: 100%;
+}

@@ -1,0 +1,194 @@
+#{$prefix}-hide-sidebar {
+    #{$prefix}-content-wrapper {
+        main.site-main {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+}
+
+#{$prefix}-content-post-one {
+    #{$prefix}-content-post {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        .visionwp-post-thumbnail {
+            a {
+                > img {
+                    max-height: 350px !important;
+                    height: 350px !important;
+                }
+            }
+        }
+    }
+}
+
+#{$prefix}-content-post-two {
+    #{$prefix}-content-post {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+        @include media(sm) {
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+    }
+}
+
+#{$prefix}-content-wrapper {
+    padding: 50px 0; 
+    main.site-main {
+        #{$prefix}-content-post {
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-bottom: 30px;
+            @include media(sm) {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            #{$prefix}-content {
+                background: #fff;
+                padding: 15px;
+                border-radius: 2px;
+                box-shadow: 0 0 8px 0px rgb(0 0 0 / 3%);
+                a {
+                    img {
+                        max-height: 200px;
+                        object-fit: cover;
+                        height: 200px;
+                        width: 100%;
+                    }
+                }
+                #{$prefix}-post-title {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    letter-spacing: 0;
+                    line-height: 1.5;
+                    text-transform: none;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    margin: 10px 0;
+                    a {
+                        color: $color-secondary;
+                        &:hover {
+                            color: #f04819;
+                        }
+                    }
+                }
+                #{$prefix}-post-excerpt {
+                    p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 1.6;
+                        color: $color-secondary;
+                        margin: 0;
+                        #{$prefix}-readmore {
+                            display: table;
+                            margin-top: 5px;
+                            color: $color-secondary;
+                            width: auto;
+                            font-weight: 500;
+                            &:hover {
+                                color: #f04819;  
+                            }
+                        }
+                    }
+                    #{$prefix}-site-button {
+                        display: block;
+                        margin-left: 0;
+                        a {
+                            background: no-repeat;
+                            padding:0;
+                            border: none;
+                            height: auto;
+                            display: table;
+                            margin-top: 5px;
+                            color: #010834;
+                            width: auto;
+                            font-weight: 500;
+                            &:hover {
+                               color: #f04819;
+                            }
+                        }
+                    }
+                }
+                #{$prefix}-post-category {
+                    margin: 10px 0;
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                        list-style: none;
+                        display: flex;
+                        flex-wrap: wrap;
+                        li {
+                            margin-top: 0.3rem;
+                            a {
+                                background: #f94d1c;
+                                color: #fff;
+                                font-size: .75rem;
+                                padding: 0.2rem 0.4rem;
+                                margin-right: 0.3rem;
+                                display: inline-block;
+                                transition: all .3s linear;
+                                &:hover {
+                                    background: #010834;
+                                }
+                            }
+                        }
+                    }
+                }
+                #{$prefix}-post-meta {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    margin: 15px 0;
+                    line-height: 1.6;
+                    #{$prefix}-author-wrapper {
+                        #{$prefix}-author-text {
+                            font-size: 0.95rem;
+                            color: #000;
+                        }
+                        #{$prefix}-author-link {
+                            color: #010834;
+                            font-weight: 600;
+                            font-size: .95rem;
+                            margin-right: 10px;
+                            &:hover {
+                                color: #f04819; 
+                            }
+                        }
+                    }
+                    .posted-on {
+                         margin-right: 10px;
+                        a {
+                            color: #010834;
+                            font-size: .95rem;
+                            &:hover {
+                                color: #f04819;
+                            }
+                            &:before {
+                                font: 14px FontAwesome;
+                                content: "\F073";
+                                margin-right: 0.1rem;
+                            } 
+                        }
+                    }
+                    #{$prefix}-comments {
+                       a {
+                            color: #010834;
+                            font-size: .95rem;
+                            &:hover {
+                                color: #f04819;
+                            }
+                       } 
+                    }
+                }
+            }
+        }
+    }
+}

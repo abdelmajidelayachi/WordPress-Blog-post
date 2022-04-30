@@ -1,0 +1,23 @@
+.be-radio-image .image-select {
+    display: none;
+}
+
+.be-radio-image img {
+    border: 1px solid transparent;
+}
+
+.be-radio-image input[type=radio] + label {
+    display: inline-block;
+    max-width: 31.3%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+.be-radio-image input[type=radio] + label:hover{
+    opacity: 0.7;
+}
+.be-radio-image input[type=radio]:checked + label {
+    border-color: #00adb5;
+    -webkit-box-shadow: 0 0 1px #00adb5;
+    box-shadow: 0 0 10px #00adb5;
+}

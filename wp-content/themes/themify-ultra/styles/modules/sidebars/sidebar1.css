@@ -1,0 +1,7 @@
+.sidebar-left #layout{
+	flex-direction:row-reverse
+}
+.sidebar-left #sidebar{
+	margin-right:auto;
+	margin-left:unset
+}

@@ -1,0 +1,455 @@
+// visionwp mobile menu configuration
+$overlay                  : true;
+$visionwp_menu_type       : overlay; // overlay or shift
+$visionwp_menu_direction  : right;  // left or right 
+$visionwp_menu_animation  : all 0.2s linear;
+$visionwp_overlay_color   : rgba(#000, 0.5);
+$visionwp_menu_width      : 300px;   
+$visionwp_menu_color      : #fff;
+$visionwp_menu_text_color : #000;  
+// $visionwp-font            : Oswald; // if you inherit font then remove this variable
+
+//  font-size
+$visionwp-fs-first-level  : 1.03rem; /* fs = font size */
+$visionwp-fs-rest-level   : 0.95rem; 
+   
+// sub menu arrow
+$visionwp_submenu_indicator_arrow_width    : 30px;
+$visionwp_submenu_indicator_arrow_color    : #000;
+$visionwp_submenu_indicator_arrow_animation : true;
+
+// close button
+$visionwp_close_button_size      : 20px;
+$visionwp_close_button_position  : right;
+$visionwp_colse_button_animation : true;
+$close-icon-color: #000;
+
+// Arrow width
+$arrow-width: 1px;
+
+//Browser reset
+#{$prefix}-menu{
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    a { text-decoration: none; }
+}
+
+// OVERLAY FOR MOBILE MENU
+@if ( $overlay ){
+  #{$prefix}-mobile-menu-overlay {
+      background-color: $visionwp_overlay_color;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      z-index: 9999;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: all 0.3s ease-in-out;
+         -moz-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
+
+      &#{$prefix}-menu-open {
+        opacity: 1;
+        visibility: visible;
+      }
+  }
+} // End overlay
+
+@if( shift == $visionwp_menu_type) and (left == $visionwp_menu_direction ){
+  body{
+    position: relative;
+    left: 0;
+    -webkit-transition: $visionwp_menu_animation;
+       -moz-transition: $visionwp_menu_animation;
+            transition: $visionwp_menu_animation;
+    &#{$prefix}-menu-open{
+      left: $visionwp_menu_width;
+    }
+  }
+}
+
+@if( shift == $visionwp_menu_type) and (right == $visionwp_menu_direction ){
+  body{
+    position: relative;
+    right: 0;
+    -webkit-transition: $visionwp_menu_animation;
+       -moz-transition: $visionwp_menu_animation;
+            transition: $visionwp_menu_animation;
+    &#{$prefix}-menu-open{
+      right: $visionwp_menu_width;
+    }
+  }
+}
+
+body {
+  overflow-X: hidden;
+
+  &#{$prefix}-menu-open{
+    overflow-y: hidden;
+  }
+}
+
+//gh-shift-menu
+#{$prefix}-mobile-menu {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    width: $visionwp_menu_width;
+    z-index: 99999;
+    overflow-x: hidden;
+    background: $color-secondary;;
+    
+    transition: $visionwp_menu_animation;
+
+    //overlay right menu
+    @if (overlay == $visionwp_menu_type) and (right == $visionwp_menu_direction) {
+      right: -$visionwp_menu_width;
+      &#{$prefix}-menu-open{
+          right: 0;
+      }
+    }
+
+    @if (overlay == $visionwp_menu_type) and (left == $visionwp_menu_direction) {
+      left: -$visionwp_menu_width;
+      &#{$prefix}-menu-open{
+          left: 0;
+      }
+    }
+
+    @if( shift == $visionwp_menu_type) and (left == $visionwp_menu_direction ){
+      left: -$visionwp_menu_width;
+      &#{$prefix}-menu-open{
+          left: 0;
+      }
+    }
+
+    @if( shift == $visionwp_menu_type) and (right == $visionwp_menu_direction ){
+      right: -$visionwp_menu_width;
+      &#{$prefix}-menu-open{
+          right: 0;
+      }
+    }
+
+    ul.menu,
+    ul.menu > ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        @if variable-exists(visionwp-font) {
+            font-family: #{$visionwp-font};
+        }
+
+        > li {
+            > a {
+                padding: 10px 35px 10px 15px;
+                display: block;
+                font-weight: 500;
+                font-size: $visionwp-fs-first-level;
+                text-transform: capitalize;
+                color: $color-white;
+                position: relative;
+            }
+
+            ul {
+                // background-color: darken($visionwp_menu_color, 3%);
+                background: transparent;
+                display: none;
+
+                li {
+                    list-style: none;
+                    position: relative;
+
+                    a {
+                        display: block;
+                        padding: 10px 30px 10px 0;
+                        color: $color-white;
+                        font-size: $visionwp-fs-rest-level;
+                        position: relative;
+                    }
+
+                    ul {
+                        li {
+                            a {
+                                padding: 8px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //li
+    }
+    //ul
+}
+//shift_menu
+
+#{$prefix}-arrow-box {
+    display: inline-block;
+    float: right;
+    width: $visionwp_submenu_indicator_arrow_width;
+    transition: all 0.3s linear;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    &:focus{
+        border: 1px dotted #fff;
+    }
+    @if $visionwp_submenu_indicator_arrow_animation{
+      -webkit-transfrom: scale(0.5);
+      -moz-transfrom: scale(0.5);
+      transform: scale(0.5);
+
+      #{$prefix}-menu-open &{
+        -webkit-transfrom: scale(1);
+           -moz-transfrom: scale(1);
+                transform: scale(1);
+       -webkit-transition: all 0.4s ease-in-out 0.2s;
+          -moz-transition: all 0.4s ease-in-out 0.2s;
+              transition: all 0.4s ease-in-out 0.2s;
+      }
+    }
+
+    &.open {
+        transform: rotate(180deg);
+    }
+
+    #{$prefix}-down-arrow {
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        top: 46%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+
+        &:after,
+        &:before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: $arrow-width;
+            background: $color-white;
+        }
+
+        &:after {
+            transform: rotate(45deg) translateX(3px);
+            transform-origin: right;
+        }
+
+        &:before {
+            transform: rotate(-45deg) translateX(-3px);
+            transform-origin: left;
+        }
+    }
+} // visionwp-arrow-box
+
+#{$prefix}-close-wrapper {
+    text-align: $visionwp_close_button_position;
+    padding: 10px 7px;
+
+    #{$prefix}-inner-box {
+        width: $visionwp_close_button_size;
+        height: $visionwp_close_button_size;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        background: transparent;
+        border: none;
+        @if $visionwp_colse_button_animation{
+          -webkit-transform: scale(0) rotate(180deg);
+          -moz-transform: scale(0) rotate(180deg);
+           transform: scale(0) rotate(180deg);
+
+          #{$prefix}-menu-open &{
+            -webkit-transform: scale(1) rotate(0deg);
+               -moz-transform: scale(1) rotate(0deg);
+                    transform: scale(1) rotate(0deg);
+            -webkit-transition: all 0.4s ease-in-out 0.3s;
+               -moz-transition: all 0.4s ease-in-out 0.3s;
+                   transition: all 0.4s ease-in-out 0.3s;
+          }
+
+        }
+
+        #{$prefix}-inner{
+          display: inline-block;
+          &:after, &:before{
+            content: "";
+            position: absolute;
+            background: $color-white; 
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            -webkit-transform: translate( -50%, -50% ) rotate(45deg);
+                    transform: translate( -50%, -50% ) rotate(45deg);
+          }
+          &:before{
+            -webkit-transform: translate(-50%, -50%) rotate( -45deg);
+                    transform: translate(-50%, -50%) rotate( -45deg);
+          }
+
+        }
+    }
+
+}
+
+
+$visionwp-line-color : #008b9e;
+$visionwp-line-animation: 0.35s ease;
+
+//Menu Toggle Design
+.menu-toggler, .sliding-menu-toggler{
+    margin-top: 0;
+    margin-left: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    float: right;
+    font-size: 32px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+
+    &:focus{
+        outline: 1px solid #fff;
+    }
+$visionwp-line-color : #fff;
+$visionwp-line-animation: 0.35s ease;
+
+//Menu Toggle Design
+.menu-toggler, .sliding-menu-toggler{
+    margin-top: 0.55rem;
+    margin-left: 0.3rem;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    float: right;
+    font-size: 32px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    &:focus{
+        outline: 1px solid #fff;
+    }
+    
+    span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: $visionwp-line-color;
+        opacity: 1;
+        left: 0;
+
+        -webkit-transform: rotate(0deg);
+           -moz-transform: rotate(0deg);
+                transform: rotate(0deg);
+
+        -webkit-transition: transform #{$visionwp-line-animation};
+           -moz-transition: transform #{$visionwp-line-animation};
+                transition: transform #{$visionwp-line-animation};
+
+        &:nth-child(1) {
+            top: 0px; 
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+            top: 8px;
+        }
+        &:nth-child(4) {
+            top: 16px;
+        }
+    }
+
+    &#{$prefix}-menu-open {
+        z-index: 9;
+        span {
+            &:nth-child(1) {
+                top: 8px;
+                width: 0%;
+                left: 50%;
+            }
+            &:nth-child(2) {
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            &:nth-child(3) {
+                 -webkit-transform: rotate(-45deg);
+                 -moz-transform: rotate(-45deg);
+                 transform: rotate(-45deg);
+            }
+            &:nth-child(4) {
+                top: 18px;
+                width: 0%;
+                left: 50%;
+            }
+        }
+    }
+}
+    
+    span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: $color-white;
+        opacity: 1;
+        left: 0;
+
+        -webkit-transform: rotate(0deg);
+           -moz-transform: rotate(0deg);
+                transform: rotate(0deg);
+
+        -webkit-transition: transform #{$visionwp-line-animation};
+           -moz-transition: transform #{$visionwp-line-animation};
+                transition: transform #{$visionwp-line-animation};
+
+        &:nth-child(1) {
+            top: 0px; 
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+            top: 8px;
+        }
+        &:nth-child(4) {
+            top: 16px;
+        }
+    }
+
+    &#{$prefix}-menu-open {
+        z-index: 9;
+        span {
+            &:nth-child(1) {
+                top: 8px;
+                width: 0%;
+                left: 50%;
+            }
+            &:nth-child(2) {
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            &:nth-child(3) {
+                 -webkit-transform: rotate(-45deg);
+                 -moz-transform: rotate(-45deg);
+                 transform: rotate(-45deg);
+            }
+            &:nth-child(4) {
+                top: 18px;
+                width: 0%;
+                left: 50%;
+            }
+        }
+    }
+}

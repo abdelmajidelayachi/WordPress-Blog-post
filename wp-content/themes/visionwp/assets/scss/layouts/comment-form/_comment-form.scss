@@ -1,0 +1,38 @@
+@import 'comment-list';
+@import 'comments-notes';
+
+.comment-respond{
+
+    .required{
+        color: red;
+    }
+    
+    .comment-reply-title{
+        margin: 4rem 0 1.5rem; 
+        font-size: 1.5rem;
+        font-weight: 700;
+
+        &:before{           
+            font-size: 1.8rem;
+            margin-right: 0.8rem;
+        }
+    }
+    
+    .comment-form {
+
+        input:not([type="checkbox"]):not([type="submit"]),textarea{
+            width: 100%;
+            border: none;
+            background-color: #efe3e3;
+            font-size: 1rem;
+            padding: 0.8rem;
+        }     
+     
+
+        label{
+            font-size: 0.9rem;
+            color: #727272;
+        }
+
+    }
+}

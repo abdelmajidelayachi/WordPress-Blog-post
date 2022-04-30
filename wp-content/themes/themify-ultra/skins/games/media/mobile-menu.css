@@ -1,0 +1,31 @@
+#main-nav a:hover,
+#main-nav ul a:hover,
+#headerwrap #main-nav a:hover, 
+#headerwrap #main-nav ul a:hover{
+	color:var(--theme_accent)
+}
+.boxed-compact .search-button{
+	position:static;
+	padding:1em;
+	margin-left:0
+}
+.boxed-compact.header-icons{
+	top:50%
+}
+@media screen and (max-width:680px){
+	.single.single-fullwidth-layout .featured-area .post-image + .post-content .post-author{
+		bottom:7px;
+		left:10px
+	}
+	.single.single-fullwidth-layout .featured-area .post-image + .post-content .post-meta .post-comment{
+		bottom:8px;
+		right:10px
+	}
+	.single.single-fullwidth-layout .featured-area .post-image + .post-content .post-date-wrap{
+		right:55px;
+		bottom:-7px
+	}
+	.single.single-fullwidth-layout .featured-area .post-image + .post-content .post-date:after{
+		margin-left:5px
+	}
+}

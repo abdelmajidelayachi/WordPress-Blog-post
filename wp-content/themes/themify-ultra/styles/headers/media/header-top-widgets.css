@@ -1,0 +1,18 @@
+#header,
+.sidemenu-off .navbar-wrapper{
+    display:block
+}
+.mobile-menu-visible.sidemenu-right #headerwrap{
+	left:-300px
+}
+.pull-down,
+#headerwrap .header-widget-full{
+	display:none
+}
+.header-widget{
+	display:block;
+	max-height:none!important
+}
+.sidemenu .header-widget{
+	display:block
+}

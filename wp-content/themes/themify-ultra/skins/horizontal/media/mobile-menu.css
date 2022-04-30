@@ -1,0 +1,19 @@
+#headerwrap #main-nav a:hover,
+#headerwrap #main-nav ul a:hover{
+	color:var(--theme_accent)
+}
+.header-leftpane #headerwrap .header-icons #menu-icon{
+	background-color:rgba(89, 132, 254, .8)
+}
+.header-minbar.slide-cart .cart-icon-link{
+	margin:0
+}
+.header-minbar.show-count + .cart-wrap a i{
+	margin-left:-.15em
+}
+.sidemenu{
+	font-size:.9em
+}
+.header-top-bar #main-nav > li > a:after{
+	bottom:0
+}

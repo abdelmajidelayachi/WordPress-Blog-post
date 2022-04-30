@@ -1,0 +1,695 @@
+/*
+Skin Name:Ultra Construction
+Version:1.0
+Demo URI:https://themify.me/demo/themes/ultra-construction/
+Required Plugins:builder-contact
+*/
+
+/************************************************************************************
+GENERAL
+*************************************************************************************/
+:root{
+	--theme_accent:#f69c32;
+	--theme_accent_semi:rgba(246,156,50,.8);
+}
+body{
+	color:#808080;
+	font-family:'Public Sans',Arial,sans-serif
+}
+a{
+	color:#000
+}
+a:hover{
+	color:var(--theme_accent);
+	text-decoration:none
+}
+
+/* reset general border-radius */
+input[type=reset],input[type=submit],button,select,textarea,input[type=checkbox],input[type=text],input[type=password],input[type=search],input[type=email],input[type=url],input[type=number],input[type=tel],input[type=date],input[type=datetime],input[type=datetime-local],input[type=month],input[type=time],input[type=week],.woocommerce ul.products li.product .button,.woocommerce a.button,.woocommerce #respond input#submit,.woocommerce #respond input#submit.alt,.woocommerce a.button,.woocommerce button.button,.woocommerce input.button,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.woocommerce button.button.alt.disabled,.woocommerce button.button:disabled,.woocommerce button.button:disabled[disabled],.woocommerce button.button.alt,.woocommerce button.button,.woocommerce a.button,.woocommerce a.button.alt,.woocommerce button.button:disabled,.woocommerce button.button:disabled[disabled],.loops-wrapper.polaroid .post,.loops-wrapper.overlay .post,.loops-wrapper.auto_tiles > .product,.loops-wrapper.auto_tiles .post-image + .post-content,.loops-wrapper.auto_tiles > .post,.post-image img,.product img, ul.products li.product .post-image,#cart-wrap .product-image img,.woocommerce div.product div.images img,.woocommerce-product-gallery__wrapper .tf_swiper-container-initialized,#add_payment_method table.cart img,.woocommerce-cart table.cart img,.woocommerce-checkout table.cart img,.select2-dropdown,.select2-container--default .select2-selection--single,.select2-container--default .select2-selection--single .select2-selection__arrow,#slide-cart .button,#slide-cart .product-image img,.woocommerce-cart #content table.cart td.actions .coupon .input-text,.woocommerce span.onsale,.woocommerce ul.products li.product .onsale,.woocommerce table.shop_table,.woocommerce-checkout #payment,#add_payment_method #payment ul.payment_methods li,.woocommerce-cart #payment ul.payment_methods li,.woocommerce-checkout #payment ul.payment_methods li,.woocommerce-error, .woocommerce-info, .woocommerce-message,.woocommerce-page .cart-collaterals .cart_totals,body:not(.footer-block) #footer .back-top a,#main-nav .highlight-link > a,.pagenav a,.pagenav span,.pagenav .current,a.load-more-button,.more-link,.widget .feature-posts-list .post-img{
+	border-radius:0
+}
+
+/* FORMS
+================================================ */
+textarea,input, input[type=text], input[type=password], input[type=search], input[type=email], input[type=url], input[type=number], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=time], input[type=week]{
+	font-weight:400;
+	font-size:.875em;
+	padding:1.1em 1.3em
+}
+input[type=reset], input[type=submit], button[type=submit]{
+	font-size:.95em;
+	font-weight:700;
+	padding:1em 2.3em;
+	letter-spacing:.03em
+}
+#commentform p label{
+	text-transform:none;
+	transform:translate(20px, 39px);
+	display:inline-block;
+	font-size:.875em
+}
+#review_form p label{
+	transform:none
+}
+
+/* HEADINGS
+================================================ */
+h1, h2, h3, h4, h5, h6{
+	font-family:'Oswald',Arial,sans-serif;
+	font-weight:700
+}
+
+/* FANCY HEADING */
+.fancy-heading{
+	font-size:2.05em;
+	letter-spacing:normal;
+	overflow:hidden;
+	line-height:normal
+}
+.module-fancy-heading .main-head{
+	text-transform:uppercase;
+	letter-spacing:-.045em;
+	position:relative;
+	display:inline-block
+}
+.module-fancy-heading .main-head:after,
+.module-fancy-heading .main-head:before{
+	content:"";
+	display:block;
+	position:absolute;
+	border-top:3px solid #ddd;
+	transform:translateY(-50%);
+	top:50%;
+	width:100px
+}
+.module-fancy-heading .main-head:before{
+	right:100%;
+	margin-right:20px
+}
+.module-fancy-heading .main-head:after{
+	left:100%;
+	margin-left:20px
+}
+.module-fancy-heading.tb_hide_divider .main-head:before,
+.module-fancy-heading.tb_hide_divider .main-head:after,
+.module-fancy-heading .sub-head:before{
+	display:none
+}
+.tf_textl.fancy-heading{
+	padding-left:120px
+}
+.tf_textr.fancy-heading{
+	padding-right:120px
+}
+.module-fancy-heading .sub-head{
+	font-family:'Public Sans',Arial,sans-serif;
+	font-weight:400;
+	font-size:55%;
+	color:#808080
+}
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+/* SITE LOGO
+================================================ */
+#site-logo{
+	font-family:'Oswald',Arial,sans-serif;
+	font-size:1.85em;
+	font-weight:700;
+	text-transform:uppercase;
+	letter-spacing:-.025em
+}
+#site-description{
+	font-size:.9em
+}
+
+/* MAIN NAVIGATION
+================================================ */
+/* remove dropdown rounded corners */
+#main-nav li:not(.themify-widget-menu) > ul,
+#main-nav .has-mega-column > .sub-menu,
+#main-nav .has-mega-sub-menu .mega-sub-menu{
+	border-radius:0
+}
+
+/* mega menu */
+#main-nav .mega-menu-posts .post,
+#main-nav .mega-menu-posts .post-title{
+	text-align:left
+}
+
+/* CART ICON
+================================================ */
+.cart-wrap a span{
+	position:static;
+	margin:0 0 -3px -12px
+}
+
+/* SEARCH LIGHTBOX
+================================================ */
+.search-option-tab li:hover a,
+.search-option-tab li.active a{
+	box-shadow:inset 0 -3px 0 0 var(--theme_accent)
+}
+.search-results-wrap .view-all-button{
+	color:var(--theme_accent)
+}
+.view-all-button:after{
+	border-color:var(--theme_accent)
+}
+
+.search-button {
+	order:1;
+	margin-left:.5em
+}
+.cart-icon, #header .social-widget {
+	order:2;
+	margin-left:.5em
+}
+
+/* HEADER TOP WIDGETS
+================================================ */
+.header-widget-full{
+	background-color:#fff;
+	box-shadow:0 3px 7px 0 rgba(0, 0, 0, .1);
+	color:#222
+}
+.header-widget-full .header-widget{
+	padding:0
+}
+.header-widget-full .header-widget .header-widget-inner{
+	text-transform:uppercase;
+	font-weight:700
+}
+.header-widget-full .header-widget-inner .widget p:last-child{
+	margin:0
+}
+.header-widget-full .header-widget-inner .widget.themify-social-links{
+	margin-bottom:-8px
+}
+.header-widget-full .widget .social-links{
+	display:table;
+	border-collapse:collapse
+}
+.header-widget-full .widget li{
+	padding:13px;
+	border-left:1px solid rgba(180,180,180,.3);
+	border-right:1px solid rgba(180,180,180,.3);
+	margin:0;
+	display:table-cell
+}
+.header-widget-full .widget li a i{
+	border:1px solid rgba(180,180,180,.3);
+	font-size:105%;
+	padding:7px
+}
+.header-widget-inner .widget .button.shortcode{
+	border:none;
+	border-radius:0;
+	box-shadow:none;
+	box-sizing:border-box;
+	background-color:var(--theme_accent);
+	color:#fff;
+	margin:0;
+	margin-left:10px;
+	font-size:.9em;
+	padding:1.65em 2em;
+	text-transform:uppercase;
+	display:inline-block
+}
+.header-top-widgets #site-description{
+	margin-top:-10px
+}
+/* HEADER OVERLAY
+================================================ */
+.header-overlay.transparent-header .fixed-header,
+.header-overlay.mobile-menu-visible #headerwrap{
+	background-color:rgba(0,0,0,.94)
+}
+
+/* HEADER STRIPE
+================================================ */
+.header-stripe #site-logo{
+	background-color:var(--theme_accent)
+}
+.header-stripe #header{
+	padding-right:1em
+}
+
+/* HEADER LEFTPANE/RIGHTPANE/MINBAR
+================================================ */
+.header-slide-out .search-button,
+.header-slide-out .cart-icon,
+.header-slide-out #header .social-widget,
+.header-minbar .search-button,
+.header-minbar .cart-icon,
+.header-minbar #header .social-widget,
+.header-rightpane .search-button,
+.header-rightpane .cart-icon,
+.header-rightpane #header .social-widget,
+.header-leftpane .search-button,
+.header-leftpane .cart-icon,
+.header-leftpane #header .social-widget {
+	margin-left:0
+}
+
+/************************************************************************************
+POST
+*************************************************************************************/
+.post-title{
+	font-family:'Public Sans',Arial,sans-serif
+}
+
+/* Grid Layout */
+.loops-wrapper .post{
+	text-align:left
+}
+.loops-wrapper.boxed .post{
+	box-shadow:0 3px 10px 0 rgba(0, 0, 0, .08)
+}
+.loops-wrapper.boxed .post-image{
+	margin-bottom:1.4em
+}
+.post-date-wrap .post-date{
+	font-size:13px;
+	letter-spacing:normal
+}
+.loops-wrapper.boxed.grid4 .has-post-thumbnail .post-date-wrap,
+.loops-wrapper.boxed.grid3 .has-post-thumbnail .post-date-wrap,
+.loops-wrapper.boxed.grid2 .has-post-thumbnail .post-date-wrap{
+	position:absolute;
+	top:20px;
+	left:20px
+}
+.loops-wrapper.boxed.grid4 .has-post-thumbnail .post-date-wrap .post-date,
+.loops-wrapper.boxed.grid3 .has-post-thumbnail .post-date-wrap .post-date,
+.loops-wrapper.boxed.grid2 .has-post-thumbnail .post-date-wrap .post-date{
+	background-color:var(--theme_accent);
+	padding:0 13px;
+	color:#fff
+}
+.loops-wrapper.boxed .post-content{
+	padding:0 20px
+}
+.post-title{
+	margin-bottom:.45em
+}
+.loops-wrapper.grid3 .post-title{
+	font-size:1.125em
+}
+.loops-wrapper.boxed .more-link{
+	margin-top:1.5em
+}
+.more-link{
+	display:inline-block;
+	font-weight:600
+}
+.more-link:after{
+	color:var(--theme_accent);
+	font-size:.6em;
+	vertical-align:middle
+}
+
+/************************************************************************************
+PORTFOLIO
+*************************************************************************************/
+.post-filter li{
+	margin:0 6px
+}
+.post-filter li a{
+	color:#222;
+	font-size:100%;
+	display:inline-block;
+	text-transform:none;
+	letter-spacing:normal;
+	padding:0 6px
+}
+.post-filter li:hover a,
+.post-filter li.active a{
+	background-color:transparent;
+	color:var(--theme_accent);
+	opacity:1
+}
+.post-filter li a:after{
+	content:"";
+	display:block;
+	font-size:100%;
+	position:static;
+	border-top:2px solid;
+	width:0;
+	margin:0;
+	margin-top:7px;
+	transition:all .3s ease;
+}
+.post-filter li:hover a:after,
+.post-filter li.active a:after{
+	width:100%;
+	opacity:1
+}
+
+.portfolio .post-meta{
+	font-family:'Oswald',Arial,sans-serif;
+	font-weight:200;
+	font-size:1em;
+	text-transform:uppercase;
+	letter-spacing:.07em;
+	margin:0
+}
+.portfolio .post-meta:after{
+	content:"";
+	display:block;
+	border-top:2px solid;
+	width:28px;
+	margin:7px auto 4px
+}
+.portfolio .post-title{
+	font-family:'Oswald',Arial,sans-serif;
+	font-weight:700;
+	text-transform:uppercase;
+	letter-spacing:-.05em
+}
+.loops-wrapper.grid3.portfolio .post-title{
+	font-size:1.75em
+}
+
+/************************************************************************************
+WIDGETS
+*************************************************************************************/
+.widgettitle{
+	font-family:'Public Sans',Arial,sans-serif;
+	font-size:1.25em;
+	font-weight:700;
+	letter-spacing:normal
+}
+.widget li{
+	padding:.35em 0
+}
+
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+#footerwrap{
+	background-color:#3b3b3b;
+	border:none;
+	color:#aaa;
+	padding-top:20px
+}
+#footer a{
+	color:#fff
+}
+#footer a:hover{
+	color:var(--theme_accent)
+}
+
+/* FOOTER LOGO
+================================================ */
+#footer-logo{
+	font-family:'Oswald',Arial,sans-serif;
+	text-transform:uppercase;
+	margin:0 0 1.3em
+}
+
+/* FOOTER WIDGETS
+================================================ */
+.footer-widgets .widgettitle,
+.footer-widgets .module-title{
+	color:#fff;
+	margin:0 0 1.8em
+}
+.footer-widgets{
+	margin:0 0 2em
+}
+
+/* FOOTER TEXT
+================================================ */
+.footer-text{
+	font-size:.95em
+}
+.section-col + .footer-text{
+	background-color:#000;
+	position:relative;
+	padding:2.1em 0 2.3em;
+	text-align:center;
+	font-weight:400;
+	font-size:.95em
+}
+.section-col + .footer-text:before,
+.section-col + .footer-text:after{
+	content:"";
+	display:block;
+	background-color:inherit;
+	position:absolute;
+	width:100%;
+	width:100vw;
+	height:100%;
+	top:0
+}
+.section-col + .footer-text:before{
+	right:100%
+}
+.section-col + .footer-text:after{
+	left:100%
+}
+.section-col + .footer-text .one,
+.section-col + .footer-text .two{
+	display:inline-block;
+	vertical-align:middle
+}
+.section-col + .footer-text .one{
+	margin-right:.4em
+}
+
+/************************************************************************************
+WOOCOMMERCE
+*************************************************************************************/
+/* BUTTON
+================================================ */
+#slide-cart .button,.woocommerce ul.products li.product .button,.woocommerce a.button.disabled,.woocommerce button.button.disabled,
+.woocommerce button.button.alt.disabled,.woocommerce button.button:disabled,.woocommerce button.button:disabled[disabled],.woocommerce input.button.disabled,.woocommerce input.button:disabled,.woocommerce input.button:disabled[disabled],.woocommerce #respond input#submit,.woocommerce a.button,.woocommerce button.button,.woocommerce input.button,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt{
+	font-weight:700;
+	padding:.95em 2.3em 1.15em;
+	letter-spacing:.005em;
+	text-transform:uppercase;
+	transition:background-color .3s ease-in-out,color .3s ease-in-out
+}
+#slide-cart .button:hover,.woocommerce ul.products li.product .button:hover,.woocommerce a.button.alt.disabled:hover,.woocommerce button.button.alt.disabled:hover,.woocommerce button.button.alt:disabled:hover,.woocommerce button.button.alt:disabled[disabled]:hover,.woocommerce input.button.alt.disabled:hover,.woocommerce input.button.alt:disabled:hover,.woocommerce input.button.alt:disabled[disabled]:hover,.woocommerce #respond input#submit:hover,.woocommerce a.button:hover,.woocommerce button.button:hover,.woocommerce input.button:hover,.woocommerce a.button.alt:hover,.woocommerce button.button.alt:hover,.woocommerce input.button.alt:hover{
+	background-color:#000;
+	color:#fff
+}
+
+/* SINGLE PRODUCTS
+================================================ */
+/* quantity */
+.woocommerce .quantity .qty{
+	margin:0;
+	padding:.9em;
+	width:5em;
+	font-size:1em
+}
+
+/* related products */
+.woocommerce .related h2,
+.woocommerce .upsells h2{
+	font-weight:700
+}
+
+/* CART
+================================================ */
+.woocommerce #content table.cart td.actions .coupon .input-text{
+	padding:.9em;
+	font-size:1em
+}
+
+/* CHECKOUT
+================================================ */
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+	height:52px;
+	border-color:#ddd
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+	line-height:52px
+}
+.select2-results__option{
+	margin:0
+}
+.select2-container--default .select2-results__option[aria-selected=true],
+.select2-container--default .select2-results__option[data-selected=true]{
+	background-color:var(--theme_accent);
+	color:#fff
+}
+
+/* reset rounded corners */
+.loops-wrapper.boxed .post-image img,
+.woocommerce .boxed .product,
+.loops-wrapper.boxed .post{
+	border-radius:0
+}
+
+/************************************************************************************
+BUILDER STYLING
+*************************************************************************************/
+/* BUTTON MODULE
+================================================ */
+.ui.builder_button{
+	font-weight:700;
+	text-transform:uppercase;
+	line-height:normal;
+	padding:.65em 2.1em .85em
+}
+
+/* IMAGE MODULE
+================================================ */
+.module.module-image .image-wrap .zoom{
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:0;
+	width:auto;
+	height:auto;
+	border-radius:0;
+	background-color:transparent;
+	transform:scale(0);
+	transition:background-color .5s cubic-bezier(.4, 0, .2, 1),transform .5s cubic-bezier(.4, 0, .2, 1)
+}
+.module.module-image .image-wrap:hover .zoom{
+	background-color:rgba(0,0,0,.4);
+	transform:scale(1)
+}
+.module.module-image .image-wrap .zoom:before{
+	color:#fff;
+	margin:0;
+	transform:translate(-50%, -50%)
+}
+.module.module-image .image-wrap a[href$=".gif"] .zoom,
+.module.module-image .image-wrap a[href$=".png"] .zoom,
+.module.module-image .image-wrap a[href$=".jpg"] .zoom,
+.module.module-image .image-wrap a[href$=".jpeg"] .zoom{
+	font-size:3.3em
+}
+.module.module-image .image-wrap a[href*="vimeo"] .zoom .tf_fa,
+.module.module-image .image-wrap a[href*="youtu.be"] .zoom .tf_fa,
+.module.module-image .image-wrap a[href*="youtube"] .zoom .tf_fa,
+.module.module-image .image-wrap a[href*=".avi"] .zoom .tf_fa,
+.module.module-image .image-wrap a[href*=".mov"] .zoom .tf_fa,
+.module.module-image .image-wrap a[href*=".flv"] .zoom .tf_fa,
+.module.module-image .image-wrap a[href*=".f4v"] .zoom .tf_fa,
+.module.module-image .image-wrap a[href*=".mp4"] .zoom .tf_fa{
+	border-radius:50%;
+	background-color:#fff;
+	color:var(--theme_accent);
+	padding:1em;
+	font-size:1.5em
+}
+.module.module-image .image-wrap a[href*="vimeo"] .zoom,
+.module.module-image .image-wrap a[href*="youtu.be"] .zoom,
+.module.module-image .image-wrap a[href*="youtube"] .zoom,
+.module.module-image .image-wrap a[href*=".avi"] .zoom,
+.module.module-image .image-wrap a[href*=".mov"] .zoom,
+.module.module-image .image-wrap a[href*=".flv"] .zoom,
+.module.module-image .image-wrap a[href*=".f4v"] .zoom,
+.module.module-image .image-wrap a[href*=".mp4"] .zoom{
+	transform:none;
+	background:0
+}
+
+/* TESTIMONIAL MODULE
+================================================ */
+.module-testimonial-slider .testimonial-content{
+	color:#fff
+}
+.module.image-bubble.module-testimonial-slider .testimonial-content{
+	display:block;
+	background-color:transparent;
+	box-sizing:border-box;
+	box-shadow:none;
+	border-radius:0;
+	color:#fff;
+	margin:5px auto;
+	padding-top:0;
+	padding-bottom:0
+}
+.module-testimonial-slider .testimonial-content .testimonial-entry-content{
+	position:relative;
+	background-color:#fff;
+	color:#666;
+	font-size:18px;
+	box-sizing:border-box;
+	box-shadow:0 32px 49px 0 rgba(0, 0, 0, .09);
+	border-radius:4px;
+	padding:30px 60px 10px;
+	margin:15px auto 30px;
+	text-align:left;
+	line-height:1.8em
+}
+.image-bubble.module-testimonial-slider .testimonial-entry-content:after{
+	content:"";
+	width:0;
+	height:0;
+	border-left:15px solid transparent;
+	border-right:15px solid transparent;
+	border-top:20px solid #fff;
+	position:absolute;
+	top:100%;
+	left:15%
+}
+.image-bubble.module-testimonial-slider .testimonial-image{
+	float:left;
+	transform:none;
+	margin-right:20px;
+	display:inline-block
+}
+.image-bubble.module-testimonial-slider .testimonial-image img{
+	background-color:#fff;
+	padding:2px
+}
+.image-bubble.module-testimonial-slider .testimonial-author{
+	display:inline-block
+}
+.module-testimonial-slider .person-name{
+	font-size:20px;
+	font-weight:600
+}
+.testimonial-author .person-position, 
+.testimonial-author .person-company{
+	display:inline-block;
+	font-size:16px
+}
+.module-testimonial-slider .carousel-nav-wrap{
+	color:#fff
+}
+.image-bubble.module-testimonial-slider .carousel-nav-wrap{
+	left:3%;
+	right:auto
+}
+.module-testimonial-slider .carousel-prev,
+.module-testimonial-slider .carousel-next{
+	padding:5px
+}
+.module-testimonial-slider .carousel-prev:before, 
+.module-testimonial-slider .carousel-next:before{
+	width:20px;
+	height:22px;
+	border-width:4px
+}
+@media(max-width:680px){
+	.image-bubble.module-testimonial-slider .carousel-nav-wrap{
+		bottom:0;
+	}
+}
+@media(min-width:680px){
+	.image-bubble.module-testimonial-slider .carousel-nav-wrap{
+		padding-right:12%;
+		right:0;
+		left:auto
+	}
+	.module-testimonial-slider .testimonial-content{
+		padding:0 8%;
+		margin:5px 25px
+	}
+	.image-bubble.module-testimonial-slider .testimonial-content{
+		margin:5px 25px
+	}
+}

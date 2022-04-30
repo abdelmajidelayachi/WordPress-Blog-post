@@ -1,0 +1,20 @@
+#site-description{
+	margin:0 0 1.8em;
+	padding:0;
+	font-size:.9em;
+	line-height:110%;
+	opacity:.7
+}
+#site-description p{
+	padding:0
+}
+#site-description .site-taglink{
+	color:inherit;
+	font:inherit
+}
+#site-description .site-taglink:hover{
+	text-decoration:none
+}
+.fixed-header #site-description{
+	display:none
+}

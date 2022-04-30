@@ -1,0 +1,43 @@
+// Media breakpoints defined in settings
+$break-md: 1199px !default;
+$break-sm: 992px !default;
+//$break-xs: 768px !default;
+$break-mb: 768px !default;
+$break-mobile: 560px !default;
+
+// Media query mixin
+@mixin media($screen){
+
+    @if $screen == lg{
+        @media ( min-width: $break-md ){
+            @content;
+        }
+    }@else if$screen == md{
+        @media ( max-width: $break-md ){
+            @content;
+        }
+    }@else if $screen == sm{
+        @media ( max-width: $break-sm ){
+            @content;
+        }
+    }
+
+    @else if $screen == mb{
+      @media(max-width: $break-mb){
+        @content;
+      }
+    }
+
+    @else if $screen == mbUp{
+        @media(min-width: $break-mb){
+          @content;
+        }
+      }
+
+  @else if $screen == mobile{
+        @media ( max-width: $break-mobile ){
+            @content;
+        }
+    }
+} 
+

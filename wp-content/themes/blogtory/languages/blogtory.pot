@@ -1,0 +1,1871 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Blogtory\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-18 10:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.1; wp-5.9.3\n"
+"X-Domain: blogtory"
+
+#: inc/post-meta/post-meta.php:72
+msgid " &mdash; Select &mdash;"
+msgstr ""
+
+#. 1: plugin name.
+#: lib/tgm/class-tgm-plugin-activation.php:3509
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#. 1: plugin name.
+#: lib/tgm/class-tgm-plugin-activation.php:3517
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: lib/about/about.php:20
+#, php-format
+msgid ""
+"%1$s is now installed and ready to use. We want to make sure you have the "
+"best experience using the theme and that is why we gathered here all the "
+"necessary information for you. Thanks for using our theme!"
+msgstr ""
+
+#: inc/post-meta/post-meta.php:22
+#, php-format
+msgid "%1s Settings"
+msgstr ""
+
+#: lib/about/class.about.php:232
+#, php-format
+msgid "%s() method does not exist."
+msgstr ""
+
+#: inc/customizer/controls.php:89
+#: inc/widgets/class-express-double-column-posts.php:38
+#: inc/widgets/class-posts-carousel.php:33
+#: inc/widgets/class-recent-posts-with-image.php:32
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: comments.php:34
+msgid "1 Comment"
+msgstr ""
+
+#: 404.php:19
+msgid "404"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:267
+msgid "404 Not Found"
+msgstr ""
+
+#: inc/customizer/theme-options/top-bar.php:57
+#, php-format
+msgid ""
+"<a href=\"%s\" target=\"_blank\">Date and Time Formatting Documentation</a>."
+msgstr ""
+
+#: lib/about/class.about.php:121 lib/about/class.about.php:122
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:45
+msgid "Above Footer"
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:51
+msgid "Above Footer - No Container"
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:21
+msgid "Above Homepage"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: lib/tgm/class-tgm-plugin-activation.php:2614
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: inc/customizer/theme-options/header.php:48
+msgid "Ad Banner Image"
+msgstr ""
+
+#: inc/customizer/theme-options/header.php:67
+msgid "Ad Banner Link"
+msgstr ""
+
+#: inc/widgets/class-recent-posts-with-image.php:143
+#: inc/hooks/template-functions/homepage.php:54
+msgid "ago"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#. 1: dashboard link.
+#: lib/tgm/class-tgm-plugin-activation.php:394
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#. 1: plugin name, 2: error message.
+#: lib/tgm/class-tgm-plugin-activation.php:3501
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/customizer/theme-options/archive.php:41
+msgid "Archive Excerpt Length"
+msgstr ""
+
+#: inc/customizer/theme-options/archive.php:5
+msgid "Archive Options"
+msgstr ""
+
+#: inc/customizer/theme-options/archive.php:58
+msgid "Archive Pagination Type"
+msgstr ""
+
+#: inc/customizer/theme-options/archive.php:23
+msgid "Archive Style"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:268
+msgid "Archives"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/widgets/class-express-double-column-posts.php:65
+#: inc/widgets/class-posts-carousel.php:60
+#: inc/customizer/theme-options/front-page.php:118
+#: inc/customizer/theme-options/front-page.php:397
+msgid "ASC"
+msgstr ""
+
+#: inc/widgets/class-author-info.php:154
+msgid "Author Image:"
+msgstr ""
+
+#: inc/widgets/class-author-info.php:139
+msgid "Author Name:"
+msgstr ""
+
+#: inc/customizer/theme-options/single-post.php:156
+msgid "Author Posts Text"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: inc/widgets/class-mailchimp-form.php:40
+msgid "Background Image"
+msgstr ""
+
+#: inc/widgets/class-mailchimp-form.php:49
+msgid "Background Image padding"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:259
+msgid "Banner Carousel Style"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:207
+msgid "Banner Display As"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:184
+msgid "Banner Layout"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:230
+msgid "Banner Slider Style"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:380
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:370
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:375
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/widgets/widget-sidebars.php:95
+msgid "Below Footer"
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:101
+msgid "Below Footer - No Container"
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:15
+msgid "Below Header"
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:39
+msgid "Below Homepage"
+msgstr ""
+
+#. Name of the theme
+msgid "Blogtory"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Blogtory is a responsive and beautiful multipurpose blog theme. With its "
+"clean &amp; easy to use feature, you can get your site up and ready in no "
+"time. The theme primarily can be used to develop any blog site while also "
+"adding more focus on the blog categories but you can essentially use it to "
+"develop any kind of sites like news, sports, magazines, etc."
+msgstr ""
+
+#: inc/customizer/theme-options/upsell.php:11
+msgid "Blogtory Pro"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:189
+msgid "Boxed"
+msgstr ""
+
+#: inc/customizer/theme-options/theme-options.php:103
+msgid "Breadcrumb Options"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:265
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:264
+msgid "Browse:"
+msgstr ""
+
+#: inc/widgets/class-author-info.php:17
+msgid "BT: Author Info"
+msgstr ""
+
+#: inc/widgets/class-express-double-column-posts.php:19
+msgid "BT: Express Double Col Posts"
+msgstr ""
+
+#: inc/widgets/class-mailchimp-form.php:18
+msgid "BT: MailChimp Form"
+msgstr ""
+
+#: inc/widgets/class-posts-carousel.php:17
+msgid "BT: Posts Carousel"
+msgstr ""
+
+#: inc/widgets/class-recent-comments.php:17
+msgid "BT: Recent Comments"
+msgstr ""
+
+#: inc/widgets/class-recent-posts-with-image.php:17
+msgid "BT: Recent Posts With Image"
+msgstr ""
+
+#: inc/widgets/class-social-menu.php:18
+msgid "BT: Social Menu"
+msgstr ""
+
+#: inc/widgets/class-tab-posts.php:17
+msgid "BT: Tab Posts"
+msgstr ""
+
+#: inc/customizer/theme-options/upsell.php:12
+msgid "Buy Pro"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:212
+msgid "Carousel"
+msgstr ""
+
+#: inc/widgets/class-posts-carousel.php:83
+msgid "Carousel margin"
+msgstr ""
+
+#: inc/template-tags.php:70
+msgid "Categories"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:292
+msgid "Category"
+msgstr ""
+
+#: inc/category-meta/category-meta.php:7 inc/category-meta/category-meta.php:23
+msgid "Category Color"
+msgstr ""
+
+#: inc/customizer/theme-options/archive.php:84
+#: inc/customizer/theme-options/front-page.php:626
+msgid "Center"
+msgstr ""
+
+#: inc/widgets/class-author-info.php:173
+#: inc/widgets/widget-base/abstract-widget-base.php:465
+msgid "Choose an Image"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:52
+#: inc/customizer/theme-options/front-page.php:313
+msgid "Choose Category"
+msgstr ""
+
+#: footer.php:52
+msgid "Close Menu"
+msgstr ""
+
+#: inc/widgets/class-posts-carousel.php:88
+msgid "Column"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:423
+msgid "Comma ( , ) separated posts ids. Ex: 1, 2, 3"
+msgstr ""
+
+#. %s is the page number.
+#: lib/breadcrumbs/breadcrumbs.php:274
+#, php-format
+msgid "Comment Page %s"
+msgstr ""
+
+#: inc/widgets/class-tab-posts.php:44
+msgid "Comment Settings"
+msgstr ""
+
+#: inc/widgets/class-tab-posts.php:189
+msgid "Comments"
+msgstr ""
+
+#: comments.php:64
+msgid "Comments are closed."
+msgstr ""
+
+#: inc/widgets/class-recent-comments.php:78 inc/widgets/class-tab-posts.php:247
+msgid "comments on"
+msgstr ""
+
+#. 1: comment count number, 2: title.
+#: comments.php:38
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/about/about.php:86 lib/about/about.php:89
+msgid "Contact Support"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:7
+msgid "Contains all front page settings"
+msgstr ""
+
+#: inc/customizer/theme-options/theme-options.php:68
+msgid "Contains all theme settings"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: template-parts/single/single_style_1.php:35
+#: template-parts/single/single_style_2.php:6
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: inc/customizer/defaults.php:146
+msgid "Copyright &copy; All rights reserved."
+msgstr ""
+
+#: inc/customizer/theme-options/footer.php:47
+msgid "Copyright Text"
+msgstr ""
+
+#: lib/about/about.php:67
+msgid "Customize"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:790 lib/breadcrumbs/breadcrumbs.php:1219
+msgctxt "daily archives date format"
+msgid "j"
+msgstr ""
+
+#: inc/widgets/class-express-double-column-posts.php:54
+#: inc/widgets/class-posts-carousel.php:49
+#: inc/customizer/theme-options/front-page.php:93
+#: inc/customizer/theme-options/front-page.php:366
+msgid "Date"
+msgstr ""
+
+#: inc/widgets/class-recent-posts-with-image.php:50
+msgid "Date Format"
+msgstr ""
+
+#: inc/customizer/theme-options/archive.php:62
+msgid "Default (Older / Newer Post)"
+msgstr ""
+
+#: lib/about/about.php:72
+msgid "Demo Content"
+msgstr ""
+
+#: inc/widgets/class-express-double-column-posts.php:66
+#: inc/widgets/class-posts-carousel.php:61
+#: inc/customizer/theme-options/front-page.php:119
+#: inc/customizer/theme-options/front-page.php:398
+msgid "DESC"
+msgstr ""
+
+#: inc/widgets/class-mailchimp-form.php:26
+msgid "Description"
+msgstr ""
+
+#: lib/about/class.about.php:126 lib/tgm/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/widgets/class-express-double-column-posts.php:86
+#: inc/widgets/class-posts-carousel.php:71
+msgid "Display Style"
+msgstr ""
+
+#: inc/widgets/class-author-info.php:18
+msgid "Displays author short info."
+msgstr ""
+
+#: inc/widgets/class-mailchimp-form.php:16
+msgid "Displays MailChimp form if you have any"
+msgstr ""
+
+#: inc/widgets/class-posts-carousel.php:15
+msgid "Displays posts in carousel"
+msgstr ""
+
+#: inc/widgets/class-express-double-column-posts.php:17
+msgid "Displays posts in express double column style"
+msgstr ""
+
+#: inc/widgets/class-tab-posts.php:15
+msgid "Displays posts in tab"
+msgstr ""
+
+#: inc/widgets/class-recent-comments.php:15
+msgid "Displays recent comments"
+msgstr ""
+
+#: inc/widgets/class-recent-posts-with-image.php:15
+msgid "Displays recent posts with an image"
+msgstr ""
+
+#: inc/widgets/class-social-menu.php:16
+msgid "Displays social menu if you have set it(social menu)"
+msgstr ""
+
+#: inc/widgets/class-mailchimp-form.php:41
+msgid "Don't upload any image if you do not want to show the background image."
+msgstr ""
+
+#: inc/helpers.php:426 inc/helpers.php:449
+msgid "Double Column"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:127 page-templates/template-home.php:96
+#: template-parts/content-page.php:40
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/customizer/theme-options/theme-options.php:118
+msgid "Enable Breadcrumb"
+msgstr ""
+
+#: inc/customizer/theme-options/footer.php:64
+msgid "Enable Footer Credit"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:515
+msgid "Enable Front Page Sticky Sidebar"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:167
+msgid "Enable Home Banner"
+msgstr ""
+
+#: inc/widgets/class-mailchimp-form.php:53
+msgid "Enable Image Overlay"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:542
+msgid "Enable Latest Posts in Homepage"
+msgstr ""
+
+#: inc/customizer/theme-options/header.php:87
+msgid "Enable Search on Header"
+msgstr ""
+
+#: inc/customizer/theme-options/theme-options.php:165
+msgid "Enable Sticky Sidebar"
+msgstr ""
+
+#: inc/customizer/theme-options/top-bar.php:38
+msgid "Enable Todays Date"
+msgstr ""
+
+#: inc/customizer/theme-options/top-bar.php:21
+msgid "Enable Top Bar"
+msgstr ""
+
+#: inc/customizer/theme-options/top-bar.php:81
+msgid "Enable Top Bar Social Nav Menu"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:33
+msgid "Enable Trending Posts"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:581
+msgid "Excerpt Length"
+msgstr ""
+
+#: inc/customizer/theme-options/theme-options.php:177
+msgid "Excerpt Options"
+msgstr ""
+
+#: footer.php:75
+msgid "Expanded Social links"
+msgstr ""
+
+#: inc/widgets/class-express-double-column-posts.php:81
+msgid "Express Post Excerpt Length"
+msgstr ""
+
+#: inc/widgets/class-express-double-column-posts.php:71
+msgid "Express Post Image Size"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:84
+#, php-format
+msgid "Footer Column %1$d"
+msgstr ""
+
+#: inc/customizer/theme-options/footer.php:26
+msgid "Footer Column Layout"
+msgstr ""
+
+#: functions.php:49
+msgid "Footer Menu"
+msgstr ""
+
+#: inc/customizer/theme-options/footer.php:8
+msgid "Footer Options"
+msgstr ""
+
+#: inc/customizer/theme-options/footer.php:27
+#, php-format
+msgid ""
+"Footer widgetareas used will vary based on the footer column layout chosen. "
+"Head over to  <a href=\"%s\" target=\"_blank\">widgets</a> to see which "
+"footer widgetareas are used if you change the layout."
+msgstr ""
+
+#: inc/widgets/class-recent-posts-with-image.php:52
+msgid "Format 1"
+msgstr ""
+
+#: inc/widgets/class-recent-posts-with-image.php:53
+msgid "Format 2"
+msgstr ""
+
+#: inc/helpers.php:368
+msgid "Four Columns"
+msgstr ""
+
+#: lib/about/class.about.php:480
+msgid "Free"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:151
+msgid "Front Page Banner Options"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:6
+msgid "Front Page Options"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:527
+msgid "Front Page Post Options"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:497
+msgid "Front Page Sidebar Layout"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:479
+msgid "Front Page Sidebar Options"
+msgstr ""
+
+#: inc/helpers.php:422 inc/helpers.php:445
+msgid "Full Column"
+msgstr ""
+
+#: inc/helpers.php:326
+msgid "Full Image"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:188
+msgid "FullWidth"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:288
+msgid "Get Banner Content From"
+msgstr ""
+
+#: lib/about/about.php:59
+msgid "Get Started"
+msgstr ""
+
+#: lib/about/class.about.php:126
+#, php-format
+msgid "Get started with %1$s"
+msgstr ""
+
+#: lib/about/about.php:24
+msgid "Getting Started"
+msgstr ""
+
+#: inc/customizer/theme-options/theme-options.php:147
+msgid "Global Sidebar Layout"
+msgstr ""
+
+#: lib/about/about.php:88
+msgid ""
+"Got theme support question or found bug or got some feedbacks? Best place to "
+"ask your query is the dedicated Support forum for the theme."
+msgstr ""
+
+#: inc/customizer/theme-options/header.php:7
+msgid "Header Options"
+msgstr ""
+
+#: inc/customizer/theme-options/header.php:25
+msgid "Header Style"
+msgstr ""
+
+#: inc/helpers.php:345
+msgid "Header Style 1"
+msgstr ""
+
+#: inc/helpers.php:349
+msgid "Header Style 2"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:3509
+#: lib/tgm/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:266
+msgid "Home"
+msgstr ""
+
+#. Name of the template
+msgid "Home Page"
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:27
+msgid "Homepage"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:599
+msgid "Homepage Latest Posts Pagination Type"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:562
+msgid "Homepage Latest Posts Style"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:621
+msgid "Homepage Numeric Pagination Align"
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:33
+msgid "Homepage Sidebar"
+msgstr ""
+
+#: inc/widgets/class-tab-posts.php:178
+msgid "Hot"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:772
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#. URI of the theme
+msgid "https://unfoldwp.com/products/blogtory/"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://www.unfoldwp.com/"
+msgstr ""
+
+#: inc/widgets/class-express-double-column-posts.php:55
+#: inc/widgets/class-posts-carousel.php:50
+#: inc/customizer/theme-options/front-page.php:94
+#: inc/customizer/theme-options/front-page.php:367
+msgid "ID"
+msgstr ""
+
+#: inc/widgets/class-tab-posts.php:33
+msgid "Image Size"
+msgstr ""
+
+#: inc/helpers.php:1318 inc/helpers.php:1323
+msgid "Instagram did not return a 200."
+msgstr ""
+
+#: inc/helpers.php:1378
+msgid "Instagram did not return any images."
+msgstr ""
+
+#: inc/helpers.php:1329 inc/helpers.php:1335 inc/helpers.php:1339
+msgid "Instagram has returned invalid data."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: lib/tgm/class-tgm-plugin-activation.php:2603
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr ""
+
+#. 1: install status, 2: update status
+#: lib/tgm/class-tgm-plugin-activation.php:2342
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: lib/tgm/class-tgm-plugin-activation.php:3512
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: lib/tgm/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. %s: plugin name.
+#: lib/tgm/class-tgm-plugin-activation.php:330
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. If there are characters in your language that are not supported by Roboto Condensed, translate this to 'off'. Do not translate into your own language.
+#: functions.php:139
+msgctxt "Inter: on or off"
+msgid "on"
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#. %s: post title
+#: inc/template-tags.php:109
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/customizer/theme-options/header.php:70
+msgid "Leave empty if you don't want the image to have a link"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:54
+#: inc/customizer/theme-options/front-page.php:314
+msgid "Leave Empty if you don't want the posts to be category specific"
+msgstr ""
+
+#: inc/widgets/class-express-double-column-posts.php:32
+#: inc/widgets/class-posts-carousel.php:27
+#: inc/widgets/class-recent-posts-with-image.php:26
+msgid "Leave empty if you don't want the posts to be category specific"
+msgstr ""
+
+#: inc/customizer/theme-options/archive.php:83
+#: inc/customizer/theme-options/front-page.php:625
+msgid "Left"
+msgstr ""
+
+#: inc/helpers.php:395
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/template-tags.php:90
+msgctxt "list item separator"
+msgid " "
+msgstr ""
+
+#: inc/hooks/tgm.php:26
+msgid "MailChimp for WordPress"
+msgstr ""
+
+#: inc/widgets/class-mailchimp-form.php:31
+msgid "MailChimp Form Shortcode"
+msgstr ""
+
+#: lib/about/class.about.php:341 lib/about/class.about.php:382
+msgid "Manage Plugins"
+msgstr ""
+
+#: inc/customizer/theme-options/theme-options.php:193
+msgid "Max Excerpt Length"
+msgstr ""
+
+#: template-parts/header/header_style_1.php:11
+#: template-parts/header/header_style_2.php:35
+msgid "Menu"
+msgstr ""
+
+#: inc/helpers.php:598
+msgctxt "menu"
+msgid "Horizontal"
+msgstr ""
+
+#: footer.php:56
+msgctxt "menu"
+msgid "Mobile"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#. Minute archive title. %s is the minute time format.
+#: lib/breadcrumbs/breadcrumbs.php:276
+#, php-format
+msgid "Minute %s"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:738
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:755
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:789 lib/breadcrumbs/breadcrumbs.php:845
+#: lib/breadcrumbs/breadcrumbs.php:1215
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr ""
+
+#: inc/customizer/defaults.php:121
+msgid "More From Author"
+msgstr ""
+
+#: inc/widgets/class-tab-posts.php:182
+msgid "New"
+msgstr ""
+
+#: template-parts/single/single-info.php:28
+msgid "Next Article"
+msgstr ""
+
+#: template-parts/single/single-info.php:29
+msgid "Next post:"
+msgstr ""
+
+#: inc/helpers.php:1029
+msgctxt "next set of posts"
+msgid "Next"
+msgstr ""
+
+#. 1: plugin name.
+#: lib/tgm/class-tgm-plugin-activation.php:390
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/helpers.php:292
+msgid "No Image"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:603
+msgid "No Pagination"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/helpers.php:403
+msgid "No Sidebar"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: inc/customizer/theme-options/single-post.php:174
+msgid "Number of Author Posts"
+msgstr ""
+
+#: inc/widgets/class-recent-comments.php:29 inc/widgets/class-tab-posts.php:57
+msgid "Number of comments to show"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:338
+msgid "Number of Posts"
+msgstr ""
+
+#: inc/widgets/class-express-double-column-posts.php:47
+#: inc/widgets/class-posts-carousel.php:42
+#: inc/widgets/class-recent-posts-with-image.php:41
+#: inc/widgets/class-tab-posts.php:29
+msgid "Number of posts to show"
+msgstr ""
+
+#: inc/customizer/theme-options/single-post.php:121
+msgid "Number of Related Posts"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:71
+msgid "Number of Trending Posts"
+msgstr ""
+
+#: inc/customizer/theme-options/archive.php:63
+#: inc/customizer/theme-options/front-page.php:604
+msgid "Numeric"
+msgstr ""
+
+#: inc/hooks/tgm.php:16 lib/about/about.php:74
+msgid "One Click Demo Import"
+msgstr ""
+
+#: 404.php:24
+msgid "Oops! That page can&rsquo;t be found.Maybe try search?"
+msgstr ""
+
+#. If there are characters in your language that are not supported by Open Sans, translate this to 'off'. Do not translate into your own language.
+#: functions.php:144
+msgctxt "Open+Sans: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/widgets/class-express-double-column-posts.php:63
+#: inc/widgets/class-posts-carousel.php:58
+#: inc/customizer/theme-options/front-page.php:393
+msgid "Order"
+msgstr ""
+
+#: inc/widgets/class-express-double-column-posts.php:52
+#: inc/widgets/class-posts-carousel.php:47
+msgid "Order by"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:89
+#: inc/customizer/theme-options/front-page.php:114
+#: inc/customizer/theme-options/front-page.php:362
+msgid "Orderby"
+msgstr ""
+
+#. %s is the page number.
+#: lib/breadcrumbs/breadcrumbs.php:272
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: inc/post-meta/post-meta.php:52
+msgid "Page Layout"
+msgstr ""
+
+#: inc/helpers.php:916 inc/helpers.php:966 page-templates/template-home.php:84
+#: template-parts/content-page.php:27
+#: template-parts/single/single_style_1.php:46
+#: template-parts/single/single_style_2.php:17
+msgid "Pages:"
+msgstr ""
+
+#: inc/customizer/theme-options/archive.php:79
+msgid "Pagination Align"
+msgstr ""
+
+#: lib/about/about.php:49
+msgid ""
+"Please check our full documentation for detailed information on how to setup "
+"and customize the theme."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:934
+#: lib/tgm/class-tgm-plugin-activation.php:937
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:1121
+#: lib/tgm/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:387
+#: lib/tgm/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#. 1: plugin name.
+#: lib/tgm/class-tgm-plugin-activation.php:392
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. 1: number of plugins.
+#: lib/tgm/class-tgm-plugin-activation.php:2388
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. %s: post author.
+#: inc/template-tags.php:42
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:293
+#: inc/customizer/theme-options/front-page.php:422
+msgid "Post ID's"
+msgstr ""
+
+#: inc/widgets/class-tab-posts.php:21
+msgid "Post Settings"
+msgstr ""
+
+#: inc/post-meta/post-meta.php:69
+msgid "Post style"
+msgstr ""
+
+#: inc/customizer/theme-options/single-post.php:42
+msgid "Posts Navigation Style"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/customizer/theme-options/theme-options.php:77
+msgid "Preloader Options"
+msgstr ""
+
+#: template-parts/single/single-info.php:33
+msgid "Previous Article"
+msgstr ""
+
+#: template-parts/single/single-info.php:34
+msgid "Previous post:"
+msgstr ""
+
+#: inc/helpers.php:1028
+msgctxt "previous set of posts"
+msgid "Previous"
+msgstr ""
+
+#: functions.php:47
+msgid "Primary Menu"
+msgstr ""
+
+#: lib/about/class.about.php:481
+msgid "Pro"
+msgstr ""
+
+#: inc/widgets/class-express-double-column-posts.php:57
+#: inc/widgets/class-posts-carousel.php:52
+#: inc/customizer/theme-options/front-page.php:96
+#: inc/customizer/theme-options/front-page.php:369
+msgid "Random"
+msgstr ""
+
+#: inc/customizer/defaults.php:47 inc/customizer/defaults.php:112
+msgid "Read More"
+msgstr ""
+
+#: inc/customizer/theme-options/theme-options.php:211
+msgid "Read More Text"
+msgstr ""
+
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: inc/customizer/theme-options/header.php:49
+#, php-format
+msgid "Recommended Size %1$s px X %2$s px"
+msgstr ""
+
+#: inc/customizer/defaults.php:120
+msgid "Related Articles"
+msgstr ""
+
+#: inc/customizer/theme-options/single-post.php:103
+msgid "Related Posts Text"
+msgstr ""
+
+#: inc/customizer/theme-options/single-post.php:64
+msgid "Related/Author Posts Column"
+msgstr ""
+
+#: inc/customizer/theme-options/theme-options.php:194
+msgid ""
+"Remember this will affect other areas that shows excerpt too. So if you have "
+"excerpt with more length on other areas but is not working on front-end, be "
+"sure to increase the length here too."
+msgstr ""
+
+#: inc/widgets/class-author-info.php:176
+#: inc/widgets/widget-base/abstract-widget-base.php:468
+msgid "Remove image"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: 404.php:29
+msgid "Return to Homepage"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:386
+#: lib/tgm/class-tgm-plugin-activation.php:827
+#: lib/tgm/class-tgm-plugin-activation.php:2533
+#: lib/tgm/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/customizer/theme-options/archive.php:85
+#: inc/customizer/theme-options/front-page.php:627
+msgid "Right"
+msgstr ""
+
+#: inc/helpers.php:399
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:53
+msgid "Same as above footer but does not have its own container."
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:103
+msgid "Same as below footer but does not have its own container."
+msgstr ""
+
+#. %s: search query.
+#: search.php:24
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#. %s is the search query.
+#: lib/breadcrumbs/breadcrumbs.php:270
+#, php-format
+msgid "Search results for: %s"
+msgstr ""
+
+#: inc/widgets/class-express-double-column-posts.php:31
+#: inc/widgets/class-posts-carousel.php:26
+#: inc/widgets/class-recent-posts-with-image.php:25
+msgid "Select Category"
+msgstr ""
+
+#: inc/category-meta/category-meta.php:9 inc/category-meta/category-meta.php:26
+msgid ""
+"Select color for this category that will be displayed on the front end on "
+"many sections."
+msgstr ""
+
+#: inc/widgets/class-author-info.php:147
+msgid "Short Description:"
+msgstr ""
+
+#: inc/customizer/theme-options/single-post.php:139
+msgid "Show Author Posts"
+msgstr ""
+
+#: inc/widgets/class-posts-carousel.php:66
+#: inc/customizer/theme-options/front-page.php:447
+msgid "Show Category"
+msgstr ""
+
+#: inc/widgets/class-tab-posts.php:48
+msgid "Show Comment Tab"
+msgstr ""
+
+#: inc/widgets/class-recent-posts-with-image.php:45
+#: inc/widgets/class-tab-posts.php:39
+msgid "Show Date"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:465
+msgid "Show Date Info"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:3509
+#: lib/tgm/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr ""
+
+#: inc/customizer/theme-options/footer.php:81
+msgid "Show Footer Nav Menu"
+msgstr ""
+
+#: inc/customizer/theme-options/theme-options.php:92
+msgid "Show Preloader"
+msgstr ""
+
+#: inc/customizer/theme-options/single-post.php:86
+msgid "Show related posts"
+msgstr ""
+
+#: inc/template-tags.php:217
+msgid "Show sub menu"
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:9
+msgid "Sidebar"
+msgstr ""
+
+#: inc/customizer/theme-options/theme-options.php:129
+msgid "Sidebar Options"
+msgstr ""
+
+#: inc/customizer/theme-options/single-post.php:5
+msgid "Single Post Options"
+msgstr ""
+
+#: inc/customizer/theme-options/single-post.php:21
+msgid "Single Post style"
+msgstr ""
+
+#: inc/customizer/theme-options/theme-options.php:16
+msgid "Site Tagline Style"
+msgstr ""
+
+#: inc/customizer/theme-options/theme-options.php:55
+msgid "Site Tagline Text Size"
+msgstr ""
+
+#: inc/customizer/theme-options/theme-options.php:39
+msgid "Site Title Text Size"
+msgstr ""
+
+#: header.php:46
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:211
+msgid "Slider"
+msgstr ""
+
+#: inc/helpers.php:560
+msgid "Social links"
+msgstr ""
+
+#: functions.php:48
+msgid "Social Menu"
+msgstr ""
+
+#: inc/widgets/class-social-menu.php:59
+msgid ""
+"Social menu is not set. You need to create menu and assign it to Social Menu "
+"on Menu Settings."
+msgstr ""
+
+#: inc/customizer/theme-options/header.php:26
+msgid ""
+"Some options related to header may not show in the front-end based on header "
+"style chosen."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#: inc/widgets/class-recent-posts-with-image.php:59
+msgid "Style"
+msgstr ""
+
+#: inc/post-meta/post-meta.php:73
+#: inc/widgets/class-express-double-column-posts.php:88
+#: inc/widgets/class-posts-carousel.php:73
+#: inc/widgets/class-recent-posts-with-image.php:61
+#: inc/customizer/theme-options/front-page.php:234
+#: inc/customizer/theme-options/front-page.php:263
+#: inc/customizer/theme-options/single-post.php:25
+#: inc/customizer/theme-options/single-post.php:46
+#: inc/customizer/theme-options/theme-options.php:20
+msgid "Style 1"
+msgstr ""
+
+#: inc/post-meta/post-meta.php:74
+#: inc/widgets/class-express-double-column-posts.php:89
+#: inc/widgets/class-posts-carousel.php:74
+#: inc/widgets/class-recent-posts-with-image.php:62
+#: inc/customizer/theme-options/front-page.php:235
+#: inc/customizer/theme-options/front-page.php:264
+#: inc/customizer/theme-options/single-post.php:26
+#: inc/customizer/theme-options/single-post.php:47
+#: inc/customizer/theme-options/theme-options.php:21
+msgid "Style 2"
+msgstr ""
+
+#: inc/customizer/theme-options/theme-options.php:22
+msgid "Style 3"
+msgstr ""
+
+#. %s: version number
+#: lib/tgm/class-tgm-plugin-activation.php:1982
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:346
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:388
+#: lib/tgm/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:364
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:358
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. 1: plugin name.
+#: lib/tgm/class-tgm-plugin-activation.php:3503
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:937
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:934
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: lib/about/about.php:31
+msgid "Theme Details"
+msgstr ""
+
+#: lib/about/about.php:47
+msgid "Theme Documentation"
+msgstr ""
+
+#: lib/about/about.php:64 inc/customizer/theme-options/theme-options.php:67
+msgid "Theme Options"
+msgstr ""
+
+#: lib/about/about.php:77
+msgid "Theme Preview"
+msgstr ""
+
+#: lib/about/about.php:98
+msgid ""
+"Theme supports some helpful WordPress plugins to enhance your site. But, "
+"please enable only those plugins which you need in your site. For example, "
+"enable WooCommerce only if you are using e-commerce."
+msgstr ""
+
+#: lib/about/about.php:66
+msgid ""
+"Theme uses Customizer API for theme options. Using the Customizer you can "
+"easily customize different aspects of the theme."
+msgstr ""
+
+#: lib/about/about.php:58
+msgid ""
+"Theme uses widgetareas and widget to display content on homepage. Different "
+"combination of widgets and widgetareas will make your site unique."
+msgstr ""
+
+#: template-parts/footer/footer_style_1.php:88
+#, php-format
+msgid "Theme: %1$s by %2$s"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:396
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:352
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:543
+msgid ""
+"This setting is applicable if you have static homepage template enabled for "
+"the homepage. It will show latest post listing on homepage."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:340
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:334
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/helpers.php:372
+msgid "Three Columns"
+msgstr ""
+
+#: inc/widgets/class-express-double-column-posts.php:27
+#: inc/widgets/class-express-double-column-posts.php:56
+#: inc/widgets/class-mailchimp-form.php:22
+#: inc/widgets/class-posts-carousel.php:22
+#: inc/widgets/class-posts-carousel.php:51
+#: inc/widgets/class-recent-comments.php:21
+#: inc/widgets/class-recent-posts-with-image.php:21
+#: inc/widgets/class-social-menu.php:22
+#: inc/customizer/theme-options/front-page.php:95
+#: inc/customizer/theme-options/front-page.php:368
+msgid "Title"
+msgstr ""
+
+#: inc/widgets/class-author-info.php:131
+msgid "Title:"
+msgstr ""
+
+#. 1: number of plugins.
+#: lib/tgm/class-tgm-plugin-activation.php:2400
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/about/about.php:74
+#, php-format
+msgid ""
+"To import sample demo content, %1$s plugin should be installed and activated."
+" After plugin is activated, visit Import Demo Data menu under Appearance."
+msgstr ""
+
+#. 1: number of plugins.
+#: lib/tgm/class-tgm-plugin-activation.php:2392
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/customizer/theme-options/top-bar.php:56
+msgid "Todays Date Format"
+msgstr ""
+
+#: functions.php:46
+msgid "Top Menu"
+msgstr ""
+
+#: inc/customizer/theme-options/top-bar.php:5
+msgid "Topbar Options"
+msgstr ""
+
+#: inc/customizer/defaults.php:24 inc/customizer/defaults.php:71
+msgid "Trending Now"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:138
+msgid "Trending Post Text"
+msgstr ""
+
+#: inc/customizer/theme-options/front-page.php:17
+msgid "Trending Posts Options"
+msgstr ""
+
+#: inc/helpers.php:376
+msgid "Two Columns"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: inc/helpers.php:1314
+msgid "Unable to communicate with Instagram."
+msgstr ""
+
+#. Author of the theme
+msgid "Unfoldwp"
+msgstr ""
+
+#: inc/hooks/tgm.php:21
+msgid "Unfoldwp Import Companion"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: lib/tgm/class-tgm-plugin-activation.php:2608
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. 1: number of plugins.
+#: lib/tgm/class-tgm-plugin-activation.php:2396
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: lib/tgm/class-tgm-plugin-activation.php:3498
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. %s: plugin name.
+#: lib/tgm/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/widgets/class-author-info.php:174
+#: inc/widgets/widget-base/abstract-widget-base.php:466
+msgid "Upload/Add image"
+msgstr ""
+
+#: inc/widgets/class-author-info.php:173
+#: inc/widgets/widget-base/abstract-widget-base.php:465
+msgid "Use Image"
+msgstr ""
+
+#: lib/about/about.php:25
+msgid "Useful Plugins"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: lib/about/about.php:35 lib/about/about.php:80
+msgid "View Demo"
+msgstr ""
+
+#: lib/about/about.php:39 lib/about/about.php:50
+msgid "View Documentation"
+msgstr ""
+
+#. Weekly archive title. %s is the week date format.
+#: lib/breadcrumbs/breadcrumbs.php:278
+#, php-format
+msgid "Week %s"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:818
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: lib/about/class.about.php:126
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing %1$s. To fully take advantage of the best "
+"our theme can offer please make sure you visit theme info page."
+msgstr ""
+
+#: lib/about/about.php:56
+msgid "Widget Options"
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:85
+#, php-format
+msgid "Widgets added here will appear in column %1$d of the footer."
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:47
+msgid "Widgets added to this region will appear above the footer."
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:23
+msgid ""
+"Widgets added to this region will appear above the homepage content. "
+"Basically useful if you want to have sidebar on homepage but want some "
+"content on top without the sidebar too."
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:97
+msgid ""
+"Widgets added to this region will appear after the footer and before sub-"
+"footer."
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:41
+msgid ""
+"Widgets added to this region will appear below the homepage content. "
+"Basically useful if you want to have sidebar on homepage but want some "
+"content on bottom without the sidebar too."
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:17
+msgid ""
+"Widgets added to this region will appear beneath the header and above the "
+"main content."
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:35
+msgid "Widgets added to this region will appear on the homepage sidebar."
+msgstr ""
+
+#: inc/widgets/widget-sidebars.php:29
+msgid "Widgets added to this region will appear on the homepage."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:788 lib/breadcrumbs/breadcrumbs.php:817
+#: lib/breadcrumbs/breadcrumbs.php:844 lib/breadcrumbs/breadcrumbs.php:871
+#: lib/breadcrumbs/breadcrumbs.php:1211
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/customizer/theme-options/footer.php:82
+#, php-format
+msgid "You can add/edit footer nav menu from <a href=\"%s\">here</a>."
+msgstr ""
+
+#: inc/customizer/theme-options/top-bar.php:82
+#, php-format
+msgid "You can add/edit social nav menu from <a href=\"%s\">here</a>."
+msgstr ""
+
+#: lib/about/about.php:79
+msgid ""
+"You can check out the theme demos for reference to find out what you can "
+"achieve using the theme and how it can be customized."
+msgstr ""
+
+#: inc/widgets/class-mailchimp-form.php:35
+#, php-format
+msgid ""
+"You can edit your sign-up form in the <a href=\"%s\">MailChimp for WordPress "
+"form settings</a>."
+msgstr ""

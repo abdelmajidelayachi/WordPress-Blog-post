@@ -1,0 +1,47 @@
+#{$prefix}-transparent-header {
+	header#masthead {
+		#{$prefix}-top-bar {
+    		background: transparent;
+		}
+	}
+}
+#{$prefix}-top-bar {
+	padding: 10px 0;
+	background: #2B9DFF;
+    width: 100%;
+    position: relative;
+	#{$prefix}-top-bar-info {
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		    display: flex;
+			justify-content: flex-end;
+			@include media(mb) {
+		    	justify-content: center;
+		    }
+			li {
+				margin-left: 20px;
+			    font-size: 16px;
+			    font-weight: 300;
+			    @include media(mb) {
+			    	margin-left: 0;
+			    	margin-right: 15px;
+			    	&:last-child {
+			    		margin-right: 0;
+			    	}
+			    }
+			    a {
+			    	color: #fff;
+			    	&:hover {
+                        color: #f04819;
+                    }
+			    	i {
+				    	margin-right: 6px;
+				    }
+			    }
+			    
+			}
+		}
+	}
+}

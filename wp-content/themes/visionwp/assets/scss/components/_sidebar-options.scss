@@ -1,0 +1,31 @@
+#{$prefix}-left-sidebar {
+	.content-order {
+		order: 2;
+		padding-right: 15px;		
+		@include media(mb) {
+			order: 1;
+		}
+	}
+	.sidebar-order {
+		order: 1;
+		padding-right: 15px;
+		@include media(mb) {
+			order: 2;
+			padding-right: 15px;
+		}
+	}
+}
+
+#{$prefix}-right-sidebar {
+	.content-order {
+		order: 1;
+		padding-left: 15px;	
+	}
+	.sidebar-order {
+		order: 2;
+		padding-left: 15px;
+		@include media(mb) {
+			padding-left: 15px;
+		}
+	}
+}

@@ -1,0 +1,311 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body,html {
+    font-size: 16px;
+    margin: 0;
+    font-family: "Ubuntu";
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat Alternates';
+}
+
+.post, .page {
+    margin: 0;
+}
+
+#{$prefix}-container {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+#{$prefix}-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+body,
+h1,
+.entry-title a,
+.entry-content h1,
+h2,
+.entry-content h2,
+h3,
+.entry-content h3,
+h4,
+.entry-content h4,
+h5,
+.entry-content h5,
+h6,
+.entry-content h6 {
+    color: #3a3a3a;
+}
+
+img {
+    max-width: 100%;
+}
+
+a,
+a:focus,
+a:hover,
+a:visited {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+
+/*--------------------------------------------------------------
+# Heading
+--------------------------------------------------------------*/
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+    margin-bottom: 20px;
+}
+
+h1,
+.entry-content h1 {
+    font-size: 40px;
+    font-size: 2.6666666666667rem;
+}
+
+h2,
+.entry-content h2 {
+    font-size: 20px;
+    font-size: 1.3rem;
+}
+
+h3,
+.entry-content h3 {
+    font-size: 25px;
+    font-size: 1.6666666666667rem;
+}
+
+h4,
+.entry-content h4 {
+    font-size: 20px;
+    font-size: 1.3333333333333rem;
+}
+
+h5,
+.entry-content h5 {
+    font-size: 18px;
+    font-size: 1.2rem;
+}
+
+h6,
+.entry-content h6 {
+    font-size: 15px;
+    font-size: 1rem;
+}
+
+
+/*--------------------------------------------------------------
+# Table
+--------------------------------------------------------------*/
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-width: 1px 0 0 1px;
+    margin: 0 0 1.5em;
+    width: 100%;
+}
+
+td,
+th {
+    padding: 8px;
+    text-align: left;
+    border-width: 0 1px 1px 0;
+}
+
+table,
+td,
+th {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/* Code  */
+
+code,
+pre {
+    font-size: 0.9rem;
+    line-height: 1.50001;
+    font-variant-ligatures: none;
+    word-wrap: break-word;
+    word-break: normal;
+    -webkit-tab-size: 4;
+    -moz-tab-size: 4;
+    tab-size: 4;
+}
+
+code {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    background-color: #f8f8f8;
+    color: #e01e5a;
+}
+
+pre {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background: #f8f8f8;
+}
+
+blockquote {
+    margin: 1.5em 1em 1.5em 3em;
+    padding: 1.2em;
+    font-size: 1.1em;
+    line-height: inherit;
+    position: relative;
+    border-left: 5px solid rgba(0, 0, 0, 0.05);
+    background-color: #fbfbfb;
+}
+
+.gallery-columns-4 .gallery-item,
+.gallery-item {
+    margin: 0;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+
+/* align */
+
+
+/* .alignleft,
+.alignright{
+    margin-top: 0;
+} */
+
+a:hover {
+    transition: all 0.3s;
+}
+
+textarea {
+    width: 100%;
+}
+
+
+// contact form defalut style
+
+
+form.wpcf7-form input:focus,
+textarea:focus{
+    outline: none;
+}
+
+form.wpcf7-form p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wpcf7-form-control-wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 49%;
+    flex: 0 0 49%;
+    margin-bottom: 15px;
+}
+
+.form-footer .wpcf7-form-control-wrap {
+    width: auto;
+    max-width: initial;
+    flex: auto;
+    margin-bottom: 0;
+}
+
+.wpcf7 {
+    color: #010834;
+}
+
+span.wpcf7-form-control-wrap.your-message {
+    max-width: 100%;
+    flex: 100%;
+}
+
+input.wpcf7-form-control.has-spinner.wpcf7-submit {
+    background: #ff8500;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    border-style: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all .3s;
+    height: auto;
+}
+input.wpcf7-form-control.has-spinner.wpcf7-submit:hover {
+    background: #ee7d01;
+}
+
+form.wpcf7-form input::placeholder,
+textarea.wpcf7-form-control.wpcf7-textarea::placeholder{ 
+  color: #0B0B0B;
+  opacity: 1; 
+}
+
+span.wpcf7-spinner {
+    position: absolute;
+}
+
+form.wpcf7-form input,
+textarea.wpcf7-form-control.wpcf7-textarea{
+    min-height: 40px;
+    padding: 10px;
+    border: 1px solid #707070;
+    color: #000;
+    width: 100%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+textarea.wpcf7-form-control.wpcf7-textarea {
+    max-height: 100px;
+}
+form.wpcf7-form input[type="checkbox"] {
+    height: 30px;
+    width: 30px;
+    margin: 0 10px 0 0;
+}
+

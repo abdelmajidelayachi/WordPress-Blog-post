@@ -1,0 +1,30 @@
+#{$prefix}-scroll-top {
+    position: fixed;
+    bottom: -200px;
+    right: 15px;
+    background: #f94d1c;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    color: #fff;
+    border-radius: 3px;
+    transition: all .3s;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    @include media(sm) {
+        left: 15px;
+        display: none;
+    }
+}
+#{$prefix}-scrolled-down {
+    #{$prefix}-scroll-top {
+        opacity: 1;
+        z-index: 999;
+        visibility: visible;
+        bottom: 30px;
+        color: #fff;
+    }
+}

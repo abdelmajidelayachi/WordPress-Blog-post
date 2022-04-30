@@ -1,0 +1,15 @@
+.header-classic #headerwrap{
+	padding-top:0
+}
+#header{
+	padding:1em 0
+}
+#site-description{
+	margin:1em 0
+}
+.header-widget .widgettitle{
+	text-align:left
+}
+.header-classic .navbar-wrapper{
+	border-bottom:none
+}

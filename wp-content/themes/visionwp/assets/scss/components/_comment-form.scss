@@ -1,0 +1,107 @@
+#{$prefix}-comment-wrapper {
+    h3#reply-title {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    form#commentform {
+        p {
+            label,input,textarea {
+                display: block;
+                margin: 10px 0;
+                font-size: 16px;
+            }
+        }
+
+        input[type="text"],
+        input[type="email"], input[type="url"] {
+            min-height: 40px;
+            width: 100%;
+        }
+
+        .comment-form-cookies-consent {
+            display: flex;
+            align-items: center;
+            background: #e4e4e4;
+            padding: 10px;
+            border-radius: 3px;
+            font-size: 12px;
+            label {
+                margin-left: 6px;
+            }
+        }
+
+        input#submit {
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            display: inline-flex !important;
+            line-height: 1;
+            background: #f94d1c;
+            border: none;
+            color: #ffff;
+            transition: all .3s;
+            cursor: pointer;
+            padding: 10px 15px;
+            font-size: 16px;
+            &:hover {
+                background: #010834;
+                color: #fff;
+            }
+        }
+    }
+
+    h2.comments-title {
+        font-size: 17px;
+        margin-bottom: 35px;
+    }
+
+    .comment-list {
+        margin: 0 0 30px;
+        font-size: 13px;
+
+        .comment-author.vcard {
+            margin-bottom: 10px;
+
+            a {
+                color: $color-primary;
+            }
+        }
+
+        em.comment-awaiting-moderation {
+            display: block;
+        }
+
+        .comment-meta.commentmetadata {
+            margin-bottom: 10px;
+
+            a {
+                color: $color-primary;
+            }
+        }
+
+        .reply {
+            a {
+                color: $color-primary;
+            }
+        } 
+    }
+
+    p.comment-notes {
+        font-size: 13px;
+    }
+
+    h3#reply-title {
+        margin-top: 20px; 
+        a {
+            color: $color-primary;
+        }
+    }
+    
+}
+
+// default widgets
+
+ol.wp-block-latest-comments {
+    margin-left: 0;
+    padding: 0;
+}

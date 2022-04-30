@@ -1,0 +1,99 @@
+/* carousel nav */
+#gallery-controller .carousel-nav-wrap{
+	text-align:center;
+	margin:10px 0 5px;
+}
+#gallery-controller .carousel-arrow{
+	display:inline-block;
+	z-index:100
+}
+#gallery-controller .carousel-nav-wrap > a{
+	line-height:1em;
+	margin:-36px 0 0;
+	width:72px;
+	height:72px;
+	text-decoration:none;
+	position:absolute;
+	top:50%;
+	left:0
+}
+#gallery-controller a.carousel-next{
+	right:0;
+	left:auto;
+}
+#gallery-controller .carousel-nav-wrap > a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition:all 0.3s linear;
+}
+#gallery-controller .carousel-nav-wrap > a:before{
+	margin-left:12px;
+	width:24px;
+	height:24px;
+	transition:all 0.3s linear;
+}
+#gallery-controller .carousel-nav-wrap > a:hover:before{
+	width:30px;
+	height:30px;
+}
+#gallery-controller .carousel-nav-wrap > .carousel-next:hover:before{
+	margin-left:-12px;
+}
+/* carousel pager */
+#gallery-controller .carousel-pager{
+	clear:both;
+	text-align:center;
+	position:absolute;
+	bottom:20px
+}
+#gallery-controller .carousel-pager a{
+	margin:0 5px;
+	width:4px;
+	height:4px;
+	display:inline-block;
+	border-radius:20px;
+	border:solid 2px #fff;
+	background-color:transparent;
+	transition:all .3s ease-in-out;
+	box-sizing:unset
+}
+#gallery-controller .carousel-pager a:hover,
+#gallery-controller .carousel-pager a.selected{
+	background-color:#fff;
+	box-shadow:0 0 0 2px rgba(255, 255, 255, 1)
+}
+.fixed-header #gallery-controller .carousel-nav-wrap{
+	display:none
+}
+@media screen and (max-width:1260px){
+	.header-gallery .fixed-header #header{
+		padding-left:0;
+		padding-right:0;
+		width:96%
+	}
+}
+@media screen and (max-width:680px){
+	#gallery-controller .tf_carousel_bullets{
+		display:none
+	}
+	#gallery-controller .carousel-nav-wrap > a{
+		width:45px;
+		height:45px
+	}
+	#gallery-controller .carousel-nav-wrap > a:before{
+		width:12px;
+		height:12px;
+		margin-top:0
+	}
+	#gallery-controller .carousel-nav-wrap > a:hover:before{
+		width:12px;
+		height:12px;
+		margin:0 0 0 7px;
+	}
+	.header-gallery .fixed-header #header{
+		padding-left:0;
+		padding-right:0;
+		width:90%
+	}
+}

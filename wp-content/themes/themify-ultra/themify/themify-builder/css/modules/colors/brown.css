@@ -1,0 +1,39 @@
+:root{
+	--tb_preset_brown:#a35004
+}
+.module.module-buttons a.brown.builder_button,
+.module-alert.ui .ui.brown,
+.module-menu .ui.nav.brown a,
+.themify_builder .ui.brown,
+.ui.nav.brown li a,
+.ui.module-tab.brown .tab-nav li a{
+    color:#ffeee0
+}
+.ui.brown,
+.ui.nav.brown,
+.ui.nav.brown ul,
+.ui.separate.brown > li,
+.ui.module-tab.brown .tab-nav li,
+.ui.brown.vertical .tab-nav,
+.ui.module-accordion.brown .accordion-title,
+.ui.module-tab.brown.panel .tab-nav{
+    background-color:var(--tb_preset_brown)
+}
+.ui.brown > li.current_page_item > a,
+.ui.brown > li.current_page_item:hover > a,
+.ui.brown > li.current-menu-item > a,
+.ui.brown > li.current-menu-item:hover > a,
+.ui.builder_button.brown:hover,
+.ui.nav.brown > li a:hover,
+.ui.module-accordion.brown li:hover .accordion-title,
+.ui.module-tab.brown .tab-nav li:hover{
+    background:#d68035
+}
+.ui.brown > li.current,
+.ui.brown > li.current:hover,
+.ui.brown .tab-nav li.current{
+    background:#6b3100
+}
+.module.module-buttons.transparent a.brown{
+    color:var(--tb_preset_brown)
+}

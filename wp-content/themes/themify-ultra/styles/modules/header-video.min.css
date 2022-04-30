@@ -1,0 +1,1 @@
+.big-video-wrap{overflow:hidden;height:100%;width:100%;top:0;left:0;z-index:0;position:absolute;user-select:none;pointer-events:none}.big-video-wrap .header-video{position:absolute;top:0;left:0;height:100%;width:100%;object-fit:cover}#headerwrap[data-fullwidthvideo][data-bg]{border-bottom-width:0;background-size:cover}

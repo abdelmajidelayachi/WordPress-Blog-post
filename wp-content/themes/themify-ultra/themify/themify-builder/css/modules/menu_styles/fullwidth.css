@@ -1,0 +1,11 @@
+.ui.nav.fullwidth{
+    display:block;
+    padding:0 5px
+}
+.ui.nav.fullwidth > li:before{
+    background:none
+}
+.ui.nav.fullwidth li:first-child > a,
+.ui.nav.fullwidth li:last-child > a{
+    border-radius:0
+}

@@ -1,0 +1,95 @@
+#headerwrap{
+	border:none;
+	padding-bottom:56px;
+}
+#header{
+	padding:1.5em 0
+}
+.header-bar{
+	float:left;
+	width:20%;
+	max-width:100%
+}
+.navbar-wrapper{
+	border-top:1px solid rgba(180,180,180,.2);
+	border-bottom:1px solid rgba(180,180,180,.2);
+	clear:both;
+	position:absolute;
+	width:100%;
+	left:0;
+	top:100%;
+	padding:0;
+	display:flex;
+	align-items:center
+}
+.social-widget .widget,
+#site-logo{
+	margin:0
+}
+#site-description{
+	margin:11px 0 0 4px;
+	font-size:.8em;
+	letter-spacing:0;
+	line-height:1.5em
+}
+.cart-wrap{
+	padding:7px 0
+}
+#headerwrap #searchform-wrap,
+.social-widget,
+.search-button,
+.cart-icon{
+	order:1
+}
+#main-nav-wrap{
+	margin-right:auto
+}
+#main-nav{
+	float:left
+}
+#main-nav > li{
+	padding:10px 0; /* for divider spacing */
+}
+#main-nav > li > a{
+	border-left:1px solid rgba(180,180,180,.2);
+	padding:.225em 1em
+}
+#main-nav > li:first-child > a{
+	border:none;
+	padding-left:0
+}
+.header-widget{
+	float:right;
+	clear:right;
+	max-width:78%;
+	width:80%;
+	margin-top:8px;
+	font-size:.9em;
+	line-height:1.55em
+}
+.header-widget .header-widget-inner{
+	height:100%
+}
+.header-widget .widget{
+	margin-top:0;
+	margin-bottom:1.4em
+}
+.header-widget .widgettitle{
+	margin-bottom:.75em
+}
+#headerwrap.fixed-header{
+	padding-bottom:0
+}
+.fixed-header #header{
+	padding-top:0;
+	padding-bottom:0
+}
+.fixed-header .navbar-wrapper{
+	position:static;
+	border-top:none
+}
+.fixed-header-on #headerwrap .social-widget,
+.fixed-header-on #headerwrap #searchform-wrap,
+.fixed-header .search-button{
+	display:block
+}

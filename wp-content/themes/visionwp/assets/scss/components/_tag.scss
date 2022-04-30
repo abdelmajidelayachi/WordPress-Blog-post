@@ -1,0 +1,27 @@
+.visionwp-tag-wrapper {
+	display: flex;
+    align-items: center;
+	h2 {
+		font-size: 20px;
+	    font-weight: 500;
+	    line-height: 1.5;
+	    text-transform: none;  
+	}
+	.visionwp-tags-wrapper {
+	    display: flex;
+	    align-items: center;
+	    flex-wrap: wrap;
+	    a {
+	    	background: #f94d1c;
+		    color: #fff;
+		    font-size: 0.75rem;
+		    padding: 0.2rem 0.4rem;
+	        margin: 0 5px;
+		    display: inline-block;
+		    transition: all 0.3s linear;
+		    &:hover {
+		    	background: #f04819;
+		    }
+	    }
+	}
+}

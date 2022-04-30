@@ -1,0 +1,40 @@
+.module .video-title{
+    margin:0 0 .3em;
+    font-size:1.3em;
+    padding:0
+}
+.video-wrap{
+    padding-bottom:56.25%;
+    height:0
+}
+/* reset responsive video iframe embed */
+.video-wrap.tf_local_video{
+	padding-bottom:0; 
+	height:auto;
+}
+.video-top .video-title{
+    margin-top:.8em
+}
+.video-top .video-caption{
+    margin-bottom:1em
+}
+.module-video img{
+	width:100%
+}
+/* Fix fullscreen vimeo video z-index */
+.themify_builder .wow.module-video{
+    animation-fill-mode:none
+}
+/*layout*/
+.video-right .video-wrap-outer,
+.video-left .video-wrap-outer{
+    width:50%;
+    margin-right:1.5em;
+    margin-bottom:1em;
+    float:left;
+}
+.video-right .video-wrap-outer{
+    float:right;
+    margin-right:0;
+    margin-left:1.5em;
+}

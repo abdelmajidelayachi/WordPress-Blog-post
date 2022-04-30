@@ -1,0 +1,52 @@
+.navbar-wrapper{
+    background-color:transparent;
+    color:inherit;
+    clear:none;
+    position:static
+}
+/* for header backdrop blur */
+#header{
+	position:relative
+}
+#headerwrap:not([style*="padding-bottom"]) .navbar-wrapper,
+.navbar-wrapper-inner{
+	max-width:none;
+	margin:0;
+	transform:none;
+	position:static;
+    display:block;
+    background:none
+}
+#headerwrap:not([style*="padding-bottom"]){
+	overflow:visible
+}
+#headerwrap:not([style*="padding-bottom"]) .navbar-wrapper:before,
+#headerwrap:not([style*="padding-bottom"]) .navbar-wrapper:after{
+	display:none
+}
+#headerwrap{
+	padding-bottom:0!important
+}
+.header-bar{
+	width:auto
+}
+#header .social-widget{
+	margin:auto;
+	float:none;
+	border:none
+}
+.search-button{
+	position:static;
+	padding:.5em;
+	border:none
+}
+#headerwrap #searchform-wrap{
+	position:static
+}
+#headerwrap .header-widget{
+	display:block;
+	text-align:inherit;
+	max-height:none!important;
+	max-width:none;
+	width:auto
+}

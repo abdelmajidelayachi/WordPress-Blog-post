@@ -1,0 +1,6 @@
+#headerwrap #main-nav .current_page_item > a,
+#headerwrap #main-nav .current-menu-item > a,
+#headerwrap #main-nav a:hover,
+#headerwrap #main-nav ul a:hover{
+	color:#7c10f7
+}

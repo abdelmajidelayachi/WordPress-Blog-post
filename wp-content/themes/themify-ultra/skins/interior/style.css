@@ -1,0 +1,319 @@
+/*
+Skin Name:Ultra Interior
+Version:1.0
+Demo URI:https://themify.me/demo/themes/ultra-interior/
+Required Plugins: builder-contact, themify-portfolio-post
+*/
+
+/************************************************************************************
+GENERAL
+*************************************************************************************/
+:root{
+	--theme_accent:#c5a47e;
+	--theme_accent_semi:rgba(197,164,126,.9);
+}
+body{
+	color:#808080;
+	font:1em/1.5em 'Public Sans', sans-serif;
+}
+.post-nav .arrow,
+a{
+	color:#000
+}
+a:hover{
+	color:var(--theme_accent)
+}
+
+/* Remove 1px gap in footer bg */
+.screen-reader-text{
+	height:0
+}
+
+/* reset general border-radius */
+input[type=reset],input[type=submit],button,select,textarea,input[type=checkbox],input[type=text],input[type=password],input[type=search],input[type=email],input[type=url],input[type=number],input[type=tel],input[type=date],input[type=datetime],input[type=datetime-local],input[type=month],input[type=time],input[type=week],.woocommerce ul.products li.product .button,.woocommerce a.button,.woocommerce #respond input#submit,.woocommerce #respond input#submit.alt,.woocommerce a.button,.woocommerce button.button,.woocommerce input.button,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.woocommerce button.button.alt.disabled,.woocommerce button.button:disabled,.woocommerce button.button:disabled[disabled],.woocommerce button.button.alt,.woocommerce button.button,.woocommerce a.button,.woocommerce a.button.alt,.woocommerce button.button:disabled,.woocommerce button.button:disabled[disabled],.loops-wrapper.polaroid .post,.loops-wrapper.overlay .post,.loops-wrapper.auto_tiles > .product,.loops-wrapper.auto_tiles .post-image + .post-content,.loops-wrapper.auto_tiles > .post,.post-image img,.product img, ul.products li.product .post-image,#cart-wrap .product-image img,.woocommerce div.product div.images img,.woocommerce-product-gallery__wrapper .tf_swiper-container-initialized,#add_payment_method table.cart img,.woocommerce-cart table.cart img,.woocommerce-checkout table.cart img,.select2-dropdown,.select2-container--default .select2-selection--single,.select2-container--default .select2-selection--single .select2-selection__arrow,#slide-cart .button,#slide-cart .product-image img,.woocommerce-cart #content table.cart td.actions .coupon .input-text,.woocommerce span.onsale,.woocommerce ul.products li.product .onsale,.woocommerce table.shop_table,.woocommerce-checkout #payment,#add_payment_method #payment ul.payment_methods li,.woocommerce-cart #payment ul.payment_methods li,.woocommerce-checkout #payment ul.payment_methods li,.woocommerce-error, .woocommerce-info, .woocommerce-message,.woocommerce-page .cart-collaterals .cart_totals,body:not(.footer-block) #footer .back-top a,#main-nav .highlight-link > a,.pagenav a,.pagenav span,.pagenav .current,a.load-more-button,.more-link,.widget .feature-posts-list .post-img{
+	border-radius:0
+}
+
+/* FORMS
+================================================ */
+input[type=reset], input[type=submit], button{
+	background-color:#000;
+	padding:1.2em 2.1em;
+	font-family:'Poppins', sans-serif;
+	font-size:.95em;
+	font-weight:600;
+	letter-spacing:.14em
+}
+input[type=reset]:hover,input[type=submit]:hover,button:hover{
+	background-color:var(--theme_accent);
+	color:#fff;
+	transform:none
+}
+textarea, input[type=text], input[type=password], input[type=search], input[type=email], input[type=url], input[type=number], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=time], input[type=week]{
+	border:none;
+	border-bottom:1px solid #c0c0c0;
+	background-color:transparent;
+	padding:.6em 1em;
+	text-transform:none
+}
+textarea{
+	border:1px solid #c0c0c0;
+}
+input[type=checkbox]{
+	border:2px solid;
+	border-color:#c0c0c0
+}
+input[type=checkbox]:before{
+	color:var(--theme_accent)
+}
+#commentform p label{
+	display:inline-block;
+	transform:translate(-2px,25px);
+	text-transform:none;
+	font-size:.95em;
+	letter-spacing:.01em
+}
+#commentform p.comment-form-comment label{
+	transform:none
+}
+#review_form p label{
+	transform:none
+}
+
+/* HEADINGS
+================================================ */
+h1,h2,h3,h4,h5,h6{
+	font-family:'Poppins', sans-serif
+}
+h2{
+	font-size:2.7em;
+	font-weight:800;
+	letter-spacing:-.02em;
+	margin:0 0 .3em
+}
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+/* SITE LOGO
+================================================ */
+#site-logo{
+	font-family:'Poppins', sans-serif;
+	font-size:1.5em;
+	font-weight:800;
+	letter-spacing:-.01em;
+	text-transform:uppercase
+}
+
+/* MAIN NAVIGATION
+================================================ */
+#main-nav li > .sub-menu{
+	top:auto;
+	border-radius:0
+}
+
+#menu-icon{
+	padding:16px 10px
+}
+.menu-icon-inner{
+	width:30px;
+	height:18px;
+	border-bottom:1px solid;	
+	transform:rotateZ(180deg);
+}
+.menu-icon-inner:before{
+	width:70%;
+	border-top:1px solid;
+}
+.menu-icon-inner:after{
+    width:85%;
+    border-top:1px solid;
+}
+.mobile-menu-visible #menu-icon{
+	padding:10px
+}
+.mobile-menu-visible .menu-icon-inner:before,
+.mobile-menu-visible .menu-icon-inner:after{
+	width:100%
+}
+
+/* SEARCH LIGHTBOX
+================================================ */
+.search-option-tab li:hover a,
+.search-option-tab li.active a{
+	box-shadow:inset 0 -3px 0 0 var(--theme_accent)
+}
+.view-all-button:after{
+	border-color:var(--theme_accent)
+}
+
+/* TRANSPARENT HEADER
+================================================ */
+.transparent-header #headerwrap.fixed-header{
+	background-color:rgba(255,255,255,.9);
+	color:#000
+}
+
+/* HEADER BOTTOM
+================================================ */
+.header-bottom #footerwrap .footer-tab{
+	color:#fff
+}
+
+/* HEADER STRIPE
+================================================ */
+.header-stripe #site-logo{
+	background-color:var(--theme_accent)
+}
+
+/* HEADER OVERLAY
+================================================ */
+.header-overlay.transparent-header .fixed-header,
+.header-overlay.mobile-menu-visible #headerwrap{
+	background-color:rgba(255,255,255,.9);
+	color:#000
+}
+.header-overlay.transparent-header .fixed-header .header-icons a,
+.header-overlay.mobile-menu-visible .header-icons a,
+.header-overlay.mobile-menu-visible #header,
+.header-overlay.mobile-menu-visible #header a,
+.header-overlay.mobile-menu-visible #mobile-menu.sidemenu{
+	color:#000
+}
+.header-overlay.transparent-header .fixed-header .header-icons a:hover,
+.header-overlay.mobile-menu-visible .header-icons a:hover,
+.header-overlay.mobile-menu-visible #header a:hover{
+	color:var(--theme_accent)
+}
+
+/************************************************************************************
+WIDGET
+*************************************************************************************/
+.footer-widgets .widgettitle,
+.widgettitle{
+	color:#404040;
+	font-size:1.1em;
+	margin:0 0 1.6em;
+	letter-spacing:normal
+}
+
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+#footerwrap{
+	background-color:#f9f9f9;
+	border:none;
+	padding-top:80px
+}
+#footer a{
+	color:#404040
+}
+#footer a:hover{
+	color:var(--theme_accent)
+}
+
+/* FOOTER LOGO
+================================================ */
+#footer-logo{
+	font-family:'Poppins', sans-serif;
+	font-weight:800;
+	letter-spacing:-0.001em;
+	text-transform:uppercase;
+}
+
+/* FOOTER BACK TO TOP
+================================================ */
+#footer .back-top-float,
+#pagewrap .back-top-float{
+	border-radius:0
+}
+
+/************************************************************************************
+BUILDER STYLING
+*************************************************************************************/
+/* SLIDER MODULE
+================================================ */
+.module.module-slider.slider-agency .slide-image{
+	width:auto
+}
+.module.module-slider.slider-agency .slide-content{
+	flex:1;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	margin:0 0 1em;
+	padding-right:0
+}
+div.themify_builder_slider_vertical .carousel-prev,
+div.themify_builder_slider_vertical .carousel-next{
+	background:var(--theme_accent);
+	padding:26px 34px
+}
+.tf_carousel_nav_wrap .carousel-prev:hover,
+.tf_carousel_nav_wrap .carousel-next:hover{
+	background:rgba(197,164,126,.5)
+}
+.themify_builder_slider_wrap .carousel-prev:before,
+.themify_builder_slider_wrap .carousel-next:before,
+.themify_builder_slider_wrap .carousel-prev:after,
+.themify_builder_slider_wrap .carousel-next:after{
+	border-radius:0px;
+	margin-left:0;
+	margin-right:0
+}
+.themify_builder_slider_wrap .carousel-prev:after,
+.themify_builder_slider_wrap .carousel-next:after{
+	content:"";
+	display:inline-block;
+	border-top:3px solid;
+	width:22px;
+	position:absolute;
+	top:50%;
+	margin-top:0
+}
+.themify_builder_slider_wrap .carousel-prev:after{
+	left:calc(50% - 8px);
+}
+.themify_builder_slider_wrap .carousel-next:after{
+	right:calc(50% - 8px);
+}
+.themify_builder_slider_wrap .carousel-prev:before,
+.themify_builder_slider_wrap .carousel-next:before{
+	width:0;
+	height:0;
+	border-width:4px
+}
+.themify_builder_slider_wrap .carousel-prev:before{
+	margin-left:-11px
+}
+.themify_builder_slider_wrap .carousel-next:before{
+	margin-right:-11px
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+@media screen and (min-width:681px){
+	.footer-left-col .main-col,
+	.footer-horizontal-left .footer-left-wrap{
+		width:35.6%
+	}
+	.footer-left-col .section-col,
+	.footer-horizontal-left .footer-right-wrap{
+		width:61.2%
+	}
+}
+@media screen and (min-width:768px){
+	.module.module-slider.slider-agency .slide-inner-wrap{
+		max-width:80%;
+		margin-left:auto;
+		margin-right:auto
+	}
+}
+@media screen and (max-width:767px){
+	div.themify_builder_slider_vertical .carousel-prev,
+    div.themify_builder_slider_vertical .carousel-next{
+		position:relative;
+		margin:10px
+	}
+}

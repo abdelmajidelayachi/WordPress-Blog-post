@@ -1,0 +1,35 @@
+.woocommerce ul.products  {
+	li.product-category.product {
+	    overflow: visible;
+	    box-shadow: none;
+
+	    h2 {
+	    	position: absolute;
+		    bottom: -5px;
+		    width: 90%;
+		    margin: auto;
+		    left: 0;
+		    right: 0;
+		    padding: 10px;
+		    border-radius: 5px;
+		    text-align: center;
+		    color: #fff;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+
+		    mark.count {
+			    background: #fff;
+			    border-radius: 50%;
+			    font-size: 10px;
+			    height: 26px;
+			    width: 26px;
+			    display: inline-flex;
+			    align-items: center;
+			    justify-content: center;
+			    color: #ff3afb;
+			    margin-left: 10px;
+			}
+	    }
+	}
+}

@@ -1,0 +1,35 @@
+.woocommerce #reviews .comment-reply-title{
+    font-weight:300;
+    font-size:1.2em;
+    margin:0 0 .5em;
+    font-weight:inherit;
+    display: block
+}
+.woocommerce #reviews #comments ol.commentlist li img.avatar{
+    padding:0;
+    width:75px;
+    border:none
+}
+.woocommerce #reviews #comments ol.commentlist li img + .comment-text{
+    margin:0 0 0 95px;
+    padding:0
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text{
+    margin:0;
+    border:none
+}
+.woocommerce #reviews #comments ol.commentlist li .meta{
+    color:inherit
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text p.meta{
+    margin:auto
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text p.meta strong{
+    font-weight:400;
+    font-size:1.5em;
+    display:block
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text p.meta time{
+    font-size:100%;
+    font-style:italic
+}

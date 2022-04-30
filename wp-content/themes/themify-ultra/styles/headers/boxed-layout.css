@@ -1,0 +1,55 @@
+body{
+	background-color:#ddd
+}
+.boxed-layout #pagewrap{
+	width:1230px;
+	margin:27px auto;
+	max-width:94%;
+	background-color:#fff;
+	position:relative;
+	box-shadow:0 3px 16px rgba(0,0,0,.10)
+}
+.fixed-header-enabled #headerwrap{
+	position:relative
+}
+.transparent-header #headerwrap,
+#headerwrap.fixed-header{
+	position:fixed
+}
+#header{
+	text-align:center;
+	padding:2em 0 1em
+}
+.pagewidth,.full_width .row_inner{
+	max-width:96%
+}
+/* Search Button */
+.search-button{
+	margin-right:0
+}
+#headerwrap #searchform-wrap{
+	margin-left:0
+}
+/* boxed layout cart wrap */
+#main-nav-wrap{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	position:relative
+}
+#main-nav{
+	margin-top:15px;
+}
+.fixed-header .header-bar{
+	display:block;
+	float:left
+}
+.fixed-header .sidemenu .cart-icon{
+	float:right;
+	margin-top:12px;
+	position:relative;
+	z-index:1
+}
+.fixed-header #main-nav{
+	margin-top:8px
+}

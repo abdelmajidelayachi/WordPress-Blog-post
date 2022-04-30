@@ -1,0 +1,88 @@
+/* builder active full section */
+.full-section-scrolling.themify_builder_active .themify_builder:not(.not_editable_builder) .module_column,
+.full-section-scrolling.themify_builder_active .themify_builder:not(.not_editable_builder) .module_row,
+.full-section-scrolling.themify_builder_active .themify_builder:not(.not_editable_builder) .tb_holder{
+	min-height:100vh
+}
+.builder-breakpoint-mobile.full-section-scrolling.themify_builder_active .themify_builder:not(.not_editable_builder) .module_column{
+	min-height:0
+}
+.full-section-scrolling.themify_builder_active .themify_builder:not(.not_editable_builder) .module_subrow .module_column,
+.full-section-scrolling.themify_builder_active .themify_builder:not(.not_editable_builder) .module_subrow,
+.full-section-scrolling.themify_builder_active .themify_builder:not(.not_editable_builder) .module_subrow .tb_holder{
+	min-height:37px
+}
+/* reset row height in layout part */
+.full-section-scrolling.themify_builder_active .module-layout-part .module_row:not(.fullheight) .tb-column .tb_holder{
+	height:auto;
+	min-height:0
+}
+/*middle*/
+.full-section-scrolling.themify_builder_active .tb_holder{
+	align-items:center; /* for single line flex container */
+	align-content:center; /* for multi-line flex container */
+}
+/*top*/
+.full-section-scrolling.themify_builder_active .col_align_top > .module_column > .tb_holder{
+	align-items:flex-start;
+	align-content:flex-start
+}
+/*bottom*/
+.full-section-scrolling.themify_builder_active .col_align_bottom > .module_column > .tb_holder{
+	align-items:flex-end;
+	align-content:flex-end
+}
+/* required:reset column height on mobile */
+@media screen and (max-width:680px){
+    .full-section-scrolling.themify_builder_active .themify_builder:not(.not_editable_builder) .tb_holder,
+    .full-section-scrolling.themify_builder_active .themify_builder:not(.not_editable_builder) .module_column{
+            min-height:0;
+            height:auto
+    }
+}
+.themify_builder_active #pagewrap .back-top-float{
+	bottom:50px
+}
+.themify_builder_active.transparent-header #headerwrap a{
+	color:inherit
+}
+.themify_builder_active.transparent-header #headerwrap,
+.themify_builder_active.fixed-header-enabled #headerwrap{
+	position:relative;
+	color:inherit;
+}
+/* fix tinyMCE buttons in Builder on frontend,#3021 */
+.frontend.noScroll .mce-container.mce-floatpanel{
+	position:fixed
+}
+/* Header-overlay */
+.themify_builder_active.slide-cart.header-overlay .header-icons{
+    text-align:inherit
+}
+.themify_builder_active.header-overlay #headerwrap .sidemenu-off .cart-wrap{
+    top:35px
+}
+.themify_builder_active.header-overlay #headerwrap .header-icons{
+	top:1.5%
+}
+/* Header-slide-out */
+.themify_builder_active.header-slide-out #headerwrap .header-icons{
+	top:.5%
+}
+/* Skin Accountant */
+.themify_builder_active.header-top-widgets.skin-accountant #header{
+	transform:none; /* prevent header overlap builder UI */
+}
+/* Skin Photography,Skin Portfolio */
+.themify_builder_active.transparent-header.header-overlay.skin-photography #headerwrap,
+.themify_builder_active.transparent-header.header-overlay.skin-portfolio #headerwrap{
+    position:relative
+}
+.themify_builder_active.header-overlay.skin-portfolio #headerwrap .header-icons{
+	top:0;
+	transform:none
+}
+/* Skin Software */
+.themify_builder_active.skin-software #footerwrap{
+	margin-bottom:37px
+}

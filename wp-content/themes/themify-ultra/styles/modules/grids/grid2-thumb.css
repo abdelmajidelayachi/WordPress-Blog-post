@@ -1,0 +1,23 @@
+.woocommerce ul.products.grid2-thumb li.product,
+.loops-wrapper.grid2-thumb > .post,
+.loops-wrapper.grid2-thumb .post-meta{
+	text-align:left
+}
+.loops-wrapper.grid2-thumb .post-title{
+	font-size:1.2em;
+	text-align:left
+}
+.loops-wrapper.grid2-thumb .post-image{
+	width:25%;
+	float:left;
+	margin:0 1.6em 1.3em 0
+}
+.loops-wrapper.grid2-thumb .post-content{
+	overflow:hidden;
+	min-width:120px
+}
+@media screen and (max-width:680px){
+	.loops-wrapper.grid2-thumb .post-content{
+		overflow:visible
+	}
+}

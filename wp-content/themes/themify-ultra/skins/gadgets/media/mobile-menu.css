@@ -1,0 +1,17 @@
+.header-rightpane #menu-icon,
+.header-leftpane #menu-icon{
+	background-color:var(--theme_accent);
+}
+#menu-icon{
+	padding:11px
+}
+.header-block .fixed-header #site-logo,
+.fixed-header #site-logo{
+	margin-top:10px
+}
+#headerwrap #main-nav .current_page_item > a,
+#headerwrap #main-nav .current-menu-item > a,
+#headerwrap #main-nav a:hover,
+#headerwrap #main-nav ul a:hover{
+	color:var(--theme_accent)
+}

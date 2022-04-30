@@ -1,0 +1,8 @@
+.widget .twitter-list .twitter-timestamp a{
+	font-style:italic;
+	font-size:90%
+}
+.widget .follow-user{
+	margin:0;
+	padding:5px 0
+}

@@ -1,0 +1,135 @@
+ #{$prefix}-right-sidebar {
+ 	.content-order {
+ 		flex: 0 0 66.66%;
+ 		max-width: 66.66%;
+        @include media(mb) {
+           flex: 0 0 100%;
+            max-width: 100%; 
+        }
+ 	}
+ 	.sidebar-order {
+ 		flex: 33.33%;
+ 		max-width: 33.33%;
+        padding: 0 15px;
+        @include media(mb) {
+            flex: 0 0 100%;
+            max-width: 100%; 
+        }
+ 	}
+ }
+
+ .content-wrapper main#main {
+    padding-right: 30px;
+
+    @include media(mb) {
+        padding-right: 0;
+    }
+}
+
+#{$prefix}-left-sidebar {
+    .content-order {
+        flex: 66.66%;
+        max-width: 66.66%;
+        padding: 0 15px;
+        @include media(mb) {
+            flex: 0 0 100%;
+            max-width: 100%; 
+        }
+    }
+    .sidebar-order {
+        flex: 33.33%;
+        max-width: 33.33%;
+        @include media(mb) {
+            flex: 0 0 100%;
+            max-width: 100%; 
+        }
+    }
+ }
+
+
+aside#secondary {
+    padding-left: 15px;
+    section {
+        .wp-block-search {
+            .wp-block-search__label{
+                font-weight: 500;
+                font-size: 20px;
+            }
+            .wp-block-search__inside-wrapper {
+                margin-top: 15px;
+            }
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            margin-bottom: 13px;
+            > a {
+                color: $color-black;
+                transition: all .3s;
+                font-size: 16px;
+                text-decoration: none;
+                &:hover {
+                    color: #f04819;
+                }
+                &:before {
+                    content: "\f178";
+                    margin-right: 5px;
+                    transition: all 0.3s linear;
+                    font: normal normal normal 14px FontAwesome;
+                }
+                &:hover {
+                    margin-left: 5px;
+                }
+            }
+            .wp-block-latest-posts__post-excerpt {
+                .visionwp-site-button {
+                    > a {
+                        color: #010834;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .widget{
+        .wp-block-image {
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    @include media(mb) {
+        padding-left: 0;
+        border-left: none;
+        margin-top: 40px;
+    }
+    
+}
+.wp-container-1 {
+    .alignleft{
+        margin-bottom: 1rem;
+        margin-right: 1rem !important;
+    }
+}
+
+.wp-block-latest-posts__list{
+    li {
+        > a {
+            &:before {
+                content: "\f178";
+                margin-right: 5px;
+                transition: all 0.3s linear;
+                font: normal normal normal 14px FontAwesome;
+            }
+            &:hover {
+                margin-left: 5px;
+            }
+        }
+    }
+}

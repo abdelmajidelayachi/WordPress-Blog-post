@@ -1,0 +1,9 @@
+.textwidget ul{
+	margin:0 0 1.4em 1.6em
+}
+.textwidget ul li{
+	list-style:disc
+}
+.textwidget ol li{
+	list-style:decimal
+}

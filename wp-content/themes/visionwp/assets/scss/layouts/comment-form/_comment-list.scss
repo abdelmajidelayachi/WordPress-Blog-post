@@ -1,0 +1,133 @@
+.comments-area{
+    .comments-title{
+        margin: 3.5rem 0 2rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding-left: 2.5rem;
+        position: relative;
+
+        &:before{
+            font-size: 1.8rem;
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    .comment-list{
+        list-style: none;
+
+        ol{
+            list-style: none;
+        }
+        
+        .comment-body{
+            padding-left: 3rem;
+            position: relative;
+            margin-bottom: 3rem;
+
+            + .comment-respond{
+                padding-left: 3rem;
+                margin-bottom: 4rem;
+            }
+
+            .comment-awaiting-moderation{
+                display: block;
+                padding: 0.8rem;
+                font-size: 0.85rem;
+                margin: 0.5rem 0;
+                border-left: 2px solid #000;
+
+                + br{
+                    display: none;
+                }
+            }
+
+            .comment-meta{
+                color: #000;
+                font-size: 0.8rem;
+
+                *{
+                    color: #767676;
+                }
+            }
+
+            .comment-author{
+                cite{
+                    font-weight: 600;
+                    font-style: inherit;
+
+                    a{
+                        color: #000;
+                        text-decoration: underline;
+                    }
+                }
+
+                
+            }
+
+            p{
+                margin-top: 0.5rem;
+                padding: 0.8rem;
+                font-size: 0.9rem;
+                margin-bottom: 0.4rem;
+            }
+
+            .reply{
+                a{
+                    font-weight: 600;
+                    color: #000;
+                    font-size: 0.85rem;
+                }
+            }
+            
+            .comment-reply-link{
+                &:before{
+                    font-size: 0.85rem;
+                }
+            }
+            .comment-author{
+                img{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+
+
+.comment-respond{
+    .comment-reply-title,
+    .logged-in-as{
+        a{
+            font-size: 15px;
+            color: #767676;
+            text-decoration: underline;
+            &:hover {
+                color: #f04819;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .comment-reply-title{
+        a{
+            float: right;
+            margin-top: 0.5rem;
+            margin-left: 0.7rem;
+
+             @include media(mb){
+                display: block;
+                float: none;
+                text-align: right;
+             }
+        }
+    }
+}
+
+.comment-navigation {
+    + * {
+        margin-top: 65px;
+    }
+} 

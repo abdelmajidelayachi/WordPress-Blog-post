@@ -1,0 +1,126 @@
+#{$prefix}-404-wrapper {
+    max-width: 800px;
+    margin: 80px auto;
+    text-align: center;
+    #{$prefix}-404-content {
+        color: #6c6c6c;
+        font-size: 18px;
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #000;
+        }
+    }
+
+    a.btn#{$prefix}-404-home-btn {
+        background: $color-primary;
+        color: #fff;
+        font-size: 18px;
+        padding: 15px 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+        margin-top: 30px;
+
+        i {
+            margin-left: 10px;
+        }
+    }
+
+    .search-form {
+        position: relative;
+        display: flex;
+        max-width: 300px;
+        margin: auto;
+        margin-top: 30px;
+        label {
+            margin: 0;
+            width: 100%;
+            max-width: calc(100% - 40px);
+            input {
+                border: 1px solid #e0e0e0;
+                height: 40px;
+                padding: 10px;
+                width: 100%;
+                border-radius: 3px 0 0 3px;
+            }
+        }
+
+        button.search-submit {
+            background: $color-primary;
+            border: none;
+            height: 40px;
+            width: 40px;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            border-radius: 0 3px 3px 0;
+        }
+        
+    }
+}
+
+#{$prefix}-no-results.not-found {
+    max-width: 800px;
+    margin: 80px auto;
+    text-align: center;
+    h1.page-title {
+        margin-bottom: 30px;
+        font-size: 38px;
+    }
+    #{$prefix}-page-content {
+        color: #6c6c6c;
+        p {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #000;
+            margin-top: 25px;
+        }
+    }
+    .search-form {
+        position: relative;
+        display: flex;
+        max-width: 300px;
+        margin: auto;
+        label {
+            margin: 0;
+            width: 100%;
+            max-width: calc(100% - 40px);
+            input {
+                border: 1px solid #e0e0e0;
+                height: 40px;
+                padding: 10px;
+                width: 100%;
+                border-radius: 3px 0 0 3px;
+            }
+        }
+        button.search-submit {
+            background: $color-primary;
+            border: none;
+            height: 40px;
+            width: 40px;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            border-radius: 0 3px 3px 0;
+        }
+    }
+    a#{$prefix}-btn-primary {
+        background: $color-primary;
+        color: #fff;
+        padding: 15px 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+        margin-top: 30px;
+    }
+}
+

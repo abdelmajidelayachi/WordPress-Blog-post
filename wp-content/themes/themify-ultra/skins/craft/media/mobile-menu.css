@@ -1,0 +1,5 @@
+/* mobile menu hover */
+#headerwrap #main-nav a:hover,
+#headerwrap #main-nav ul a:hover {
+	color:var(--theme_accent)
+}

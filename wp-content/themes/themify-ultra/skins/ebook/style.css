@@ -1,0 +1,385 @@
+/* 
+Skin Name:Ultra eBook
+Version:1.0
+Demo URI:https://themify.me/demo/themes/ultra-ebook/ 
+Required Plugins:builder-contact
+*/
+
+/************************************************************************************
+GENERAL
+*************************************************************************************/
+:root{
+	--theme_accent:#daa36d;
+	--theme_accent_semi:rgba(218,163,109,.8);
+}
+body{
+	font:normal 1em/1.625em 'Public Sans',Arial,sans-serif;
+	color:#333
+}
+
+/* reset general border-radius */
+input[type=reset],input[type=submit],button,select,textarea,input[type=checkbox],input[type=text],input[type=password],input[type=search],input[type=email],input[type=url],input[type=number],input[type=tel],input[type=date],input[type=datetime],input[type=datetime-local],input[type=month],input[type=time],input[type=week],.woocommerce ul.products li.product .button,.woocommerce a.button,.woocommerce #respond input#submit,.woocommerce #respond input#submit.alt,.woocommerce a.button,.woocommerce button.button,.woocommerce input.button,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.woocommerce button.button.alt.disabled,.woocommerce button.button:disabled,.woocommerce button.button:disabled[disabled],.woocommerce button.button.alt,.woocommerce button.button,.woocommerce a.button,.woocommerce a.button.alt,.woocommerce button.button:disabled,.woocommerce button.button:disabled[disabled],.loops-wrapper.polaroid .post,.loops-wrapper.overlay .post,.loops-wrapper.auto_tiles > .product,.loops-wrapper.auto_tiles .post-image + .post-content,.loops-wrapper.auto_tiles > .post,.post-image img,.product img, ul.products li.product .post-image,#cart-wrap .product-image img,.woocommerce div.product div.images img,.woocommerce-product-gallery__wrapper .tf_swiper-container-initialized,#add_payment_method table.cart img,.woocommerce-cart table.cart img,.woocommerce-checkout table.cart img,.select2-dropdown,.select2-container--default .select2-selection--single,.select2-container--default .select2-selection--single .select2-selection__arrow,#slide-cart .button,#slide-cart .product-image img,.woocommerce-cart #content table.cart td.actions .coupon .input-text,.woocommerce span.onsale,.woocommerce ul.products li.product .onsale,.woocommerce table.shop_table,.woocommerce-checkout #payment,#add_payment_method #payment ul.payment_methods li,.woocommerce-cart #payment ul.payment_methods li,.woocommerce-checkout #payment ul.payment_methods li,.woocommerce-error, .woocommerce-info, .woocommerce-message,.woocommerce-page .cart-collaterals .cart_totals,body:not(.footer-block) #footer .back-top a,#main-nav .highlight-link > a,.pagenav a,.pagenav span,.pagenav .current,a.load-more-button,.more-link,.widget .feature-posts-list .post-img{
+	border-radius:0
+}
+
+/* FORM
+================================================ */
+textarea,
+input[type=text], input[type=password], input[type=search], input[type=email], input[type=url], input[type=number], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=time], input[type=week]{
+	border:none;
+	border-bottom:1px solid #686868;
+	background:none
+}
+textarea{
+	border:1px solid #686868
+}
+.module-contact label,#commentform label{
+	font-weight:400;
+	text-transform:none
+}
+input[type=text],input[type=email],input[type=url]{
+	padding:.75em;
+	max-width:none;
+}
+.module .builder-contact-field{
+	margin-bottom:3em
+}
+
+/* HEADINGS
+================================================ */
+h1, h2, h3, h4{
+	font-family:'Playfair Display',serif;
+	font-weight:400
+}
+h1{
+	font-size:3em
+}
+h2{
+	font-size:2em
+}
+h3{
+	font-size:1.6em
+}
+h4{
+	font-size:1.2em
+}
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+#headerwrap{
+	font-family:'Playfair Display',serif
+}
+.transparent-header #headerwrap,
+.transparent-header .header-icons a{
+	color:#1c1c1c
+}
+#headerwrap.fixed-header,
+.transparent-header #headerwrap.fixed-header{
+	background-color:rgba(255, 255, 255, .9)
+}
+
+/* SITE LOGO
+================================================ */
+#site-logo{
+	font-size:1.7em;
+	text-transform:uppercase;
+	letter-spacing:.2em;
+	font-weight:400
+}
+
+/* MAIN NAVIGATION
+================================================ */
+#main-nav a{
+	padding:.6em 1.3em
+}
+
+/* SEARCH OPTIONS
+================================================ */
+.search-option-tab li:hover a,
+.search-option-tab li.active a{
+	box-shadow:inset 0 -3px 0 0 var(--theme_accent)
+}
+.view-all-button:after{
+	border-bottom:3px solid var(--theme_accent)
+}
+
+/* HEADER OVERLAY
+================================================ */
+.header-overlay.transparent-header .fixed-header,
+.header-overlay.mobile-menu-visible #headerwrap{
+	background-color:rgba(218, 163, 109, .94)
+}
+
+/* HEADER STRIPE
+================================================ */
+.header-stripe #site-logo{
+	background-color:var(--theme_accent)
+}
+
+/* HEADER BOTTOM
+================================================ */
+.header-bottom #footerwrap.expanded{
+	border-top:none;
+	border-bottom:1px solid var(--theme_accent)
+}
+/* HEADER CLASSIC
+================================================ */
+.header-classic .navbar-wrapper{
+	background-color:var(--theme_accent)
+}
+
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+#footerwrap{
+	background:#262627 url('images/footer-bg.png') no-repeat top 40px center;
+	border:none;
+	color:rgba(255, 255, 255, .6);
+	padding:146px 0 2em
+}
+#footerwrap a{
+	color:var(--theme_accent)
+}
+#footerwrap a:hover{
+	color:#fff
+}
+.footer-horizontal-left .footer-widgets .col4-2.first,
+.footer-horizontal-right .footer-widgets .col4-2.first{
+	width:74.2%;
+	text-align:unset
+}
+.footer-horizontal-left .footer-widgets .col4-2,
+.footer-horizontal-right .footer-widgets .col4-2{
+	width:22.6%;
+	text-align:right
+}
+
+/* FOOTER NAVIGATION
+================================================ */
+.footer-widgets .menu li{
+	display:inline-block
+}
+.footer-widgets .menu li a,
+.footer-nav li a{
+	font-family:'Playfair Display', serif;
+	font-size:1.1em;
+	letter-spacing:.04em;
+	text-transform:uppercase;
+	margin-right:1.4em
+}
+.footer-horizontal-left .footer-nav a,
+.footer-horizontal-right .footer-nav a,
+.footer-left-col .footer-nav a,
+.footer-right-col .footer-nav a{
+	margin-right:1.4em
+}
+
+/* FOOTER SOCIAL WIDGET
+================================================ */
+#footer .social-links li{
+	margin-right:7px
+}
+#footerwrap .social-links a{
+	background-color:var(--theme_accent);
+	color:#262627;
+	min-width:30px;
+	min-height:30px;
+	padding:11px;
+	display:inline-block;
+	border-radius:50em;
+	box-sizing:border-box;
+	transition:transform .7s
+}
+#footerwrap .social-links a:hover{
+	transform:scale(1.1)
+}
+
+/* FOOTER TEXT
+================================================ */
+.footer-text{
+	font-size:.9em
+}
+.footer-text .one,
+.footer-text .two{
+	display:block
+}
+.section-col + .footer-text{
+	width:50%;
+	position:absolute;
+	bottom:0;
+	right:0;
+	text-align:right
+}
+.footer-block .section-col + .footer-text{
+	position:static;
+	width:auto;
+	text-align:unset
+}
+/* FOOTER BACK TOP
+================================================ */
+#footerwrap.expanded{
+	border-top:1px solid var(--theme_accent)
+}
+#footerwrap .ui.builder_button{
+	text-transform:uppercase;
+	background-color:var(--theme_accent);
+	color:#000;
+	font-size:1.1em;
+	padding:1.2em 2em
+}
+/************************************************************************************
+BUILDER STYLES
+*************************************************************************************/
+/* BUTTON
+================================================ */
+input[type=reset], input[type=submit], button[type=submit],
+.ui.builder_button{
+	font-family:'Playfair Display',serif;
+	padding:.75em 1.9em 1em 2.45em;
+	border:none;
+	font-weight:400;
+	position:relative;
+	letter-spacing:.05em;
+	text-transform:uppercase;
+	transition:all .3s
+}
+.module.module-buttons a.tb_default_color,
+input[type=reset], input[type=submit], button[type=submit]{
+	background-color:#333333;
+	color:#fff
+}
+input[type=reset]:hover, input[type=submit]:hover, button[type=submit]:hover,
+.module.module-buttons .tb_default_color:hover{
+	background-color:var(--theme_accent);
+	color:#000000
+}
+.module.module-buttons.outline .tb_default_color{
+	background:0
+}
+
+/* DROP CAP
+================================================ */
+.tb_module_front.tb_text_dropcap .tb_action_wrap + :first-letter, 
+.tb_text_dropcap > :first-child:first-letter{
+	background-color:inherit;
+	color:inherit;
+	font-family:'Playfair Display', serif;
+	font-weight:700;
+	padding:0 0 6px 0;
+	margin-right:6px
+}
+
+/* TESTIMONIAL SLIDER 
+================================================ */
+.module.module-testimonial-slider .testimonial-item{
+	margin:1.2em 1.4em
+}
+.module.module-testimonial-slider .testimonial-item:before{
+	content:"";
+	background-image:url('images/testimonials-box-bg.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	box-sizing:border-box;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	width:90%
+}
+.module.module-testimonial-slider .testimonial-content{
+	background-color:#1c1c1c;
+	color:#fff;
+	padding:3em;
+	font-style:italic;
+	text-align:left;
+	line-height:2em;
+	position:relative;
+	z-index:1
+}
+.module.module-testimonial-slider .testimonial-entry-content{
+	margin-bottom:3.1em;
+	font-size:1.125em;
+	letter-spacing:0
+}
+.module.module-testimonial-slider .testimonial-author{
+	background-image:url('images/testimonials-5stars.png');
+	background-repeat:no-repeat;
+	background-position:bottom left;
+	padding-bottom:2.2em
+}
+.module.module-testimonial-slider .testimonial-author:after{
+	content:'';
+	display:block;
+	height:1.25em;
+	background:url('images/testimonials-line.png') no-repeat bottom left
+}
+.module.module-testimonial-slider .testimonial-content .person-name{
+	font-size:.875em;
+	font-style:normal;
+	line-height:1.1em;
+	letter-spacing:.02em
+}
+.module.module-testimonial-slider .testimonial-content .person-position,
+.module.module-testimonial-slider .testimonial-content .person-company{
+	color:rgba(255,255,255,.5);
+	display:block;
+	font-size:.88em;
+	font-style:normal;
+	line-height:1.8em;
+	letter-spacing:.02em
+}
+.module.module-testimonial-slider.image-bottom .testimonial-image{
+	float:left;
+	margin-right:.7em
+}
+.module.module-testimonial-slider .testimonial-image img{
+	padding-bottom:0
+}
+
+/* image bubble */
+.module.module-testimonial-slider.image-bubble .testimonial-content{
+	padding-bottom:0
+}
+
+/* OPTIN MODULE
+================================================ */
+.module-optin.tb_optin_horizontal form .tb_optin_submit{
+	width:auto
+}
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+@media screen and (max-width:880px){
+	.module.module-testimonial-slider .testimonial-content{
+		margin:1em
+	}
+}
+@media screen and (max-width:980px) and (min-width:681px){
+	.module.module-testimonial-slider .testimonial-author{
+		background-size:100%
+	}
+}
+@media screen and (max-width:680px){
+	h1{
+		font-size:3em
+	}
+	h2{
+		font-size:2.2em
+	}
+	h3{
+		font-size:1.6em
+	}
+	.section-col + .footer-text,
+	.footer-horizontal-left .footer-widgets .col4-2.first,
+	.footer-horizontal-right .footer-widgets .col4-2.first,
+	.footer-horizontal-left .footer-widgets .col4-2,
+	.footer-horizontal-right .footer-widgets .col4-2{
+		width:auto;
+		text-align:unset
+	}
+	.section-col + .footer-text{
+		position:static
+	}
+}

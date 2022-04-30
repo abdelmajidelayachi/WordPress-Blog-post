@@ -1,0 +1,15 @@
+@import "helpers/master";
+@import "components/master";
+@import "layouts/master";
+@import "pages/master";
+@import "woocommerce/master";
+
+// sass assets/scss/style.scss assets/css/visionwp-style.css
+// sass --watch assets/scss/style.scss:assets/css/visionwp-style.css
+
+body.visionwp-layout-box {
+    max-width: 1160px;
+    margin: 20px auto;
+    width: 100%;
+    box-shadow: 0 0 10px #eee;
+}

@@ -1,0 +1,514 @@
+/*  
+Skin Name:Ultra Agency
+Version:1.0
+Demo URI:https://themify.me/demo/themes/ultra-agency/
+Required Plugins:builder-typewriter, builder-progress-bar, builder-contact, builder-maps-pro, themify-portfolio-post
+*/
+
+/************************************************************************************
+GENERAL
+*************************************************************************************/
+:root{
+	--theme_accent:#23c3d1;
+	--theme_accent_semi:rgba(35,195,209,.8)
+}
+body{
+	font-family:'Poppins',Arial,sans-serif
+}
+/* reset general border-radius */
+input[type=reset],input[type=submit],button,select,textarea,input[type=checkbox],input[type=text],input[type=password],input[type=search],input[type=email],input[type=url],input[type=number],input[type=tel],input[type=date],input[type=datetime],input[type=datetime-local],input[type=month],input[type=time],input[type=week],.woocommerce ul.products li.product .button,.woocommerce a.button,.woocommerce #respond input#submit,.woocommerce #respond input#submit.alt,.woocommerce a.button,.woocommerce button.button,.woocommerce input.button,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.woocommerce button.button.alt.disabled,.woocommerce button.button:disabled,.woocommerce button.button:disabled[disabled],.woocommerce button.button.alt,.woocommerce button.button,.woocommerce a.button,.woocommerce a.button.alt,.woocommerce button.button:disabled,.woocommerce button.button:disabled[disabled],.loops-wrapper.polaroid .post,.loops-wrapper.overlay .post,.loops-wrapper.auto_tiles > .product,.loops-wrapper.auto_tiles .post-image + .post-content,.loops-wrapper.auto_tiles > .post,.post-image img,.product img, ul.products li.product .post-image,#cart-wrap .product-image img,.woocommerce div.product div.images img,.woocommerce-product-gallery__wrapper .tf_swiper-container-initialized,#add_payment_method table.cart img,.woocommerce-cart table.cart img,.woocommerce-checkout table.cart img,.select2-dropdown,.select2-container--default .select2-selection--single,.select2-container--default .select2-selection--single .select2-selection__arrow,#slide-cart .button,#slide-cart .product-image img,.woocommerce-cart #content table.cart td.actions .coupon .input-text,.woocommerce span.onsale,.woocommerce ul.products li.product .onsale,.woocommerce table.shop_table,.woocommerce-checkout #payment,#add_payment_method #payment ul.payment_methods li,.woocommerce-cart #payment ul.payment_methods li,.woocommerce-checkout #payment ul.payment_methods li,.woocommerce-error, .woocommerce-info, .woocommerce-message,.woocommerce-page .cart-collaterals .cart_totals,body:not(.footer-block) #footer .back-top a,#main-nav .highlight-link > a,.pagenav a,.pagenav span,.pagenav .current,a.load-more-button,.more-link,.widget .feature-posts-list .post-img{
+	border-radius:0
+}
+
+/************************************************************************************
+HEADING
+*************************************************************************************/
+h1, h2, h3{
+	font-family:'Poppins',Arial,sans-serif;
+	font-weight:700;
+	text-transform:none
+}
+h1, h2, h3, h4, h5, h6{
+	color:#000
+}
+h1{
+	font-size:3.75em;
+	letter-spacing:-.02em;
+	line-height:1.3em;
+	margin:0 0 .5em
+}
+h2{
+	font-size:2.85em;
+	letter-spacing:-.02em;
+	line-height:1.4em;
+	margin:0 0 .5em
+}
+h3{
+	font-size:2.25em;
+	letter-spacing:normal;
+	line-height:1.5em;
+	margin:0 0 .5em
+}
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+#headerwrap{
+	background-color:rgba(37, 198, 212, .86);
+	border:none;
+	color:#d9fcff
+}
+#headerwrap a{
+	color:#ffffff
+}
+#headerwrap a:hover{
+	color:#a6f8ff
+}
+#main-nav a:hover,
+#main-nav .current_page_item > a,
+#main-nav .current-menu-item > a{
+	color:#fff
+}
+.header-horizontal #headerwrap > a{
+	color:#fff
+}
+#main-nav ul a:hover,
+#main-nav .mega-menu-posts a:hover{
+	color:#a6f8ff
+}
+
+/* MAIN NAVIGATION
+================================================ */
+.header-horizontal .navbar-wrapper{
+	justify-content:unset
+}
+.header-horizontal #main-nav-wrap{
+	margin-left:auto
+}
+
+.header-horizontal #main-nav > li{
+	padding:0 .8em
+}
+.header-horizontal #main-nav > li > a{
+	padding:.715em .12em;
+	position:relative
+}
+.header-horizontal #main-nav > li > a:after{
+	content:'';
+	display:block;
+	width:0;
+	border-bottom:2px solid transparent;
+	position:absolute;
+	bottom:0;
+	left:-1px;
+	transition:border .3s ease-in-out,width .3s ease-in-out
+}
+.header-horizontal #main-nav > li:hover > a:after,
+.header-horizontal #main-nav .current_page_item > a:after,
+.header-horizontal #main-nav .current-menu-item > a:after{
+	border-color:#fff;
+	width:100%
+}
+#main-nav .highlight-link > a{
+	background:none;
+	border:2px solid;
+	color:inherit;
+	font-size:.9em;
+	letter-spacing:.035em;
+	padding:.5em 2.05em .4em;
+	text-transform:uppercase
+}
+#main-nav .highlight-link > a:after{
+	display:none
+}
+.header-horizontal #main-nav .highlight-link > a{
+	padding:.5em 2.05em .4em;
+}
+.header-horizontal #main-nav ul a:hover{
+	color:#a6f8ff
+}
+
+/* SOCIAL WIDGETS
+================================================ */
+.header-horizontal #header .social-widget{
+	order:-1
+}
+.header-horizontal .social-widget .widget{
+	margin:0
+}
+.header-horizontal .search-button{
+	font-size:1.4em;
+}
+
+/* HEADER HORIZONTAL
+================================================ */
+/* site logo */
+.header-horizontal #site-logo{
+	margin-right:.85em
+}
+
+/* HEADER STRIPE
+================================================ */
+.header-stripe #headerwrap{
+	background:0
+}
+.header-stripe #header{
+	background: rgba(37,198,212,.86)
+}
+
+/* HEADER LEFTPANE/RIGHTPANE/MINBAR
+================================================ */
+.header-leftpane #main-nav .highlight-link > a,
+.header-rightpane #main-nav .highlight-link > a,
+.header-minbar #main-nav .highlight-link > a{
+	width:auto
+}
+.header-rightpane #headerwrap #main-nav > li.highlight-link:last-child a,
+.header-minbar #headerwrap #main-nav > li.highlight-link:last-child a,
+.header-leftpane #headerwrap #main-nav > li.highlight-link:last-child a{
+	border-bottom-color:inherit;
+	border-bottom-width:2px
+}
+.header-minbar .sidemenu,
+.header-slide-out .sidemenu{
+	background-color:var(--theme_accent)
+}
+
+/* HEADER CLASSIC
+================================================ */
+.header-classic #main-nav .highlight-link{
+	margin-top:10px;
+	margin-bottom:10px
+}
+
+/* FIXED HEADER
+================================================ */
+.transparent-header #headerwrap.fixed-header,
+#headerwrap.fixed-header{
+	background-color:var(--theme_accent_semi)
+}
+
+/************************************************************************************
+PAGE NAVIGATION
+*************************************************************************************/
+.pagenav{
+	display:flex;
+	align-items:center;
+	justify-content:center
+}
+.pagenav .current,
+.pagenav a,
+.pagenav span{
+	border:1px solid rgba(0,0,0,.2);
+	color:inherit;
+	font-size:.8em;
+	font-weight:400;
+	min-width:1em;
+	min-height:.8em;
+	margin:0 -.025em;
+	padding:1.6em 1.55em 1.2em
+}
+.pagenav a:hover,
+.pagenav .current{
+	border-color:#404040;
+	background-color:#404040;
+	color:#fff;
+	text-decoration:none
+}
+
+/************************************************************************************
+POST
+*************************************************************************************/
+.loops-wrapper.list-post .post-meta,
+.single .post-meta{
+	font-size:1em
+}
+
+/* PORTFOLIO
+================================================ */
+.loops-wrapper .portfolio .entry-content:before{
+	content:'';
+	display:block;
+	border-top:1px solid rgba(0,0,0,.2);
+	width:71px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:.45em
+}
+/************************************************************************************
+PAGE
+*************************************************************************************/
+.page-title{
+	text-transform:uppercase;
+	font-size:3em
+}
+
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+#footerwrap a{
+	color:#666
+}
+#footerwrap a:hover{
+	color:var(--theme_accent)
+}
+#footerwrap a.arrow-up{
+	color:#fff
+}
+#footerwrap{
+	background-color:#FFF;
+	color:#777;
+	padding:0
+}
+.footer-horizontal-left .main-col{
+	display:table;
+	width:100%
+}
+.footer-horizontal-left .main-col .footer-left-wrap,
+.footer-horizontal-left .main-col .footer-right-wrap{
+	margin-left:3.65%;
+	float:none;
+	display:inline-block;
+	vertical-align:top;
+	box-sizing:border-box
+}
+.footer-horizontal-left .main-col .footer-left-wrap.first,
+.footer-horizontal-left .main-col .footer-right-wrap.first{
+	margin-left:0;
+	clear:left
+}
+.footer-horizontal-left .main-col .footer-left-wrap{
+	width:39.75%;
+	background-color:#ecf2f4;
+	padding:3em 5.25% 1em
+}
+.footer-horizontal-left .main-col .footer-right-wrap{
+	width:56%;
+	padding:3em 0 1em
+}
+
+/* FOOTER LOGO
+================================================ */
+.footer-horizontal-left #footer-logo{
+	color:#656565;
+	font-weight:500;
+	letter-spacing:-.08em;
+	margin:0 0 1.1em
+}
+
+/* FOOTER SOCIAL WIDGETS
+================================================ */
+.footer-horizontal-left #footer .social-widget{
+	margin:0;
+	padding:0
+}
+.footer-horizontal-left #footer .social-widget .social-links .icon-medium i{
+	font-size:2.4em;
+	margin-bottom:1em
+}
+.footer-horizontal-left #footer .social-widget{
+	color:#404040
+}
+
+/* BACK TOP
+================================================ */
+body:not(.footer-block) #footer .back-top{
+    position:absolute;
+	left:auto;
+	right:0;
+	top:3em;
+    width:60px;
+    height:60px
+}
+body:not(.footer-block) #footer .back-top a{
+	background-color:#084073;
+	color:#fff;
+	height:60px;
+	padding: 0;
+	box-sizing:border-box;
+	display:flex;
+	align-items:center;
+	justify-content:center
+}
+body:not(.footer-block) #footer .back-top-float{
+	position:fixed;
+	top:auto;
+	right:30px
+}
+#pagewrap .back-top-float .arrow-up{
+	position:static
+}
+#pagewrap .back-top-float a:before{
+	top:50%;
+	margin-top:-6px
+}
+
+/* FOOTER MENU
+================================================ */
+.footer-horizontal-left .footer-nav{
+	margin:0
+}
+.footer-horizontal-left .footer-nav li a{
+	color:inherit;
+	font-size:.9em;
+	letter-spacing:.06em
+}
+.footer-horizontal-left .footer-nav li a{
+	font-weight:700;
+	text-transform:uppercase
+}
+
+/* FOOTER TEXT
+================================================ */
+.footer-horizontal-left .footer-text{
+	padding-bottom:.275em;
+	text-align:left
+}
+.footer-horizontal-left .footer-text .one,
+.footer-horizontal-left .footer-text .two{
+	display:block
+}
+
+/************************************************************************************
+MODULE STYLING
+*************************************************************************************/
+/* slider module */
+.module-slider.themify_builder_slider_wrap .carousel-nav-wrap{
+	text-align:inherit
+}
+.module-slider .themify_builder_slider .slide-content{
+	padding:0
+}
+
+/* button module */
+.ui.builder_button{
+	font-size:.8em;
+	font-weight:600;
+	text-transform:uppercase;
+	letter-spacing:.06em;
+	padding:.85em 1.05em .8em 1.45em;
+}
+a.shortcode.button.outline,
+.module_column .module-buttons.outline a{
+	border-width:2px
+}
+a.shortcode.button.outline.blue,
+.module.module-buttons.outline a.blue.builder_button{
+	border-color:var(--theme_accent);
+	color:var(--theme_accent)
+}
+.module.module-buttons.outline a.blue.builder_button:hover{
+	background-color:var(--theme_accent);
+	color:#fff
+}
+
+/* PROGRESS BAR */
+.module-progressbar .tb-progress-bar{
+	height:15px !important;
+	background-color:#fff !important;
+	margin-bottom:3.65em !important
+}
+.module-progressbar .tb-progress-bar .tb-progress-bar-bg{
+	height:15px !important
+}
+.module-progressbar .tb-progress-bar .tb-progress-bar-label{
+	text-transform:none !important
+}
+.module-progressbar .tb-progress-tooltip{
+	background-color:#084073;
+	color:#fff;
+	font-weight:500;
+	min-width:65px;
+	min-height:30px;
+	text-align:center !important;
+	line-height:30px;
+	bottom:100% !important;
+	margin-bottom:17px;
+	margin-right:-32.5px
+}
+.module-progressbar .tb-progress-tooltip:after{
+	content:'';
+	display:block;
+	position:absolute;
+	top:100%;
+	left:50%;
+	border:7px solid transparent;
+	border-top-color:#084073;
+	transform:translateX(-50%)
+}
+
+/* CONTACT DETAILS */
+.themify_builder .module.tf_contact-details{
+	width:100%;
+	max-width:460px;
+	position:absolute;
+	left:0;
+	bottom:0;
+	line-height:2.25em
+}
+.themify_builder .module.tf_contact-details h5{
+	font-weight:600;
+	margin-bottom:.6em
+}
+.themify_builder .module.tf_contact-details hr{
+	border-color:transparent;
+	border-top-color:#48d7e3;
+	border-style:solid;
+	margin:0 0 .5em
+}
+.themify_builder .module.tf_contact-details p{
+	padding-bottom:.85em
+}
+
+/* CONTACT MODULE */
+.module-contact{
+	text-transform:uppercase
+}
+.module-contact textarea,
+.module-contact input[type=text],
+.module-contact input[type=email],
+.module-contact input[type=url]{
+	background:0;
+	border:none;
+	border-bottom:1px solid #ccc
+}
+.module-contact input[type=reset],
+.module-contact input[type=submit],
+.module-contact button{
+	border-color:#dfa300;
+	font-size:.9em
+}
+.module-contact textarea{
+	border:1px solid #ccc
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+@media screen and (max-width:900px){
+	/* HEADINGS */
+	h1{
+		font-size:1.95em
+	}
+	h2{
+		font-size:1.75em
+	}
+	h3{
+		font-size:1.3em
+	}
+	
+	/* FOOTER */
+	.footer-horizontal-left .main-col .footer-left-wrap,
+	.footer-horizontal-left .main-col .footer-right-wrap{
+		display:block;
+		width:auto;
+		margin:0 0 1em;
+		padding-bottom:.5em
+	}
+	.footer-horizontal-left .main-col .footer-right-wrap{
+		padding-top:.5em
+	}	
+	.themify_builder .module.tf_contact-details{
+		position:static
+	}
+}

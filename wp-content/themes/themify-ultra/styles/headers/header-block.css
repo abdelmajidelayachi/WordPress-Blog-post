@@ -1,0 +1,30 @@
+#main-nav-wrap,
+.fixed-header-enabled #headerwrap{
+	position:relative
+}
+.fixed-header-enabled.transparent-header #headerwrap,
+#headerwrap.fixed-header{
+	position:fixed
+}
+#header{
+	text-align:center
+}
+/* header block */
+.fixed-header .header-bar{
+	display:block;
+	float:left;
+	position:relative;
+	z-index:1
+}
+.fixed-header .sidemenu .cart-icon{
+	float:right;
+	margin-top:4px;
+	position:relative;
+	z-index:1
+}
+#main-nav{
+	margin-top:15px;
+}
+.fixed-header #main-nav{
+	margin-top:0;
+}

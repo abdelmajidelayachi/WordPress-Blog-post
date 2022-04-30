@@ -1,0 +1,28 @@
+.no-results.not-found{
+    text-align: center;
+
+    h1{
+        margin: 2.5rem 0 1.5rem;
+    }
+    
+    .page-content{
+        p{
+            margin-bottom: 1.5rem;
+        }
+    }
+    
+    svg{
+        max-width: 650px;
+    }
+
+    a{
+        @extend %btn-primary;
+        display: inline-block;
+    }
+    .search-form {
+        max-width: 300px;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    
+}

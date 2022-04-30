@@ -1,0 +1,6 @@
+body:not(.announcement-bar-showing):not(.themify_builder_active) .header-icons{
+	top:26px
+}
+.announcement-bar-showing .header-icons{
+	bottom:auto
+}

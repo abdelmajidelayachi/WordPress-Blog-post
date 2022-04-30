@@ -1,0 +1,43 @@
+.tb_row_frame{
+    line-height:0;
+    direction:ltr;
+    contain:strict;
+     /* fix FF bug with repeated backgrounds */
+    background-size:100% 100%
+}
+.tb_row_frame.tf_hide{
+    display:block
+}
+.tb_row_frame_wrap{
+    pointer-events:none
+}
+.tb_row_frame_bottom,
+.tb_row_frame_top{
+    top:-1px; /* -1 fix sub-pixel */
+    height:150px;
+    border-top-left-radius:inherit;
+    border-top-right-radius:inherit
+}
+.tb_row_frame.tb_row_frame_bottom{
+    top:auto;
+    bottom:-1px; /* -1 fix sub-pixel */
+    transform:rotate(180deg) translateZ(0)
+}
+.tb_row_frame_left,
+.tb_row_frame_right{
+    width:150px;
+    left:-1px;
+    border-top-left-radius:inherit;
+    border-bottom-left-radius:inherit
+}
+.tb_row_frame.tb_row_frame_right{
+    right:-1px;
+    left:auto;
+    transform:rotate(180deg) translateZ(0)
+}
+.tb_row_frame.in_front{
+    z-index:1
+}
+.module_row > .tb_row_frame.in_front{
+    z-index:2
+}

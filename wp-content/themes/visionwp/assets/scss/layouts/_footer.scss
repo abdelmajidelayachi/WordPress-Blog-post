@@ -1,0 +1,137 @@
+$footer-bottom-bg: #2f2e2e;
+$footer-text-color: #fff;
+
+#{$prefix}-footer-area-wrapper {
+    background: $color-secondary;
+    padding: 50px 0;
+}
+
+#{$prefix}-footer-area-wrapper {
+    .credit-link{
+        text-align: right;
+        @include media(sm) {
+            text-align: center;
+        } 
+        a {
+            color: #fff;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    #visionwp-copyright{
+       @include media(sm) {
+            display: block;
+            text-align: center;
+        } 
+    } 
+
+
+    .social-menu {   
+        text-align: center;
+    }
+    span,
+    a {
+        font-size: 16px;
+    }
+}
+
+#{$prefix}-social-link-footer {
+    ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        width: 100%;
+        
+        @include media(sm) {
+            margin: 12px 0;
+        }
+    }
+}
+.footer-widget .widget-title, 
+.footer-widget .footer-widget-wrapper section .widget-title, 
+.footer-widget .footer-widget-wrapper section h2 {
+    padding-bottom: 10px;
+}
+
+
+
+#{$prefix}-widget-area {
+    color: $footer-text-color;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: $footer-text-color;
+        li{
+            color: $footer-text-color;
+            line-height: 1.6;
+            > a {
+                color: $color-white;
+                text-decoration: none;
+                line-height: 1.6;
+                &:hover {
+                    text-decoration: none;
+                    color: #f04819;
+                }
+            }
+        }
+    }
+    .widget-title, h1, h2, h3, h4, h5, h6 {
+        color: #fff;
+        font-weight: 700;
+        margin: 10px 0;
+        text-transform: capitalize;
+        padding: 0;
+    }
+    p {
+        padding: 0;
+        margin: 0;
+    }
+    .footer-widget-wrapper {
+        @include media(sm) {
+            flex-basis: 100%;
+            flex: 0 0 100%;
+        }
+
+    }
+}
+.wp-block-columns {
+    margin-bottom: 0; 
+}
+
+#{$prefix}-footer-copyright {
+    background: #010834;
+    > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 15px;
+
+        > div {
+            color: #fff;
+            font-size: 16px;
+            a {
+                color: #fff;
+                &:hover {
+                    color: #f04819;
+                }
+            }
+            @include media(mb) {
+                flex: 0 0 100%;
+                text-align: center;
+                margin-bottom: 6px;
+            }
+
+        }
+
+        #{$prefix}-footer-credit {
+            padding: 0 10px;
+        }
+    }
+} 
+

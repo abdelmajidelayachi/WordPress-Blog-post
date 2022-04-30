@@ -1,0 +1,134 @@
+.single .post-content .post-date-wrap:not(.post-date-inline){
+	width:110px;
+	height:110px;
+	border-radius:100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:1em
+}
+.single .has-post-thumbnail .post-date-wrap{
+	position:relative;
+	margin-top:-75px
+}
+.single .post-date span{
+	display:block
+}
+.single .post-content .post-date{
+	color:#fff;
+	display:block;
+	width:110px;
+	height:110px;
+	margin:0;
+	border-radius:100%;
+	background-color:var(--theme_accent_semi);
+	text-align:center
+}
+.single .post-content .post-date-wrap:not(.post-date-inline) .post-date{
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center
+}
+.single .post-date .day{
+	font-size:36px;
+	margin:4px 0;
+	letter-spacing:-.05em;
+	line-height:100%
+}
+.single .post-date .month{
+	font-size:14px;
+	text-transform:uppercase;
+	line-height:100%;
+	margin:0
+}
+.single .post-date .year{
+	font-size:14px;
+	margin:0;
+	line-height:100%
+}
+/* Display post date circle as inline text */
+.single .post .post-date-inline{
+	width:auto;
+	height:auto;
+	border-radius:0;
+	margin:0 auto 1em
+}
+.single .has-post-thumbnail .post-date-inline{
+	position:static;
+	margin-top:0;
+	margin-bottom:0
+}
+.single .post-content .post-date-inline .post-date{
+	color:inherit;
+	width:auto;
+	height:auto;
+	margin:0 0 .4em;
+	border-radius:0;
+	background:none
+}
+.single .post-date-inline .post-date span{
+	display:inline
+}
+.single .post-date-inline .post-date .year,
+.single .post-date-inline .post-date .month,
+.single .post-date-inline .post-date .day{
+	font-size:inherit;
+	font-family:inherit;
+	text-transform:inherit;
+	line-height:inherit;
+	display:inline
+}
+/* post meta */
+.single .post-meta{
+	margin:0 0 1em
+}
+.single .post-author{
+	font-size:.9em;
+	text-transform:uppercase;
+	letter-spacing:.05em;
+	font-weight:400
+}
+.single .post-meta,
+.single .post-title{
+	text-align:center
+}
+.single .post-meta:empty,
+.single .post-author:empty{
+	display:none
+}
+.single .entry-content .post-date,
+.single .entry-content .post-title,
+.single .entry-content .post-meta{
+	text-align:inherit
+}
+@media screen and (max-width:680px){
+	.single .post-meta{
+		font-size:.9em
+	}
+	.single .post-content .post-date,
+	.single .post-content .post-date-wrap:not(.post-date-inline){
+		width:80px;
+		height:80px
+	}
+	.single .post-date .year{
+		font-size:10px
+	}
+	.single .post-date .month{
+		font-size:13px
+	}
+	.single .post-date .day{
+		font-size:23px
+	}
+	.single .has-post-thumbnail .post-date-wrap.post-date-inline{
+		margin-top:auto
+	}
+	.single-post .post-content .post-date-wrap.post-date-inline{
+		width:auto;
+		height:auto
+	}
+	.single .has-post-thumbnail .post-date-wrap,
+	.single.single-fullwidth-layout .featured-area .post-image + .post-content .post-date-wrap{
+		margin-top:-65px
+	}
+}

@@ -1,0 +1,13 @@
+.themify_builder .builder-zoom-scrolling{
+    background-size:100%;
+    background-position:50%;
+    background-repeat:no-repeat
+}
+.themify_builder.themify_builder_content .builder-zoom-scrolling{
+    transition-property:font-size,line-height,color,padding,margin,border,border-radius,box-shadow,text-shadow,filter,transform
+}
+@media screen and (max-width:680px){
+    .themify_builder .builder-zoom-scrolling{
+        background-size:cover!important
+    }
+}

@@ -1,0 +1,49 @@
+body #accordion-section-theme_upsell {
+    display: block !important;
+}
+
+body .control-section-upsell .accordion-section-title .button {
+    margin-top: -4px;
+    font-weight: 700;
+    margin-left: 8px;
+    border-color: #00adb5;
+    background-color: #00adb5;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    color: #fff;
+}
+
+body .control-section-upsell .accordion-section-title .button:hover {
+    background-color: #000000;
+}
+
+.customize-control-radio-image .radio-image input[type=radio] {
+    display: none;
+}
+
+.customize-control-radio-image img {
+    border: 1px solid transparent;
+}
+
+.customize-control-radio-image input[type=radio] + label {
+    display: inline-block;
+    max-width: 31.3%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+.customize-control-radio-image input[type=radio] + label:hover{
+    opacity: 0.7;
+}
+.customize-control-radio-image input[type=radio]:checked + label {
+    border-color: #00adb5;
+    -webkit-box-shadow: 0 0 1px #00adb5;
+    box-shadow: 0 0 10px #00adb5;
+}
+
+#accordion-section-freemius_upsell{
+    display: none !important;
+}

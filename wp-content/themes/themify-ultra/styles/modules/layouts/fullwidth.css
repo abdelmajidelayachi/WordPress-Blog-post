@@ -1,0 +1,38 @@
+.single.single-fullwidth-layout .featured-area{
+	margin:0 0 2.4em
+}
+.single.single-fullwidth-layout .featured-area .post-content{
+	text-align:center
+}
+.single.single-fullwidth-layout .featured-area .post-image + .post-content .post-date-wrap{
+	margin-top:-94px;
+	position:relative
+}
+.single.single-fullwidth-layout .featured-area .post-image img{
+	border-radius:0;
+}
+.single-post.single-fullwidth-layout #content,
+.single-post.single-fullwidth-layout #sidebar,
+.single-post.single-fullwidth-layout #sidebar-alt,
+.single-portfolio.single-fullwidth-layout #content,
+.single-portfolio.single-fullwidth-layout #sidebar,
+.single-portfolio.single-fullwidth-layout #sidebar-alt{
+	padding-top:8px
+}
+.single.single-fullwidth-layout .featured-area .post-image + .post-content .post-date-wrap.post-date-inline{
+	margin-top:auto;
+	width:auto;
+	height:auto
+}
+.single.single-fullwidth-layout .featured-area .post-image + .post-content .post-date-wrap.post-date-inline .post-date{
+	color:inherit;
+	width:auto;
+	height:auto;
+	margin:0 0 .6em;
+	border-radius:0;
+	background:none;
+	text-align:inherit
+}
+.featured-area .edit-button{
+	display:none
+}

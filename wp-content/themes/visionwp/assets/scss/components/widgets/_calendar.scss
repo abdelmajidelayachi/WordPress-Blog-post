@@ -1,0 +1,47 @@
+
+.wp-block-calendar{
+    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.058823529411764705);
+    padding: 1rem;
+    
+    #wp-calendar{
+        border: none;
+    
+        th{
+            color: #a7a1a1;
+            font-weight: 600;
+            text-align: center;
+        }
+    
+        th,td{
+            border: none; 
+        }
+    
+        .caption{
+            caption-side: top;
+        }
+    
+        tbody{
+            th, td{
+                position: relative;
+                text-align: center;
+                
+                a{
+                    background: #f6f5f7;
+                    line-height: 2.2;
+                    border-radius: 0.3rem;
+                    color: #000;
+                    min-width: 33px;
+                    display: inline-block;
+                }
+            }
+        }
+    
+    }   
+}
+
+
+.footer-widget {
+    table {
+        width: auto;
+    }
+}

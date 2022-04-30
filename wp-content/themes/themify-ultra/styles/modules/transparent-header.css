@@ -1,0 +1,14 @@
+.transparent-header #headerwrap{
+	border:none;
+	background:none; /* required for transparent-header */
+	color:#fff
+}
+.transparent-header #headerwrap .themify-widget-menu{
+	color:#666
+}
+.transparent-header #content{
+	padding:0
+}
+.transparent-header #headerwrap.fixed-header{
+	background-color:rgba(0,0,0,.8)
+}

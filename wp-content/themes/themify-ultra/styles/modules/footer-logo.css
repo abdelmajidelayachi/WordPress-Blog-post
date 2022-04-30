@@ -1,0 +1,11 @@
+#footer-logo{
+    font-size:1.5em;
+    font-weight:600;
+    letter-spacing:-.03em;
+    padding:0;
+    margin:0 0 .8em
+}
+#footer-logo a{
+    color:inherit;
+    text-decoration:none
+}

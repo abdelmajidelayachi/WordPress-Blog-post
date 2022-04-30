@@ -1,0 +1,34 @@
+.woocommerce nav.woocommerce-pagination ul{
+    border:none;
+    margin:1px 0 0 1px;
+    padding-top:2em;
+    padding-bottom:40px;
+    font-size:1.1em
+}
+.woocommerce nav.woocommerce-pagination ul li{
+	border:none;
+	margin:0 1px 0 0;
+	float:none;
+	display:inline-block
+}
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce nav.woocommerce-pagination ul li span{
+	font-weight:400;
+	border:none;
+	border-radius:100%;
+	box-sizing:border-box;
+	text-align:center;
+	background-color:transparent;
+    min-height:36px;
+    min-width:36px;
+	padding:9px
+}
+.woocommerce nav.woocommerce-pagination ul li a:focus,
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current{
+    background-color:transparent
+}
+.woocommerce nav.woocommerce-pagination ul li a:focus,
+.woocommerce nav.woocommerce-pagination ul li span.current{
+	border:1px solid
+}

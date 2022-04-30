@@ -1,0 +1,31 @@
+#{$prefix}-no-sidebar {
+    #{$prefix}-single-post-wrapper {
+        main.site-main {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+}
+#{$prefix}-single-post-wrapper {
+	padding: 30px 0;
+	main.site-main {
+		#{$prefix}-single-content {
+			padding: 0 15px;
+			flex: auto;
+			p {
+				font-size: 16px;
+	            font-weight: 400;
+	            line-height: 1.6;
+	            color: $color-secondary;
+			}
+			#{$prefix}-single-thumbnail {
+				width: 100%;
+				img {
+					width: 100%;
+					object-fit: cover;
+					max-height: 450px;
+				}
+			}
+		}
+	}
+}

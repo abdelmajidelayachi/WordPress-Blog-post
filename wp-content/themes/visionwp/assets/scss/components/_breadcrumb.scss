@@ -1,0 +1,38 @@
+#{$prefix}-breadcrumb-wrapper {
+	margin-top: 10px;
+	.trail-browse {
+    	color: $color-white; 
+    	display: none;
+    }
+	ul {
+		display: flex;
+	    flex-wrap: wrap;
+	    list-style: none;
+	    margin: 0;
+	    padding: 0;
+	    align-items: center;
+	    justify-content: center;
+	    li {
+	    	color: $color-white;
+	    	a {
+	    		color: $color-white;
+	    		&:hover {
+	    			color: #f04819;
+	    		}
+	    	}
+	    	&:after {
+    			content: "\f054";
+			   	font-family: 'FontAwesome';
+			    font-weight: 600;
+			    font-size: 12px;
+			    margin: 0 15px;
+    		}
+    		&:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+	    }
+
+	}
+}
