@@ -1,4 +1,4 @@
-# WordPress-Blog-post
+# WordPress-blog-post
 __________________
 ## username : Abdelmajid 
 ## Password : 2022@2022
